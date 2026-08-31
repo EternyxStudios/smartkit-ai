@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#090d18" />
+  <meta name="description" content="SmartKit AI - free everyday tools for job seekers, students and creators." />
+  <title>SmartKit AI — Free Career & Creator Tools</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root{--bg:#070b14;--panel:#0e1526;--panel2:#121b30;--text:#f7f9ff;--muted:#9aa8c7;--line:#22304f;--brand:#7c5cff;--brand2:#18d2c4;--good:#55e68c;--bad:#ff6b7a;--shadow:0 24px 70px rgba(0,0,0,.35)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:
+      radial-gradient(circle at 10% 0%,rgba(124,92,255,.18),transparent 35%),
+      radial-gradient(circle at 100% 15%,rgba(24,210,196,.12),transparent 30%),var(--bg);color:var(--text)}
+    button,input,textarea,select{font:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(7,11,20,.76);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{height:66px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.4px}
+    .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;box-shadow:0 12px 28px rgba(124,92,255,.35)}
+    nav .actions{display:flex;gap:8px}.btn{border:0;border-radius:12px;padding:11px 15px;font-weight:800;cursor:pointer;color:#fff;background:#17213a}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#5c78ff);box-shadow:0 10px 28px rgba(124,92,255,.27)} .btn.ghost{background:transparent;border:1px solid var(--line)}
+    .hero{padding:62px 0 34px}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:center}
+    .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid #2c3c62;background:#0d1424;border-radius:999px;padding:8px 11px;color:#cbd4e9;font-size:13px}
+    h1{font-size:clamp(39px,7vw,72px);line-height:.98;letter-spacing:-3px;margin:18px 0 18px}.gradient{background:linear-gradient(90deg,#fff 5%,#9fc0ff 42%,#74ffe8);-webkit-background-clip:text;color:transparent}
+    .hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:700px}.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+    .mini{font-size:12px;color:#8493b5;margin-top:12px}
+    .phone{border:1px solid #293859;background:linear-gradient(180deg,#11192c,#0a101d);border-radius:30px;padding:14px;box-shadow:var(--shadow);max-width:390px;margin-left:auto}
+    .screen{min-height:500px;border-radius:22px;background:linear-gradient(180deg,#0b1120,#0f1730);padding:16px;overflow:hidden}.screen-top{display:flex;justify-content:space-between;color:#aeb9d1;font-size:12px}
+    .balance{margin-top:20px;padding:18px;border:1px solid #28375b;border-radius:20px;background:linear-gradient(135deg,rgba(124,92,255,.18),rgba(24,210,196,.07))}
+    .balance b{display:block;font-size:30px;margin-top:8px}.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}.q{padding:14px;border-radius:16px;background:#131d33;border:1px solid #22304e}
+    section{padding:38px 0}.sec-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:18px}.sec-head h2{font-size:31px;letter-spacing:-1px;margin:0}.sec-head p{color:var(--muted);margin:0}
+    .tools{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(180deg,rgba(18,27,48,.94),rgba(11,17,30,.94));border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 12px 35px rgba(0,0,0,.12)}
+    .ico{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#1b2642;font-size:21px}.card h3{margin:15px 0 7px}.card p{color:var(--muted);font-size:14px;line-height:1.55;min-height:44px}.card button{width:100%;margin-top:7px}
+    .workspace{display:none;margin-top:18px}.workspace.active{display:block}.toolbox{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    label{display:block;font-size:13px;color:#b9c3d9;margin-bottom:7px}.field{margin-bottom:13px} input,textarea,select{width:100%;color:#fff;background:#090f1d;border:1px solid #273653;border-radius:13px;padding:13px;outline:none} textarea{min-height:125px;resize:vertical}
+    input:focus,textarea:focus,select:focus{border-color:#6f71ff;box-shadow:0 0 0 3px rgba(124,92,255,.13)}
+    .result{min-height:230px;white-space:pre-wrap;line-height:1.6;color:#e9edfa}.result.empty{color:#7f8dab}.row{display:flex;gap:9px;flex-wrap:wrap}
+    .pricing{display:grid;grid-template-columns:1fr 1fr;gap:15px;max-width:840px;margin:auto}.price{position:relative}.price.pop{border-color:#735dff;box-shadow:0 0 0 1px #735dff,0 24px 70px rgba(89,72,219,.17)}.tag{position:absolute;right:14px;top:14px;background:#6d5cff;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.amount{font-size:42px;font-weight:950;margin:14px 0}.amount small{font-size:14px;color:var(--muted)}.features{color:#bac4dc;line-height:2}
+    .ad-slot{border:1px dashed #3a4b70;border-radius:16px;text-align:center;padding:18px;color:#7888ab;background:#0b1220;margin-top:16px}
+    footer{padding:34px 0 46px;color:#8694b5;border-top:1px solid #1d2942;margin-top:36px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,30px);opacity:0;background:#fff;color:#111827;padding:10px 14px;border-radius:999px;font-weight:800;transition:.25s;z-index:100}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:850px){.hero-grid,.toolbox{grid-template-columns:1fr}.phone{margin:10px auto 0}.tools{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}}
+    @media(max-width:560px){.wrap{width:min(100% - 20px,1120px)}nav{height:58px}.navhide{display:none}.hero{padding-top:42px}h1{letter-spacing:-2px}.hero p{font-size:16px}.tools{grid-template-columns:1fr}.sec-head{display:block}.sec-head p{margin-top:7px}.screen{min-height:430px}.price .btn{width:100%}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <div class="brand"><div class="logo">S</div> SmartKit AI</div>
+  <div class="actions"><button class="btn ghost navhide" onclick="scrollToId('tools')">Tools</button><button class="btn primary" onclick="scrollToId('pricing')">Go Pro</button></div>
+</nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="pill">⚡ 100% mobile friendly • No login needed</span>
+    <h1><span class="gradient">Useful AI-style tools</span><br>people return to.</h1>
+    <p>One fast website for job seekers, students and creators: resume bullets, LinkedIn posts, captions, interview practice, expense planning and text utilities. Start free, then unlock Pro.</p>
+    <div class="hero-cta"><button class="btn primary" onclick="scrollToId('tools')">Use Free Tools</button><button class="btn ghost" onclick="scrollToId('pricing')">See ₹199 Pro</button></div>
+    <div class="mini">Works as a normal website and can also be installed on Android as a PWA.</div>
+  </div>
+  <div class="phone"><div class="screen">
+    <div class="screen-top"><span>SmartKit</span><span>● Online</span></div>
+    <div class="balance"><span style="color:#9fb0d0">Your productivity hub</span><b>6 free tools</b><span style="color:#7f8fb1;font-size:13px">Career • Creator • Money</span></div>
+    <div class="quick">
+      <div class="q">💼<br><b>Resume</b><br><small style="color:#8290ad">Improve bullets</small></div>
+      <div class="q">🎤<br><b>Interview</b><br><small style="color:#8290ad">Practice answers</small></div>
+      <div class="q">📣<br><b>Caption</b><br><small style="color:#8290ad">Creator content</small></div>
+      <div class="q">💸<br><b>Budget</b><br><small style="color:#8290ad">Plan expenses</small></div>
+    </div>
+    <div class="ad-slot" style="margin-top:14px">Ad space ready<br><small>Paste AdSense code after approval</small></div>
+  </div></div>
+</div></section>
+
+<section id="tools"><div class="wrap">
+  <div class="sec-head"><div><h2>Free tools</h2><p>Useful enough to bookmark and share.</p></div><p id="usage">0 tools used today</p></div>
+  <div class="tools">
+    <div class="card"><div class="ico">💼</div><h3>Resume Bullet Improver</h3><p>Turn basic work descriptions into sharper ATS-friendly bullets.</p><button class="btn" onclick="openTool('resume')">Open Tool</button></div>
+    <div class="card"><div class="ico">💬</div><h3>LinkedIn Post Maker</h3><p>Create a clean job-search or project post from a few details.</p><button class="btn" onclick="openTool('linkedin')">Open Tool</button></div>
+    <div class="card"><div class="ico">📱</div><h3>Caption + Hashtags</h3><p>Generate social captions and relevant hashtag sets instantly.</p><button class="btn" onclick="openTool('caption')">Open Tool</button></div>
+    <div class="card"><div class="ico">🎤</div><h3>Interview Answer Builder</h3><p>Build a structured fresher-friendly response to common questions.</p><button class="btn" onclick="openTool('interview')">Open Tool</button></div>
+    <div class="card"><div class="ico">💸</div><h3>Monthly Budget Split</h3><p>Turn monthly income into needs, savings, growth and fun buckets.</p><button class="btn" onclick="openTool('budget')">Open Tool</button></div>
+    <div class="card"><div class="ico">✍️</div><h3>Text Cleaner</h3><p>Remove extra spaces, tidy punctuation and clean pasted text.</p><button class="btn" onclick="openTool('cleaner')">Open Tool</button></div>
+  </div>
+
+  <div id="workspace" class="workspace card">
+    <div class="sec-head"><div><h2 id="toolTitle">Tool</h2><p id="toolDesc"></p></div><button class="btn ghost" onclick="closeTool()">Close</button></div>
+    <div class="toolbox"><div id="formArea"></div><div><label>Result</label><div id="result" class="card result empty">Your result will appear here.</div><div class="row" style="margin-top:10px"><button class="btn" onclick="copyResult()">Copy Result</button><button class="btn ghost" onclick="clearResult()">Clear</button></div></div></div>
+  </div>
+  <div class="ad-slot">Advertisement placement — add your AdSense unit here after your site is approved.</div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <div class="sec-head"><div><h2>Simple monetization</h2><p>Free brings traffic. Pro creates recurring revenue.</p></div></div>
+  <div class="pricing">
+    <div class="card price"><h3>Free</h3><div class="amount">₹0 <small>/ forever</small></div><div class="features">✓ All 6 basic tools<br>✓ Mobile PWA<br>✓ Copy results<br>✓ Ad-supported</div><button class="btn ghost" onclick="scrollToId('tools')">Use Free</button></div>
+    <div class="card price pop"><span class="tag">BEST VALUE</span><h3>Pro</h3><div class="amount">₹199 <small>/ month</small></div><div class="features">✓ Ad-free experience<br>✓ Premium templates<br>✓ Saved history<br>✓ Unlimited presets<br>✓ Priority future tools</div><button class="btn primary" onclick="buyPro()">Unlock Pro</button></div>
+  </div>
+  <p style="text-align:center;color:#7f8dab;font-size:12px;margin-top:14px">Demo checkout is included. Replace the payment link in <b>script.js</b> with your own Razorpay Payment Page / payment provider link before launch.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap foot"><div><b style="color:#fff">SmartKit AI</b><br><span>Everyday tools, one clean website.</span></div><div>Privacy • Terms • Contact<br><small>© 2026 SmartKit AI</small></div></div></footer>
+<div id="toast" class="toast">Copied</div>
+<script src="script.js"></script>
+</body></html>
