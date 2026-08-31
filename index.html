@@ -7,6 +7,10 @@
 
 <title>WorkZivo — Professional Career Tools</title>
 
+<meta name="description" content="WorkZivo offers free professional tools for resumes, LinkedIn posts, interview preparation, captions, budgeting and productivity.">
+
+<meta name="robots" content="index, follow">
+
 <style>
 :root{
   --bg:#f6f8fb;
@@ -555,8 +559,8 @@ footer{
 <nav>
 
 <div class="brand">
-<div class="logo">S</div>
-SmartKit AI
+<div class="logo">W</div>
+WorkZivo
 </div>
 
 <div class="navlinks">
@@ -591,7 +595,7 @@ Present yourself better.
 </h1>
 
 <p>
-SmartKit AI provides practical career, productivity and
+WorkZivo provides practical career, productivity and
 content tools for job seekers, professionals and creators
 in one clean workspace.
 </p>
@@ -620,7 +624,7 @@ Free tools require no registration.
 <div class="preview-inner">
 
 <div class="preview-top">
-<span>Workspace Overview</span>
+<span>WorkZivo Workspace</span>
 <span>● Ready</span>
 </div>
 
@@ -700,9 +704,7 @@ Turn simple responsibilities into stronger,
 professional resume bullet points.
 </p>
 
-<button
-class="btn block"
-onclick="openTool('resume')">
+<button class="btn block" onclick="openTool('resume')">
 Open Tool
 </button>
 
@@ -720,9 +722,7 @@ Create professional job search,
 project and achievement posts.
 </p>
 
-<button
-class="btn block"
-onclick="openTool('linkedin')">
+<button class="btn block" onclick="openTool('linkedin')">
 Open Tool
 </button>
 
@@ -740,9 +740,7 @@ Generate clean captions for social
 content and professional projects.
 </p>
 
-<button
-class="btn block"
-onclick="openTool('caption')">
+<button class="btn block" onclick="openTool('caption')">
 Open Tool
 </button>
 
@@ -760,9 +758,7 @@ Prepare structured answers for
 common interview questions.
 </p>
 
-<button
-class="btn block"
-onclick="openTool('interview')">
+<button class="btn block" onclick="openTool('interview')">
 Open Tool
 </button>
 
@@ -780,9 +776,7 @@ Create a simple monthly budget
 based on your income.
 </p>
 
-<button
-class="btn block"
-onclick="openTool('budget')">
+<button class="btn block" onclick="openTool('budget')">
 Open Tool
 </button>
 
@@ -800,9 +794,7 @@ Remove unnecessary spaces and
 clean pasted text instantly.
 </p>
 
-<button
-class="btn block"
-onclick="openTool('cleaner')">
+<button class="btn block" onclick="openTool('cleaner')">
 Open Tool
 </button>
 
@@ -827,9 +819,7 @@ Tool
 
 </div>
 
-<button
-class="btn"
-onclick="closeTool()">
+<button class="btn" onclick="closeTool()">
 Close
 </button>
 
@@ -840,30 +830,23 @@ Close
 
 <div id="formArea"></div>
 
-
 <div>
 
 <label>
 Result
 </label>
 
-<div
-id="result"
-class="card result empty">
+<div id="result" class="card result empty">
 Your result will appear here.
 </div>
 
 <div class="result-buttons">
 
-<button
-class="btn primary"
-onclick="copyResult()">
+<button class="btn primary" onclick="copyResult()">
 Copy Result
 </button>
 
-<button
-class="btn"
-onclick="clearResult()">
+<button class="btn" onclick="clearResult()">
 Clear
 </button>
 
@@ -950,7 +933,6 @@ Start free and upgrade when you need more.
 
 <div class="pricing">
 
-
 <div class="card price">
 
 <h3>
@@ -973,9 +955,7 @@ Free
 
 <br>
 
-<button
-class="btn block"
-onclick="go('tools')">
+<button class="btn block" onclick="go('tools')">
 Start Free
 </button>
 
@@ -1008,14 +988,11 @@ Professional
 
 <br>
 
-<button
-class="btn primary block"
-onclick="buyPro()">
+<button class="btn primary block" onclick="buyPro()">
 Upgrade to Pro
 </button>
 
 </div>
-
 
 </div>
 
@@ -1031,12 +1008,12 @@ Upgrade to Pro
 <div>
 
 <b style="color:#101828">
-SmartKit AI
+WorkZivo
 </b>
 
 <br>
 
-Professional tools for work and growth.
+Smart tools for work, career and growth.
 
 </div>
 
@@ -1047,7 +1024,7 @@ Privacy • Terms • Contact
 <br>
 
 <small>
-© 2026 SmartKit AI
+© 2026 WorkZivo
 </small>
 
 </div>
@@ -1083,9 +1060,7 @@ behavior:"smooth"
 TOOLS
 ================================ */
 
-
 const tools = {
-
 
 resume:{
 
@@ -1109,7 +1084,6 @@ placeholder="Example: I created Power BI dashboards">
 
 </div>
 
-
 <div class="field">
 
 <label>
@@ -1121,7 +1095,6 @@ id="inputB"
 placeholder="Example: Data Analyst, Power BI, SQL">
 
 </div>
-
 
 <button
 class="btn blue"
@@ -1169,7 +1142,6 @@ Sharing an achievement
 
 </div>
 
-
 <div class="field">
 
 <label>
@@ -1182,7 +1154,6 @@ placeholder="Example: Data Analyst fresher, SQL, Python, Power BI">
 </textarea>
 
 </div>
-
 
 <button
 class="btn blue"
@@ -1218,7 +1189,6 @@ placeholder="Example: Power BI dashboard">
 
 </div>
 
-
 <div class="field">
 
 <label>
@@ -1246,7 +1216,6 @@ Casual
 </select>
 
 </div>
-
 
 <button
 class="btn blue"
@@ -1282,7 +1251,6 @@ placeholder="Example: Tell me about yourself">
 
 </div>
 
-
 <div class="field">
 
 <label>
@@ -1295,7 +1263,6 @@ placeholder="Education, internship, skills and strengths">
 </textarea>
 
 </div>
-
 
 <button
 class="btn blue"
@@ -1332,7 +1299,6 @@ placeholder="25000">
 
 </div>
 
-
 <div class="field">
 
 <label>
@@ -1356,7 +1322,6 @@ Reduce debt
 </select>
 
 </div>
-
 
 <button
 class="btn blue"
@@ -1393,7 +1358,6 @@ placeholder="Paste your text here">
 
 </div>
 
-
 <button
 class="btn blue"
 onclick="generate('cleaner')">
@@ -1410,7 +1374,6 @@ Clean Text
 
 
 /* OPEN TOOL */
-
 
 function openTool(type){
 
@@ -1445,7 +1408,6 @@ block:"start"
 
 /* CLOSE */
 
-
 function closeTool(){
 
 $("#workspace")
@@ -1455,7 +1417,6 @@ $("#workspace")
 
 
 /* INPUT */
-
 
 function getValue(id){
 
@@ -1471,7 +1432,6 @@ return element.value.trim();
 
 
 /* GENERATOR */
-
 
 function generate(type){
 
@@ -1498,7 +1458,6 @@ let output="";
 
 /* RESUME */
 
-
 if(type==="resume"){
 
 let sentence =
@@ -1521,7 +1480,6 @@ Tip: Add measurable results whenever possible. Example: improved reporting effic
 
 /* LINKEDIN */
 
-
 if(type==="linkedin"){
 
 output =
@@ -1537,7 +1495,6 @@ I am interested in connecting with recruiters, professionals and teams working i
 
 
 /* CAPTION */
-
 
 if(type==="caption"){
 
@@ -1561,7 +1518,6 @@ Focused on learning, improving and creating better work every day.
 
 /* INTERVIEW */
 
-
 if(type==="interview"){
 
 output =
@@ -1580,7 +1536,6 @@ I am looking for an opportunity where I can contribute to the team, learn from e
 
 
 /* BUDGET */
-
 
 if(type==="budget"){
 
@@ -1655,7 +1610,6 @@ You can adjust these percentages based on rent, family expenses and existing deb
 
 /* TEXT CLEANER */
 
-
 if(type==="cleaner"){
 
 output =
@@ -1673,7 +1627,6 @@ a
 
 /* SHOW RESULT */
 
-
 const result =
 $("#result");
 
@@ -1687,7 +1640,6 @@ result.classList
 
 
 /* CLEAR RESULT */
-
 
 function clearResult(){
 
@@ -1704,7 +1656,6 @@ result.classList
 
 
 /* COPY */
-
 
 async function copyResult(){
 
@@ -1753,7 +1704,6 @@ showToast(
 
 /* TOAST */
 
-
 function showToast(message){
 
 const toast =
@@ -1778,23 +1728,12 @@ toast.classList
 
 /* PAYMENT */
 
-
 function buyPro(){
 
 /*
-
-IMPORTANT:
-
-Later replace the value below
-with your real payment link.
-
-Example:
-
-const paymentLink =
-"https://rzp.io/l/YOUR-LINK";
-
+Later replace YOUR_PAYMENT_LINK
+with your real Razorpay payment link.
 */
-
 
 const paymentLink =
 "YOUR_PAYMENT_LINK";
