@@ -7,24 +7,24 @@
 
 <title>WorkZivo — Free Professional Career Tools</title>
 
-<meta name="description" content="WorkZivo offers free professional tools for resumes, LinkedIn posts, interview preparation, captions, budgeting and productivity.">
+<meta name="description" content="WorkZivo offers free professional tools for resumes, LinkedIn posts, interview preparation, captions, job search, career planning, budgeting and productivity.">
+
 <meta name="robots" content="index, follow">
 
-<!-- IMPORTANT: Keep this for Google Search Console verification -->
 <meta name="google-site-verification" content="NBSKN9PLvveWXPO3smJfq7NeyCMZiKa2hqA2MuHpAB0" />
-<!-- Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C64CMC5L"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1C64CMC5L');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-1C64CMC5L');
 </script>
+
 <style>
 :root{
   --bg:#f6f8fb;
-  --card:#ffffff;
+  --card:#fff;
   --text:#101828;
   --muted:#667085;
   --navy:#0b1220;
@@ -33,31 +33,23 @@
   --soft:#eef4ff;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   background:var(--bg);
   color:var(--text);
 }
 
-button,input,textarea,select{
-  font:inherit;
-}
+button,input,textarea,select{font:inherit}
 
 .container{
-  width:min(1120px, calc(100% - 28px));
+  width:min(1120px,calc(100% - 28px));
   margin:auto;
 }
-
-/* HEADER */
 
 header{
   position:sticky;
@@ -88,7 +80,7 @@ nav{
   height:36px;
   border-radius:10px;
   background:var(--navy);
-  color:white;
+  color:#fff;
   display:grid;
   place-items:center;
   font-weight:900;
@@ -108,7 +100,7 @@ nav{
 
 .btn{
   border:1px solid var(--line);
-  background:white;
+  background:#fff;
   color:var(--text);
   border-radius:10px;
   padding:11px 16px;
@@ -116,30 +108,24 @@ nav{
   font-weight:700;
 }
 
-.btn:hover{
-  opacity:.9;
-}
+.btn:hover{opacity:.9}
 
 .primary{
   background:var(--navy);
-  color:white;
+  color:#fff;
   border-color:var(--navy);
 }
 
 .blue{
   background:var(--blue);
-  color:white;
+  color:#fff;
   border-color:var(--blue);
 }
 
-.block{
-  width:100%;
-}
-
-/* HERO */
+.block{width:100%}
 
 .hero{
-  background:linear-gradient(180deg,#ffffff,#f6f8fb);
+  background:linear-gradient(180deg,#fff,#f6f8fb);
   padding:75px 0 55px;
   border-bottom:1px solid var(--line);
 }
@@ -189,8 +175,6 @@ h1{
   margin-top:12px;
 }
 
-/* PREVIEW */
-
 .preview{
   background:var(--navy);
   padding:15px;
@@ -199,7 +183,7 @@ h1{
 }
 
 .preview-inner{
-  background:white;
+  background:#fff;
   border-radius:15px;
   padding:18px;
 }
@@ -238,19 +222,11 @@ h1{
   border-radius:12px;
 }
 
-.preview-card small{
-  color:#667085;
-}
+.preview-card small{color:#667085}
 
-/* SECTIONS */
+section{padding:55px 0}
 
-section{
-  padding:55px 0;
-}
-
-.section-head{
-  margin-bottom:24px;
-}
+.section-head{margin-bottom:24px}
 
 .section-head h2{
   font-size:34px;
@@ -263,7 +239,17 @@ section{
   margin:8px 0 0;
 }
 
-/* TOOL CARDS */
+.toolbar{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+
+.toolbar input,
+.toolbar select{
+  max-width:340px;
+}
 
 .tools{
   display:grid;
@@ -272,7 +258,7 @@ section{
 }
 
 .card{
-  background:white;
+  background:#fff;
   border:1px solid var(--line);
   border-radius:16px;
   padding:19px;
@@ -289,9 +275,7 @@ section{
   font-size:21px;
 }
 
-.card h3{
-  margin:15px 0 7px;
-}
+.card h3{margin:15px 0 7px}
 
 .card p{
   color:var(--muted);
@@ -300,16 +284,14 @@ section{
   min-height:44px;
 }
 
-/* WORKSPACE */
+.hidden{display:none!important}
 
 #workspace{
   display:none;
   margin-top:20px;
 }
 
-#workspace.active{
-  display:block;
-}
+#workspace.active{display:block}
 
 .workspace-header{
   display:flex;
@@ -318,13 +300,9 @@ section{
   gap:15px;
 }
 
-.workspace-header h2{
-  margin:0;
-}
+.workspace-header h2{margin:0}
 
-.workspace-header p{
-  color:var(--muted);
-}
+.workspace-header p{color:var(--muted)}
 
 .tool-layout{
   display:grid;
@@ -333,9 +311,7 @@ section{
   margin-top:20px;
 }
 
-.field{
-  margin-bottom:15px;
-}
+.field{margin-bottom:15px}
 
 label{
   display:block;
@@ -350,7 +326,7 @@ textarea,
 select{
   width:100%;
   border:1px solid #d0d5dd;
-  background:white;
+  background:#fff;
   border-radius:10px;
   padding:13px;
   outline:none;
@@ -375,17 +351,43 @@ select:focus{
   background:#fbfcfe;
 }
 
-.result.empty{
-  color:#98a2b3;
-}
+.result.empty{color:#98a2b3}
 
 .result-buttons{
   display:flex;
   gap:10px;
   margin-top:10px;
+  flex-wrap:wrap;
 }
 
-/* FEATURES */
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.timer{
+  font-size:44px;
+  font-weight:800;
+  text-align:center;
+  padding:20px 0;
+}
+
+.tracker-list{
+  display:grid;
+  gap:10px;
+}
+
+.track-item{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px;
+  background:#fff;
+}
+
+.track-item b{display:block}
+
+.track-item small{color:var(--muted)}
 
 .features-grid{
   display:grid;
@@ -393,9 +395,7 @@ select:focus{
   gap:14px;
 }
 
-.feature{
-  text-align:center;
-}
+.feature{text-align:center}
 
 .feature b{
   display:block;
@@ -408,11 +408,9 @@ select:focus{
   font-size:13px;
 }
 
-/* FREE SECTION */
-
 .free-box{
   background:var(--navy);
-  color:white;
+  color:#fff;
   border-radius:22px;
   padding:40px 25px;
   text-align:center;
@@ -431,27 +429,23 @@ select:focus{
 }
 
 .free-box .btn{
-  background:white;
+  background:#fff;
   color:var(--navy);
-  border-color:white;
+  border-color:#fff;
 }
-
-/* ADS */
 
 .ad{
   margin-top:20px;
   border:1px dashed #cbd5e1;
-  background:white;
+  background:#fff;
   color:#98a2b3;
   text-align:center;
   padding:20px;
   border-radius:14px;
 }
 
-/* FOOTER */
-
 footer{
-  background:white;
+  background:#fff;
   border-top:1px solid var(--line);
   padding:35px 0;
 }
@@ -464,8 +458,6 @@ footer{
   color:#667085;
 }
 
-/* TOAST */
-
 .toast{
   position:fixed;
   bottom:20px;
@@ -473,7 +465,7 @@ footer{
   transform:translate(-50%,25px);
   opacity:0;
   background:#111827;
-  color:white;
+  color:#fff;
   padding:11px 16px;
   border-radius:50px;
   font-weight:700;
@@ -486,10 +478,7 @@ footer{
   transform:translate(-50%,0);
 }
 
-/* MOBILE */
-
 @media(max-width:850px){
-
   .hero-grid,
   .tool-layout{
     grid-template-columns:1fr;
@@ -503,16 +492,11 @@ footer{
     grid-template-columns:1fr 1fr;
   }
 
-  .navlinks{
-    display:none;
-  }
+  .navlinks{display:none}
 }
 
 @media(max-width:560px){
-
-  nav{
-    height:60px;
-  }
+  nav{height:60px}
 
   .container{
     width:calc(100% - 20px);
@@ -527,22 +511,17 @@ footer{
     letter-spacing:-1.5px;
   }
 
-  .hero p{
-    font-size:16px;
-  }
+  .hero p{font-size:16px}
 
   .tools,
-  .features-grid{
+  .features-grid,
+  .row{
     grid-template-columns:1fr;
   }
 
-  .section-head h2{
-    font-size:29px;
-  }
+  .section-head h2{font-size:29px}
 
-  .free-box h2{
-    font-size:28px;
-  }
+  .free-box h2{font-size:28px}
 }
 </style>
 </head>
@@ -551,7 +530,6 @@ footer{
 
 <header>
 <div class="container">
-
 <nav>
 
 <div class="brand">
@@ -570,19 +548,15 @@ Open Tools
 </button>
 
 </nav>
-
 </div>
 </header>
 
-
 <section class="hero">
-
 <div class="container hero-grid">
 
 <div>
-
 <span class="badge">
-100% Free Professional Tools
+16 Free Professional Tools
 </span>
 
 <h1>
@@ -591,28 +565,22 @@ Present yourself better.
 </h1>
 
 <p>
-WorkZivo provides practical career, productivity and
-content tools for job seekers, professionals and creators
-in one clean workspace.
+WorkZivo provides practical career, job-search, content and productivity tools
+for job seekers, professionals and creators in one clean workspace.
 </p>
 
 <div class="hero-buttons">
-
 <button class="btn blue" onclick="go('tools')">
 Explore Free Tools
 </button>
-
 </div>
 
 <div class="small-note">
 No registration. No subscription. Start using the tools for free.
 </div>
-
 </div>
 
-
 <div class="preview">
-
 <div class="preview-inner">
 
 <div class="preview-top">
@@ -621,17 +589,15 @@ No registration. No subscription. Start using the tools for free.
 </div>
 
 <div class="metric">
-
 <span style="color:#667085">
 Available professional tools
 </span>
 
-<b>6</b>
+<b>16</b>
 
 <small style="color:#98a2b3">
-Career • Content • Productivity
+Career • Job Search • Content • Productivity
 </small>
-
 </div>
 
 <div class="preview-grid">
@@ -642,173 +608,69 @@ Career • Content • Productivity
 </div>
 
 <div class="preview-card">
-<b>Interview</b><br>
-<small>Prepare answers</small>
+<b>Job Safety</b><br>
+<small>Check risk signals</small>
 </div>
 
 <div class="preview-card">
-<b>LinkedIn</b><br>
-<small>Create posts</small>
+<b>Career</b><br>
+<small>Build roadmap</small>
 </div>
 
 <div class="preview-card">
-<b>Budget</b><br>
-<small>Plan your income</small>
+<b>Tracker</b><br>
+<small>Track applications</small>
 </div>
 
 </div>
 
 </div>
-
 </div>
 
 </div>
-
 </section>
 
-
 <section id="tools">
-
 <div class="container">
 
 <div class="section-head">
-
 <h2>Professional Tools</h2>
-
 <p>
 Choose a tool and start working instantly. All tools are free.
 </p>
+</div>
+
+<div class="toolbar">
+
+<input
+id="toolSearch"
+type="search"
+placeholder="Search tools..."
+oninput="filterTools()">
+
+<select
+id="toolCategory"
+onchange="filterTools()">
+
+<option value="all">All categories</option>
+<option value="career">Career</option>
+<option value="job">Job Search</option>
+<option value="content">Content</option>
+<option value="productivity">Productivity</option>
+
+</select>
 
 </div>
 
-
-<div class="tools">
-
-
-<div class="card">
-
-<div class="icon">📄</div>
-
-<h3>Resume Bullet Improver</h3>
-
-<p>
-Turn simple responsibilities into stronger,
-professional resume bullet points.
-</p>
-
-<button class="btn block" onclick="openTool('resume')">
-Open Tool
-</button>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">💼</div>
-
-<h3>LinkedIn Post Builder</h3>
-
-<p>
-Create professional job search,
-project and achievement posts.
-</p>
-
-<button class="btn block" onclick="openTool('linkedin')">
-Open Tool
-</button>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">✍️</div>
-
-<h3>Caption Generator</h3>
-
-<p>
-Generate clean captions for social
-content and professional projects.
-</p>
-
-<button class="btn block" onclick="openTool('caption')">
-Open Tool
-</button>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🎤</div>
-
-<h3>Interview Answer Builder</h3>
-
-<p>
-Prepare structured answers for
-common interview questions.
-</p>
-
-<button class="btn block" onclick="openTool('interview')">
-Open Tool
-</button>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">₹</div>
-
-<h3>Monthly Budget Planner</h3>
-
-<p>
-Create a simple monthly budget
-based on your income.
-</p>
-
-<button class="btn block" onclick="openTool('budget')">
-Open Tool
-</button>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">✓</div>
-
-<h3>Text Cleaner</h3>
-
-<p>
-Remove unnecessary spaces and
-clean pasted text instantly.
-</p>
-
-<button class="btn block" onclick="openTool('cleaner')">
-Open Tool
-</button>
-
-</div>
-
-</div>
-
-
-<!-- TOOL WORKSPACE -->
+<div class="tools" id="toolsGrid"></div>
 
 <div id="workspace" class="card">
 
 <div class="workspace-header">
 
 <div>
-
-<h2 id="toolTitle">
-Tool
-</h2>
-
+<h2 id="toolTitle">Tool</h2>
 <p id="toolDescription"></p>
-
 </div>
 
 <button class="btn" onclick="closeTool()">
@@ -817,28 +679,31 @@ Close
 
 </div>
 
-
 <div class="tool-layout">
 
 <div id="formArea"></div>
 
 <div>
 
-<label>
-Result
-</label>
+<label>Result</label>
 
-<div id="result" class="card result empty">
+<div
+id="result"
+class="card result empty">
 Your result will appear here.
 </div>
 
 <div class="result-buttons">
 
-<button class="btn primary" onclick="copyResult()">
+<button
+class="btn primary"
+onclick="copyResult()">
 Copy Result
 </button>
 
-<button class="btn" onclick="clearResult()">
+<button
+class="btn"
+onclick="clearResult()">
 Clear
 </button>
 
@@ -850,32 +715,22 @@ Clear
 
 </div>
 
-
 <div class="ad">
 Advertisement Space — Google AdSense Ready
 </div>
 
 </div>
-
 </section>
 
-
 <section id="features">
-
 <div class="container">
 
 <div class="section-head">
-
-<h2>
-Built for everyday work
-</h2>
-
+<h2>Built for everyday work</h2>
 <p>
 Fast, simple and designed for mobile devices.
 </p>
-
 </div>
-
 
 <div class="features-grid">
 
@@ -885,38 +740,37 @@ Fast, simple and designed for mobile devices.
 </div>
 
 <div class="card feature">
-<b>Fast</b>
-<span>No heavy software required.</span>
+<b>16 Tools</b>
+<span>Career, job search, content and productivity.</span>
 </div>
 
 <div class="card feature">
-<b>Simple</b>
-<span>Easy tools with clean interfaces.</span>
+<b>Local Storage</b>
+<span>Application tracker stays on your device.</span>
 </div>
 
 <div class="card feature">
 <b>Free Access</b>
-<span>Use all available tools without a subscription.</span>
+<span>No subscription required.</span>
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-
 <section id="free">
-
 <div class="container">
 
 <div class="free-box">
 
-<h2>All WorkZivo tools are free</h2>
+<h2>
+All WorkZivo tools are free
+</h2>
 
 <p>
-Use WorkZivo's career, content and productivity tools
-without a paid plan. No subscription is required.
+Use WorkZivo's career, job-search, content and productivity tools without a paid plan.
+Some tools are rule-based and provide guidance rather than guarantees.
 </p>
 
 <button class="btn" onclick="go('tools')">
@@ -926,16 +780,12 @@ Start Using Tools
 </div>
 
 </div>
-
 </section>
 
-
 <footer>
-
 <div class="container footer">
 
 <div>
-
 <b style="color:#101828">
 WorkZivo
 </b>
@@ -943,11 +793,9 @@ WorkZivo
 <br><br>
 
 Smart tools for work, career and growth.
-
 </div>
 
 <div>
-
 Privacy • Terms • Contact
 
 <br><br>
@@ -955,133 +803,292 @@ Privacy • Terms • Contact
 <small>
 © 2026 WorkZivo
 </small>
-
 </div>
 
 </div>
-
 </footer>
-
 
 <div id="toast" class="toast">
 Done
 </div>
 
-
 <script>
 
-const $ = selector =>
-document.querySelector(selector);
+const $ = s => document.querySelector(s);
 
+let timerInterval = null;
+
+const toolDefs = [
+
+[
+'resume',
+'📄',
+'Resume Bullet Improver',
+'Turn simple responsibilities into stronger professional resume bullet points.',
+'career'
+],
+
+[
+'linkedin',
+'💼',
+'LinkedIn Post Builder',
+'Create professional job-search, project and achievement posts.',
+'content'
+],
+
+[
+'caption',
+'✍️',
+'Caption Generator',
+'Generate topic-based captions for social posts, projects, events and daily life.',
+'content'
+],
+
+[
+'interview',
+'🎤',
+'Interview Answer Builder',
+'Prepare structured answers for common interview questions.',
+'career'
+],
+
+[
+'budget',
+'₹',
+'Monthly Budget Planner',
+'Create a simple monthly budget based on your income.',
+'productivity'
+],
+
+[
+'cleaner',
+'✓',
+'Text Cleaner',
+'Remove unnecessary spaces and clean pasted text instantly.',
+'productivity'
+],
+
+[
+'scam',
+'🛡️',
+'Job Scam Checker',
+'Scan recruiter messages for common scam and high-risk signals.',
+'job'
+],
+
+[
+'hrdecoder',
+'💬',
+'HR Message Decoder',
+'Understand common HR messages and get a suggested reply.',
+'job'
+],
+
+[
+'timer',
+'⏱️',
+'Interview Answer Timer',
+'Practice answering interview questions in 60, 90 or 120 seconds.',
+'career'
+],
+
+[
+'offers',
+'⚖️',
+'Job Offer Comparator',
+'Compare two offers across salary, commute, growth and benefits.',
+'job'
+],
+
+[
+'roadmap',
+'🗺️',
+'Career Roadmap Builder',
+'Build a practical learning roadmap for your target role.',
+'career'
+],
+
+[
+'skillgap',
+'🎯',
+'Skill Gap Checker',
+'Compare your current skills with a target role and find gaps.',
+'career'
+],
+
+[
+'tracker',
+'📋',
+'Job Application Tracker',
+'Save and track applications on this device.',
+'job'
+],
+
+[
+'practice',
+'🧠',
+'Interview Practice Board',
+'Generate random interview questions for quick practice.',
+'career'
+],
+
+[
+'notice',
+'📅',
+'Notice Period Calculator',
+'Estimate your last working date from resignation date and notice period.',
+'job'
+],
+
+[
+'decision',
+'🤔',
+'Decision Matrix',
+'Compare two choices using scores for important factors.',
+'productivity'
+]
+
+];
+
+function renderCards(){
+
+const grid = $("#toolsGrid");
+
+grid.innerHTML =
+toolDefs
+.map(
+([id,icon,title,desc,cat]) => `
+
+<div
+class="card tool-card"
+data-category="${cat}"
+data-name="${title.toLowerCase()}">
+
+<div class="icon">
+${icon}
+</div>
+
+<h3>
+${title}
+</h3>
+
+<p>
+${desc}
+</p>
+
+<button
+class="btn block"
+onclick="openTool('${id}')">
+
+Open Tool
+
+</button>
+
+</div>
+
+`
+)
+.join("");
+
+}
 
 function go(id){
 
-const element =
-document.getElementById(id);
-
-if(element){
-
-element.scrollIntoView({
+document
+.getElementById(id)
+?.scrollIntoView({
 behavior:"smooth"
 });
 
 }
 
+function filterTools(){
+
+const q =
+(
+$("#toolSearch").value || ""
+)
+.toLowerCase()
+.trim();
+
+const cat =
+$("#toolCategory").value;
+
+document
+.querySelectorAll(".tool-card")
+.forEach(card => {
+
+const show =
+(
+!q ||
+card.dataset.name.includes(q)
+)
+&&
+(
+cat === "all" ||
+card.dataset.category === cat
+);
+
+card
+.classList
+.toggle(
+"hidden",
+!show
+);
+
+});
+
 }
 
+const forms = {
 
-/* ===============================
-TOOLS
-================================ */
-
-const tools = {
-
-
-resume:{
-
-title:"Resume Bullet Improver",
-
-description:
-"Create a stronger professional resume bullet.",
-
-form:`
+resume:`
 
 <div class="field">
-
-<label>
-Current resume sentence
-</label>
-
+<label>Current resume sentence</label>
 <textarea
 id="inputA"
 placeholder="Example: I created Power BI dashboards">
 </textarea>
-
 </div>
 
 <div class="field">
-
-<label>
-Skills / Role
-</label>
-
+<label>Skills / Role</label>
 <input
 id="inputB"
 placeholder="Example: Data Analyst, Power BI, SQL">
+</div>
 
+<div class="field">
+<label>Result / impact (optional)</label>
+<input
+id="inputC"
+placeholder="Example: reduced reporting time by 30%">
 </div>
 
 <button
 class="btn blue"
 onclick="generate('resume')">
-
 Improve Resume Bullet
-
 </button>
 
-`
+`,
 
-},
-
-
-linkedin:{
-
-title:"LinkedIn Post Builder",
-
-description:
-"Create a clean professional LinkedIn post.",
-
-form:`
+linkedin:`
 
 <div class="field">
-
-<label>
-Post Type
-</label>
+<label>Post Type</label>
 
 <select id="inputA">
-
-<option>
-Looking for a job
-</option>
-
-<option>
-Sharing a project
-</option>
-
-<option>
-Sharing an achievement
-</option>
-
+<option>Looking for a job</option>
+<option>Sharing a project</option>
+<option>Sharing an achievement</option>
 </select>
 
 </div>
 
 <div class="field">
-
-<label>
-Your Details
-</label>
+<label>Your Details</label>
 
 <textarea
 id="inputB"
@@ -1090,64 +1097,56 @@ placeholder="Example: Data Analyst fresher, SQL, Python, Power BI">
 
 </div>
 
+<div class="field">
+<label>Location / CTA (optional)</label>
+
+<input
+id="inputC"
+placeholder="Example: Mumbai | Open to opportunities">
+
+</div>
+
 <button
 class="btn blue"
 onclick="generate('linkedin')">
-
 Create LinkedIn Post
-
 </button>
 
-`
+`,
 
-},
-
-
-caption:{
-
-title:"Caption Generator",
-
-description:
-"Create a clean social media caption.",
-
-form:`
+caption:`
 
 <div class="field">
-
-<label>
-Topic
-</label>
+<label>Topic</label>
 
 <input
 id="inputA"
-placeholder="Example: Power BI dashboard">
+placeholder="Example: Power BI dashboard, birthday, gym, travel, food">
 
 </div>
 
 <div class="field">
-
-<label>
-Tone
-</label>
+<label>Tone</label>
 
 <select id="inputB">
+<option>Professional</option>
+<option>Clean</option>
+<option>Energetic</option>
+<option>Casual</option>
+<option>Motivational</option>
+<option>Funny</option>
+</select>
 
-<option>
-Professional
-</option>
+</div>
 
-<option>
-Clean
-</option>
+<div class="field">
+<label>Platform</label>
 
-<option>
-Energetic
-</option>
-
-<option>
-Casual
-</option>
-
+<select id="inputC">
+<option>Instagram</option>
+<option>LinkedIn</option>
+<option>Facebook</option>
+<option>General</option>
 </select>
 
 </div>
@@ -1155,30 +1154,15 @@ Casual
 <button
 class="btn blue"
 onclick="generate('caption')">
-
 Generate Caption
-
 </button>
 
-`
+`,
 
-},
-
-
-interview:{
-
-title:"Interview Answer Builder",
-
-description:
-"Prepare a structured interview answer.",
-
-form:`
+interview:`
 
 <div class="field">
-
-<label>
-Interview Question
-</label>
+<label>Interview Question</label>
 
 <input
 id="inputA"
@@ -1187,10 +1171,7 @@ placeholder="Example: Tell me about yourself">
 </div>
 
 <div class="field">
-
-<label>
-Your Details
-</label>
+<label>Your Details</label>
 
 <textarea
 id="inputB"
@@ -1199,33 +1180,29 @@ placeholder="Education, internship, skills and strengths">
 
 </div>
 
+<div class="field">
+<label>Answer length</label>
+
+<select id="inputC">
+<option>Short</option>
+<option>Medium</option>
+<option>Detailed</option>
+</select>
+
+</div>
+
 <button
 class="btn blue"
 onclick="generate('interview')">
-
 Build Answer
-
 </button>
 
-`
+`,
 
-},
-
-
-budget:{
-
-title:"Monthly Budget Planner",
-
-description:
-"Create a basic monthly budget plan.",
-
-form:`
+budget:`
 
 <div class="field">
-
-<label>
-Monthly Income ₹
-</label>
+<label>Monthly Income ₹</label>
 
 <input
 type="number"
@@ -1235,25 +1212,12 @@ placeholder="25000">
 </div>
 
 <div class="field">
-
-<label>
-Goal
-</label>
+<label>Goal</label>
 
 <select id="inputB">
-
-<option>
-Balanced
-</option>
-
-<option>
-Save more
-</option>
-
-<option>
-Reduce debt
-</option>
-
+<option>Balanced</option>
+<option>Save more</option>
+<option>Reduce debt</option>
 </select>
 
 </div>
@@ -1261,30 +1225,15 @@ Reduce debt
 <button
 class="btn blue"
 onclick="generate('budget')">
-
 Create Budget
-
 </button>
 
-`
+`,
 
-},
-
-
-cleaner:{
-
-title:"Text Cleaner",
-
-description:
-"Clean unnecessary spaces from text.",
-
-form:`
+cleaner:`
 
 <div class="field">
-
-<label>
-Paste Text
-</label>
+<label>Paste Text</label>
 
 <textarea
 id="inputA"
@@ -1293,42 +1242,567 @@ placeholder="Paste your text here">
 
 </div>
 
+<div class="field">
+<label>Mode</label>
+
+<select id="inputB">
+<option>Normal clean</option>
+<option>One line</option>
+<option>Remove blank lines</option>
+</select>
+
+</div>
+
 <button
 class="btn blue"
 onclick="generate('cleaner')">
-
 Clean Text
+</button>
 
+`,
+
+scam:`
+
+<div class="field">
+<label>Recruiter / Job Message</label>
+
+<textarea
+id="inputA"
+placeholder="Paste the full message here">
+</textarea>
+
+</div>
+
+<button
+class="btn blue"
+onclick="generate('scam')">
+Check Risk Signals
+</button>
+
+`,
+
+hrdecoder:`
+
+<div class="field">
+<label>HR Message</label>
+
+<textarea
+id="inputA"
+placeholder="Paste HR or recruiter message">
+</textarea>
+
+</div>
+
+<button
+class="btn blue"
+onclick="generate('hrdecoder')">
+Decode Message
+</button>
+
+`,
+
+timer:`
+
+<div class="field">
+<label>Practice Time</label>
+
+<select
+id="inputA"
+onchange="resetTimer()">
+
+<option value="60">60 seconds</option>
+<option value="90">90 seconds</option>
+<option value="120">120 seconds</option>
+
+</select>
+
+</div>
+
+<div
+class="timer"
+id="timerDisplay">
+01:00
+</div>
+
+<div class="result-buttons">
+
+<button
+class="btn blue"
+onclick="startTimer()">
+Start
+</button>
+
+<button
+class="btn"
+onclick="resetTimer()">
+Reset
+</button>
+
+</div>
+
+`,
+
+offers:`
+
+<div class="row">
+
+<div>
+<label>Offer A Name</label>
+<input
+id="offerAName"
+placeholder="Company A">
+</div>
+
+<div>
+<label>Offer B Name</label>
+<input
+id="offerBName"
+placeholder="Company B">
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div>
+<label>A Salary /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="aSalary"
+value="7">
+</div>
+
+<div>
+<label>B Salary /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="bSalary"
+value="7">
+</div>
+
+</div>
+
+<div class="row">
+
+<div>
+<label>A Growth /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="aGrowth"
+value="7">
+</div>
+
+<div>
+<label>B Growth /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="bGrowth"
+value="7">
+</div>
+
+</div>
+
+<div class="row">
+
+<div>
+<label>A Commute /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="aCommute"
+value="7">
+</div>
+
+<div>
+<label>B Commute /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="bCommute"
+value="7">
+</div>
+
+</div>
+
+<div class="row">
+
+<div>
+<label>A Benefits /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="aBenefits"
+value="7">
+</div>
+
+<div>
+<label>B Benefits /10</label>
+<input
+type="number"
+min="0"
+max="10"
+id="bBenefits"
+value="7">
+</div>
+
+</div>
+
+<button
+class="btn blue"
+onclick="compareOffers()">
+Compare Offers
+</button>
+
+`,
+
+roadmap:`
+
+<div class="field">
+<label>Target Role</label>
+
+<select id="inputA">
+<option>Data Analyst</option>
+<option>Business Analyst</option>
+<option>Power BI Developer</option>
+<option>Python Developer</option>
+<option>Machine Learning Engineer</option>
+</select>
+
+</div>
+
+<button
+class="btn blue"
+onclick="generate('roadmap')">
+Build Roadmap
+</button>
+
+`,
+
+skillgap:`
+
+<div class="field">
+<label>Target Role</label>
+
+<select id="inputA">
+<option>Data Analyst</option>
+<option>Business Analyst</option>
+<option>Power BI Developer</option>
+<option>Python Developer</option>
+<option>Machine Learning Engineer</option>
+</select>
+
+</div>
+
+<div class="field">
+<label>Your Current Skills</label>
+
+<textarea
+id="inputB"
+placeholder="Example: Excel, SQL, Power BI, Python">
+</textarea>
+
+</div>
+
+<button
+class="btn blue"
+onclick="generate('skillgap')">
+Check Skill Gaps
+</button>
+
+`,
+
+tracker:`
+
+<div class="field">
+<label>Company</label>
+
+<input
+id="trackCompany"
+placeholder="Company name">
+
+</div>
+
+<div class="field">
+<label>Role</label>
+
+<input
+id="trackRole"
+placeholder="Role">
+
+</div>
+
+<div class="field">
+<label>Status</label>
+
+<select id="trackStatus">
+<option>Applied</option>
+<option>Interview</option>
+<option>Offer</option>
+<option>Rejected</option>
+</select>
+
+</div>
+
+<button
+class="btn blue"
+onclick="addApplication()">
+Save Application
+</button>
+
+<div style="height:14px"></div>
+
+<div
+id="trackerList"
+class="tracker-list">
+</div>
+
+`,
+
+practice:`
+
+<div class="field">
+<label>Question Type</label>
+
+<select id="inputA">
+<option>General</option>
+<option>Data Analyst</option>
+<option>Behavioral</option>
+</select>
+
+</div>
+
+<button
+class="btn blue"
+onclick="generate('practice')">
+Give Me a Question
+</button>
+
+`,
+
+notice:`
+
+<div class="field">
+<label>Resignation Date</label>
+
+<input
+type="date"
+id="inputA">
+
+</div>
+
+<div class="field">
+<label>Notice Period (days)</label>
+
+<input
+type="number"
+id="inputB"
+value="30"
+min="0">
+
+</div>
+
+<button
+class="btn blue"
+onclick="generate('notice')">
+Calculate Date
+</button>
+
+`,
+
+decision:`
+
+<div class="row">
+
+<div>
+<label>Option A</label>
+
+<input
+id="dA"
+placeholder="Option A">
+</div>
+
+<div>
+<label>Option B</label>
+
+<input
+id="dB"
+placeholder="Option B">
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div>
+<label>A Salary /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dASalary"
+value="5">
+</div>
+
+<div>
+<label>B Salary /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dBSalary"
+value="5">
+</div>
+
+</div>
+
+<div class="row">
+
+<div>
+<label>A Growth /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dAGrowth"
+value="5">
+</div>
+
+<div>
+<label>B Growth /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dBGrowth"
+value="5">
+</div>
+
+</div>
+
+<div class="row">
+
+<div>
+<label>A Time /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dATime"
+value="5">
+</div>
+
+<div>
+<label>B Time /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dBTime"
+value="5">
+</div>
+
+</div>
+
+<div class="row">
+
+<div>
+<label>A Stability /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dAStability"
+value="5">
+</div>
+
+<div>
+<label>B Stability /10</label>
+
+<input
+type="number"
+min="0"
+max="10"
+id="dBStability"
+value="5">
+</div>
+
+</div>
+
+<button
+class="btn blue"
+onclick="compareDecision()">
+Compare
 </button>
 
 `
 
-}
-
 };
 
-
-/* OPEN TOOL */
+const descriptions =
+Object.fromEntries(
+toolDefs.map(
+([id,,title,desc]) => [
+id,
+{
+title,
+desc
+}
+]
+)
+);
 
 function openTool(type){
 
-const tool = tools[type];
+if(timerInterval){
+clearInterval(timerInterval);
+timerInterval = null;
+}
+
+const d =
+descriptions[type];
 
 $("#toolTitle").textContent =
-tool.title;
+d.title;
 
 $("#toolDescription").textContent =
-tool.description;
+d.desc;
 
 $("#formArea").innerHTML =
-tool.form;
+forms[type];
 
 $("#workspace")
-.classList.add("active");
+.classList
+.add("active");
 
 clearResult();
 
-setTimeout(()=>{
+if(type === "tracker"){
+renderApplications();
+}
+
+setTimeout(() => {
 
 $("#workspace")
 .scrollIntoView({
@@ -1338,35 +1812,342 @@ block:"start"
 
 },100);
 
+if(typeof gtag === "function"){
+
+gtag(
+"event",
+"tool_open",
+{
+tool_name:type
+}
+);
+
 }
 
-
-/* CLOSE */
+}
 
 function closeTool(){
 
-$("#workspace")
-.classList.remove("active");
-
+if(timerInterval){
+clearInterval(timerInterval);
+timerInterval = null;
 }
 
+$("#workspace")
+.classList
+.remove("active");
 
-/* INPUT */
+}
 
 function getValue(id){
 
 const element =
 document.getElementById(id);
 
-if(!element)
-return "";
-
-return element.value.trim();
+return element
+?
+String(element.value).trim()
+:
+"";
 
 }
 
+function setResult(text){
 
-/* GENERATOR */
+$("#result").textContent =
+text;
+
+$("#result")
+.classList
+.remove("empty");
+
+}
+
+function clearResult(){
+
+$("#result").textContent =
+"Your result will appear here.";
+
+$("#result")
+.classList
+.add("empty");
+
+}
+
+function cleanWords(text){
+
+return text
+.replace(/\s+/g," ")
+.trim();
+
+}
+
+function captionFor(
+topic,
+tone,
+platform
+){
+
+const text =
+topic.toLowerCase();
+
+let caption = "";
+
+let tags = [];
+
+if(
+/power bi|dashboard|data|analytics|excel|sql|python|project/.test(text)
+){
+
+caption =
+`Built something worth sharing: ${topic}. Turning ideas and data into clearer insights, stronger decisions and practical results.`;
+
+tags = [
+"#DataAnalytics",
+"#PowerBI",
+"#Projects",
+"#Learning"
+];
+
+}
+
+else if(
+/birthday|bday/.test(text)
+){
+
+caption =
+`Celebrating ${topic} with good vibes, great memories and a lot to be thankful for. 🎉`;
+
+tags = [
+"#Birthday",
+"#Celebration",
+"#Memories",
+"#GoodVibes"
+];
+
+}
+
+else if(
+/gym|workout|fitness|bodybuilding/.test(text)
+){
+
+caption =
+`${topic} — showing up, staying consistent and getting a little stronger every day. 💪`;
+
+tags = [
+"#Fitness",
+"#Gym",
+"#Consistency",
+"#Discipline"
+];
+
+}
+
+else if(
+/travel|trip|vacation|journey|tour/.test(text)
+){
+
+caption =
+`${topic} — new places, fresh views and memories worth keeping. ✈️`;
+
+tags = [
+"#Travel",
+"#Explore",
+"#Journey",
+"#TravelDiaries"
+];
+
+}
+
+else if(
+/food|pizza|burger|coffee|restaurant|meal/.test(text)
+){
+
+caption =
+`${topic} — because some moments are best enjoyed one bite at a time. 😋`;
+
+tags = [
+"#Food",
+"#Foodie",
+"#GoodFood",
+"#FoodLover"
+];
+
+}
+
+else if(
+/job|career|open to work|interview/.test(text)
+){
+
+caption =
+`Focused on the next step in my career: ${topic}. Learning, improving and staying ready for the right opportunity.`;
+
+tags = [
+"#OpenToWork",
+"#Career",
+"#Jobs",
+"#ProfessionalGrowth"
+];
+
+}
+
+else if(
+/reel|video|content|instagram/.test(text)
+){
+
+caption =
+`${topic} — creating, experimenting and enjoying the process. 🎬`;
+
+tags = [
+"#Reels",
+"#ContentCreator",
+"#Create",
+"#SocialMedia"
+];
+
+}
+
+else if(
+/friend|friendship/.test(text)
+){
+
+caption =
+`${topic} — good people make ordinary moments unforgettable. ✨`;
+
+tags = [
+"#Friends",
+"#Friendship",
+"#Memories",
+"#GoodTimes"
+];
+
+}
+
+else if(
+/love|couple|relationship/.test(text)
+){
+
+caption =
+`${topic} — simple moments, real smiles and memories that stay. ❤️`;
+
+tags = [
+"#Love",
+"#Together",
+"#Memories",
+"#GoodVibes"
+];
+
+}
+
+else if(
+/nature|sunset|rain|mountain|beach/.test(text)
+){
+
+caption =
+`${topic} — sometimes the best reset is slowing down and enjoying the view. 🌿`;
+
+tags = [
+"#Nature",
+"#Peace",
+"#Explore",
+"#Moments"
+];
+
+}
+
+else{
+
+caption =
+`${topic} — a moment, an idea and a story worth sharing.`;
+
+tags = [
+"#Moments",
+"#Life",
+"#Create",
+"#Share"
+];
+
+}
+
+if(tone === "Professional"){
+
+caption =
+caption
+.replace(
+/🎉|💪|✈️|😋|🎬|✨|❤️|🌿/g,
+""
+)
+.trim();
+
+}
+
+if(tone === "Energetic"){
+
+caption =
+`🚀 ${caption} Let’s keep moving forward!`;
+
+}
+
+if(tone === "Casual"){
+
+caption =
+`✨ ${caption}`;
+
+}
+
+if(tone === "Motivational"){
+
+caption =
+`${caption} Keep showing up — progress comes from consistency.`;
+
+}
+
+if(tone === "Funny"){
+
+caption =
+`${caption} 😄 Because serious captions are overrated.`;
+
+}
+
+if(platform === "LinkedIn"){
+
+tags =
+tags.filter(
+tag =>
+![
+"#GoodVibes",
+"#Foodie",
+"#Love",
+"#Reels"
+]
+.includes(tag)
+);
+
+tags.push(
+"#ProfessionalGrowth"
+);
+
+}
+
+if(platform === "General"){
+
+tags =
+tags.slice(
+0,
+3
+);
+
+}
+
+return `${caption}
+
+${[
+...new Set(tags)
+]
+.slice(0,5)
+.join(" ")}`;
+
+}
 
 function generate(type){
 
@@ -1376,6 +2157,8 @@ getValue("inputA");
 const b =
 getValue("inputB");
 
+const c =
+getValue("inputC");
 
 if(!a){
 
@@ -1387,73 +2170,94 @@ return;
 
 }
 
+let output = "";
 
-let output="";
-
-
-/* RESUME */
-
-if(type==="resume"){
+if(type === "resume"){
 
 let sentence =
-a.replace(/^i\s+/i,"")
-.replace(/\.$/,"");
+a
+.replace(
+/^i\s+/i,
+""
+)
+.replace(
+/\.$/,
+""
+);
 
 sentence =
-sentence.charAt(0)
+sentence
+.charAt(0)
 .toUpperCase()
 +
 sentence.slice(1);
 
 output =
-`• ${sentence}, applying ${b || "relevant professional skills"} to support accurate, efficient and high-quality outcomes.
+`• ${sentence}${b ? `, using ${b}` : ""}${c ? ` to ${c}` : ""}.
 
-Tip: Add measurable results whenever possible. Example: improved reporting efficiency by 20%.`;
+Tip: Keep the bullet specific and add measurable impact whenever possible.`;
 
 }
 
+if(type === "linkedin"){
 
-/* LINKEDIN */
+let intro = "";
 
-if(type==="linkedin"){
+if(a === "Looking for a job"){
+
+intro =
+"I’m currently exploring new opportunities.";
+
+}
+
+else if(a === "Sharing a project"){
+
+intro =
+"I’m excited to share a recent project.";
+
+}
+
+else{
+
+intro =
+"I’m happy to share a recent achievement.";
+
+}
 
 output =
-`${a}
+`${intro}
 
-${b || "I am currently building practical professional skills and looking for opportunities to contribute and grow."}
+${b || "I am continuing to build practical professional skills and looking for opportunities to contribute and grow."}${c ? `
 
-I am interested in connecting with recruiters, professionals and teams working in this field.
+${c}` : ""}
 
-#OpenToWork #Career #ProfessionalGrowth #Jobs`;
+I’d be glad to connect with recruiters, professionals and teams working in this space.
+
+#Career #ProfessionalGrowth ${a === "Looking for a job" ? "#OpenToWork #Jobs" : "#Learning #Projects"}`;
 
 }
 
-
-/* CAPTION */
-
-if(type==="caption"){
-
-let emoji="";
-
-if(b==="Energetic")
-emoji="🚀 ";
-
-if(b==="Casual")
-emoji="✨ ";
+if(type === "caption"){
 
 output =
-`${emoji}${a}
-
-Focused on learning, improving and creating better work every day.
-
-#growth #learning #professional #creator`;
+captionFor(
+a,
+b || "Professional",
+c || "Instagram"
+);
 
 }
 
+if(type === "interview"){
 
-/* INTERVIEW */
+const details =
+b ||
+"I have been building practical skills through my education and hands-on experience.";
 
-if(type==="interview"){
+const length =
+c || "Short";
+
+if(length === "Short"){
 
 output =
 `Question:
@@ -1461,24 +2265,51 @@ ${a}
 
 Suggested Answer:
 
-“I am at the beginning of my career and have been developing practical skills through my education and hands-on experience.
-
-${b || "I am a quick learner, enjoy solving problems and continuously work on improving my skills."}
-
-I am looking for an opportunity where I can contribute to the team, learn from experienced professionals and continue growing in my career.”`;
+${details} I’m a quick learner, I enjoy solving problems, and I’m looking for an opportunity where I can contribute while continuing to grow.`;
 
 }
 
+else if(length === "Detailed"){
 
-/* BUDGET */
+output =
+`Question:
+${a}
 
-if(type==="budget"){
+Suggested Answer:
+
+${details}
+
+My approach is to understand the problem clearly, apply the right tools, communicate progress, and keep improving from feedback. I value teamwork, responsibility and continuous learning.
+
+I’m now looking for a role where I can use these strengths, contribute to real business work and grow with an experienced team.`;
+
+}
+
+else{
+
+output =
+`Question:
+${a}
+
+Suggested Answer:
+
+${details}
+
+I’m a quick learner, enjoy solving problems and working with others. I’m looking for an opportunity where I can contribute to the team, learn from experienced professionals and continue growing in my career.`;
+
+}
+
+}
+
+if(type === "budget"){
 
 const income =
 Number(a);
 
-
-if(!income || income <= 0){
+if(
+!income ||
+income <= 0
+){
 
 showToast(
 "Enter valid income"
@@ -1488,115 +2319,1034 @@ return;
 
 }
 
+let needs = 55;
+let savings = 25;
+let growth = 10;
+let personal = 10;
 
-let needs=55;
-let savings=25;
-let growth=10;
-let personal=10;
+if(b === "Save more"){
 
-
-if(b==="Save more"){
-
-needs=50;
-savings=30;
-growth=10;
-personal=10;
+needs = 50;
+savings = 30;
 
 }
 
+if(b === "Reduce debt"){
 
-if(b==="Reduce debt"){
-
-needs=50;
-savings=20;
-growth=20;
-personal=10;
+needs = 50;
+savings = 20;
+growth = 20;
 
 }
 
-
-function rupees(value){
-
-return Math.round(value)
-.toLocaleString("en-IN");
-
-}
-
+const rupees =
+value =>
+Math.round(value)
+.toLocaleString(
+"en-IN"
+);
 
 output =
 `Monthly Income: ₹${rupees(income)}
 
 Needs (${needs}%):
-₹${rupees(income*needs/100)}
+₹${rupees(income * needs / 100)}
 
 Savings (${savings}%):
-₹${rupees(income*savings/100)}
+₹${rupees(income * savings / 100)}
 
 Growth / Debt (${growth}%):
-₹${rupees(income*growth/100)}
+₹${rupees(income * growth / 100)}
 
 Personal Spending (${personal}%):
-₹${rupees(income*personal/100)}
+₹${rupees(income * personal / 100)}
 
-You can adjust these percentages based on rent, family expenses and existing debt.`;
+Adjust these percentages for your real rent, family expenses and debt.`;
 
 }
 
+if(type === "cleaner"){
 
-/* TEXT CLEANER */
+if(b === "One line"){
 
-if(type==="cleaner"){
+output =
+cleanWords(a)
+.replace(
+/\s+([,.!?;:])/g,
+"$1"
+);
+
+}
+
+else if(
+b === "Remove blank lines"
+){
 
 output =
 a
-.replace(/\s+/g," ")
-.replace(/\s+([,.!?;:])/g,"$1")
+.split("\n")
+.map(
+line =>
+line.trim()
+)
+.filter(Boolean)
+.join("\n");
+
+}
+
+else{
+
+output =
+a
+.replace(
+/[ \t]+/g,
+" "
+)
+.replace(
+/\s+([,.!?;:])/g,
+"$1"
+)
 .replace(
 /([,.!?;:])([A-Za-z])/g,
 "$1 $2"
+)
+.replace(
+/\n{3,}/g,
+"\n\n"
 )
 .trim();
 
 }
 
+}
 
-/* SHOW RESULT */
+if(type === "scam"){
 
-const result =
-$("#result");
+const rules = [
 
-result.textContent =
-output;
+[
+"Payment or registration fee",
+/(pay|payment|fee|registration charge|security deposit|processing fee)/i
+],
 
-result.classList
-.remove("empty");
+[
+"Urgent pressure",
+/(urgent|immediately|today only|within 1 hour|limited time)/i
+],
+
+[
+"Guaranteed job or income",
+/(guaranteed job|100% job|guaranteed salary|earn.*per day)/i
+],
+
+[
+"OTP / bank / card request",
+/(otp|cvv|card number|bank password|upi pin)/i
+],
+
+[
+"WhatsApp-only hiring",
+/(whatsapp only|contact on whatsapp only)/i
+],
+
+[
+"Sensitive document pressure",
+/(send.*aadhaar|send.*pan|passport.*immediately)/i
+]
+
+];
+
+const found =
+rules
+.filter(
+rule =>
+rule[1].test(a)
+)
+.map(
+rule =>
+rule[0]
+);
+
+const score =
+Math.min(
+100,
+found.length * 18
+);
+
+const risk =
+score >= 55
+?
+"HIGH"
+:
+score >= 25
+?
+"MEDIUM"
+:
+"LOW";
+
+output =
+`Risk level: ${risk}
+
+Risk score: ${score}/100
+
+Signals found:
+
+${found.length
+?
+found
+.map(
+item =>
+`• ${item}`
+)
+.join("\n")
+:
+"• No common high-risk phrases detected"}
+
+Safety checks:
+
+• Verify the company on its official website.
+• Confirm the recruiter email/domain.
+• Never share OTP, PIN or card details.
+• Be cautious if money is requested for a job.
+
+This is a heuristic check, not proof that a job is genuine or fake.`;
 
 }
 
+if(type === "hrdecoder"){
 
-/* CLEAR RESULT */
+const text =
+a.toLowerCase();
 
-function clearResult(){
+if(
+/shortlist|shortlisted/.test(text)
+){
 
-const result =
-$("#result");
+output =
+`Meaning:
 
-result.textContent =
-"Your result will appear here.";
+You have likely moved to the next hiring stage.
 
-result.classList
-.add("empty");
+Suggested reply:
+
+Thank you for the update. I appreciate the opportunity. Please share the next steps, interview schedule, and any documents I should carry or prepare.`;
 
 }
 
+else if(
+/we will get back|we'll get back|under review/.test(text)
+){
 
-/* COPY */
+output =
+`Meaning:
+
+The company has not made a final decision yet.
+
+Suggested reply:
+
+Thank you for the update. I appreciate your time. I look forward to hearing from you regarding the next steps.`;
+
+}
+
+else if(
+/interview|schedule|available/.test(text)
+){
+
+output =
+`Meaning:
+
+The recruiter is trying to schedule or confirm an interview.
+
+Suggested reply:
+
+Thank you for reaching out. I am available for the interview. Please share the date, time, location or meeting link, and any preparation details.`;
+
+}
+
+else if(
+/documents|document/.test(text)
+){
+
+output =
+`Meaning:
+
+The recruiter is asking for documents. Verify the company and recruiter before sharing sensitive information.
+
+Suggested reply:
+
+Sure. Please confirm which documents are required and the official company email or portal where I should submit them.`;
+
+}
+
+else{
+
+output =
+`Simple meaning:
+
+This message does not match one of the common templates in WorkZivo.
+
+Safe reply:
+
+Thank you for the message. Could you please share a little more detail about the role, next steps, and any action required from my side?`;
+
+}
+
+}
+
+if(type === "roadmap"){
+
+const roadmaps = {
+
+"Data Analyst":[
+"Excel fundamentals",
+"SQL querying",
+"Data cleaning / EDA",
+"Power BI or Tableau",
+"Basic statistics",
+"2–3 portfolio projects",
+"Interview practice"
+],
+
+"Business Analyst":[
+"Excel",
+"Requirements gathering",
+"Process mapping",
+"SQL basics",
+"Power BI basics",
+"Documentation / BRD",
+"Case-study practice"
+],
+
+"Power BI Developer":[
+"Power Query",
+"Data modeling",
+"DAX",
+"Visual design",
+"Performance optimization",
+"Row-level security",
+"Portfolio dashboards"
+],
+
+"Python Developer":[
+"Python fundamentals",
+"OOP",
+"Git / GitHub",
+"APIs",
+"SQL",
+"Testing",
+"Framework basics",
+"Projects"
+],
+
+"Machine Learning Engineer":[
+"Python",
+"NumPy / Pandas",
+"Statistics",
+"Scikit-learn",
+"Model evaluation",
+"Feature engineering",
+"Deployment basics",
+"Projects"
+]
+
+};
+
+output =
+`${a} Roadmap
+
+${roadmaps[a]
+.map(
+(step,index) =>
+`${index + 1}. ${step}`
+)
+.join("\n")}
+
+Tip: Build one practical project after every 2–3 learning steps.`;
+
+}
+
+if(type === "skillgap"){
+
+const requirements = {
+
+"Data Analyst":[
+"excel",
+"sql",
+"power bi",
+"tableau",
+"python",
+"statistics"
+],
+
+"Business Analyst":[
+"excel",
+"sql",
+"requirements",
+"process mapping",
+"power bi",
+"documentation"
+],
+
+"Power BI Developer":[
+"power query",
+"dax",
+"data modeling",
+"power bi",
+"sql",
+"rls"
+],
+
+"Python Developer":[
+"python",
+"oop",
+"git",
+"sql",
+"api",
+"testing"
+],
+
+"Machine Learning Engineer":[
+"python",
+"pandas",
+"numpy",
+"statistics",
+"scikit-learn",
+"machine learning",
+"deployment"
+]
+
+};
+
+const current =
+b.toLowerCase();
+
+const needed =
+requirements[a];
+
+const matched =
+needed.filter(
+skill =>
+current.includes(skill)
+);
+
+const missing =
+needed.filter(
+skill =>
+!current.includes(skill)
+);
+
+output =
+`Target role: ${a}
+
+Matched skills (${matched.length}/${needed.length}):
+
+${matched.length
+?
+matched
+.map(
+skill =>
+`✓ ${skill}`
+)
+.join("\n")
+:
+"None detected"}
+
+Skills to work on:
+
+${missing.length
+?
+missing
+.map(
+skill =>
+`• ${skill}`
+)
+.join("\n")
+:
+"No major gaps detected from this simple checklist."}
+
+Note: This is a basic keyword-based comparison.`;
+
+}
+
+if(type === "practice"){
+
+const questions = {
+
+General:[
+"Tell me about yourself.",
+"Why should we hire you?",
+"What are your strengths and weaknesses?",
+"Where do you see yourself in three years?",
+"Why do you want this role?"
+],
+
+"Data Analyst":[
+"How would you clean a messy dataset?",
+"Explain INNER JOIN vs LEFT JOIN.",
+"What is the difference between a measure and calculated column in Power BI?",
+"How would you investigate a sudden drop in sales?",
+"What is EDA and why is it useful?"
+],
+
+Behavioral:[
+"Tell me about a time you solved a difficult problem.",
+"Describe a situation where you worked under pressure.",
+"Tell me about a mistake and what you learned.",
+"How do you handle conflicting priorities?",
+"Describe a time you learned something quickly."
+]
+
+};
+
+const list =
+questions[a] ||
+questions.General;
+
+const question =
+list[
+Math.floor(
+Math.random() *
+list.length
+)
+];
+
+output =
+`Practice Question:
+
+${question}
+
+Try answering in 60–90 seconds using a clear structure.`;
+
+}
+
+if(type === "notice"){
+
+const days =
+Number(b);
+
+const date =
+new Date(
+a + "T00:00:00"
+);
+
+if(
+isNaN(date.getTime())
+||
+isNaN(days)
+||
+days < 0
+){
+
+showToast(
+"Enter valid date and days"
+);
+
+return;
+
+}
+
+const startDate =
+new Date(date);
+
+date.setDate(
+date.getDate() + days
+);
+
+output =
+`Resignation date:
+${startDate.toLocaleDateString("en-IN")}
+
+Notice period:
+${days} days
+
+Estimated last working date:
+${date.toLocaleDateString("en-IN")}
+
+Note: Company policy may count notice days differently, so confirm with HR.`;
+
+}
+
+setResult(output);
+
+if(typeof gtag === "function"){
+
+gtag(
+"event",
+"tool_generate",
+{
+tool_name:type
+}
+);
+
+}
+
+}
+
+function startTimer(){
+
+if(timerInterval){
+
+clearInterval(
+timerInterval
+);
+
+}
+
+let seconds =
+Number(
+getValue("inputA")
+)
+||
+60;
+
+const display =
+$("#timerDisplay");
+
+function drawTimer(){
+
+const minutes =
+String(
+Math.floor(
+seconds / 60
+)
+)
+.padStart(
+2,
+"0"
+);
+
+const secondsLeft =
+String(
+seconds % 60
+)
+.padStart(
+2,
+"0"
+);
+
+display.textContent =
+`${minutes}:${secondsLeft}`;
+
+}
+
+drawTimer();
+
+timerInterval =
+setInterval(() => {
+
+seconds--;
+
+drawTimer();
+
+if(seconds <= 0){
+
+clearInterval(
+timerInterval
+);
+
+timerInterval = null;
+
+showToast(
+"Time is up"
+);
+
+setResult(
+"Time is up. Review your answer: Was it clear, structured and within the time limit?"
+);
+
+}
+
+},1000);
+
+}
+
+function resetTimer(){
+
+if(timerInterval){
+
+clearInterval(
+timerInterval
+);
+
+}
+
+timerInterval = null;
+
+const seconds =
+Number(
+getValue("inputA")
+)
+||
+60;
+
+const display =
+$("#timerDisplay");
+
+if(!display){
+return;
+}
+
+const minutes =
+String(
+Math.floor(
+seconds / 60
+)
+)
+.padStart(
+2,
+"0"
+);
+
+const secondsLeft =
+String(
+seconds % 60
+)
+.padStart(
+2,
+"0"
+);
+
+display.textContent =
+`${minutes}:${secondsLeft}`;
+
+}
+
+function numberScore(id){
+
+return Math.max(
+0,
+Math.min(
+10,
+Number(
+getValue(id)
+)
+||
+0
+)
+);
+
+}
+
+function compareOffers(){
+
+const offerA =
+getValue("offerAName")
+||
+"Offer A";
+
+const offerB =
+getValue("offerBName")
+||
+"Offer B";
+
+const scoreA =
+
+numberScore("aSalary") * .40
++
+numberScore("aGrowth") * .30
++
+numberScore("aCommute") * .15
++
+numberScore("aBenefits") * .15;
+
+const scoreB =
+
+numberScore("bSalary") * .40
++
+numberScore("bGrowth") * .30
++
+numberScore("bCommute") * .15
++
+numberScore("bBenefits") * .15;
+
+const winner =
+scoreA > scoreB
+?
+offerA
+:
+scoreB > scoreA
+?
+offerB
+:
+"Tie";
+
+setResult(
+`${offerA}: ${scoreA.toFixed(1)}/10
+
+${offerB}: ${scoreB.toFixed(1)}/10
+
+Higher weighted score:
+${winner}
+
+Weights:
+Salary 40%
+Growth 30%
+Commute 15%
+Benefits 15%
+
+Use this as a decision aid, not the only factor.`
+);
+
+}
+
+function compareDecision(){
+
+const optionA =
+getValue("dA")
+||
+"Option A";
+
+const optionB =
+getValue("dB")
+||
+"Option B";
+
+const scoreA =
+(
+numberScore("dASalary")
++
+numberScore("dAGrowth")
++
+numberScore("dATime")
++
+numberScore("dAStability")
+)
+/
+4;
+
+const scoreB =
+(
+numberScore("dBSalary")
++
+numberScore("dBGrowth")
++
+numberScore("dBTime")
++
+numberScore("dBStability")
+)
+/
+4;
+
+const winner =
+scoreA > scoreB
+?
+optionA
+:
+scoreB > scoreA
+?
+optionB
+:
+"Tie";
+
+setResult(
+`${optionA}: ${scoreA.toFixed(1)}/10
+
+${optionB}: ${scoreB.toFixed(1)}/10
+
+Higher score:
+${winner}
+
+Tip:
+Change the scores based on what matters most to you.`
+);
+
+}
+
+function getApplications(){
+
+try{
+
+return JSON.parse(
+localStorage.getItem(
+"workzivoApplications"
+)
+||
+"[]"
+);
+
+}
+
+catch{
+
+return [];
+
+}
+
+}
+
+function saveApplications(items){
+
+localStorage.setItem(
+"workzivoApplications",
+JSON.stringify(items)
+);
+
+}
+
+function addApplication(){
+
+const company =
+getValue("trackCompany");
+
+const role =
+getValue("trackRole");
+
+const status =
+getValue("trackStatus");
+
+if(
+!company ||
+!role
+){
+
+showToast(
+"Enter company and role"
+);
+
+return;
+
+}
+
+const items =
+getApplications();
+
+items.unshift({
+
+id:Date.now(),
+
+company,
+
+role,
+
+status,
+
+date:
+new Date()
+.toLocaleDateString(
+"en-IN"
+)
+
+});
+
+saveApplications(items);
+
+$("#trackCompany").value =
+"";
+
+$("#trackRole").value =
+"";
+
+renderApplications();
+
+showToast(
+"Application saved"
+);
+
+}
+
+function deleteApplication(id){
+
+const items =
+getApplications()
+.filter(
+item =>
+item.id !== id
+);
+
+saveApplications(items);
+
+renderApplications();
+
+}
+
+function escapeHtml(value){
+
+return String(value)
+.replace(
+/[&<>"']/g,
+character => ({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#39;"
+})[character]
+);
+
+}
+
+function renderApplications(){
+
+const container =
+$("#trackerList");
+
+if(!container){
+return;
+}
+
+const items =
+getApplications();
+
+if(items.length){
+
+container.innerHTML =
+items
+.map(
+item => `
+
+<div class="track-item">
+
+<b>
+${escapeHtml(item.company)}
+—
+${escapeHtml(item.role)}
+</b>
+
+<small>
+${escapeHtml(item.status)}
+•
+${escapeHtml(item.date)}
+</small>
+
+<div style="margin-top:8px">
+
+<button
+class="btn"
+onclick="deleteApplication(${item.id})">
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+`
+)
+.join("");
+
+}
+
+else{
+
+container.innerHTML =
+`<div class="small-note">
+No applications saved yet.
+</div>`;
+
+}
+
+setResult(
+`Saved applications on this device: ${items.length}`
+);
+
+}
 
 async function copyResult(){
 
 const result =
 $("#result");
-
 
 if(
 result.classList
@@ -1610,7 +3360,6 @@ showToast(
 return;
 
 }
-
 
 try{
 
@@ -1626,7 +3375,7 @@ showToast(
 
 }
 
-catch(error){
+catch{
 
 showToast(
 "Long press the result to copy"
@@ -1635,9 +3384,6 @@ showToast(
 }
 
 }
-
-
-/* TOAST */
 
 function showToast(message){
 
@@ -1650,8 +3396,7 @@ message;
 toast.classList
 .add("show");
 
-
-setTimeout(()=>{
+setTimeout(() => {
 
 toast.classList
 .remove("show");
@@ -1659,6 +3404,8 @@ toast.classList
 },1800);
 
 }
+
+renderCards();
 
 </script>
 
