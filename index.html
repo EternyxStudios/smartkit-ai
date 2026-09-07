@@ -4,524 +4,515 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1220">
-
-<title>WorkZivo — Free Professional Career Tools</title>
-
-<meta name="description" content="WorkZivo offers free professional tools for resumes, LinkedIn posts, interview preparation, captions, job search, career planning, budgeting and productivity.">
-
+<title>WorkZivo — Everyday Smart Tools</title>
+<meta name="description" content="WorkZivo provides free everyday tools for money, shopping, home, travel, productivity and fitness.">
 <meta name="robots" content="index, follow">
-
-<meta name="google-site-verification" content="NBSKN9PLvveWXPO3smJfq7NeyCMZiKa2hqA2MuHpAB0" />
+<meta name="google-site-verification" content="NBSKN9PLvveWXPO3smJfq7NeyCMZiKa2hqA2MuHpAB0">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C64CMC5L"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
+window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-1C64CMC5L');
+gtag('js',new Date());
+gtag('config','G-1C64CMC5L');
 </script>
 
 <style>
-:root{
-  --bg:#f6f8fb;
-  --card:#fff;
-  --text:#101828;
-  --muted:#667085;
-  --navy:#0b1220;
-  --blue:#2563eb;
-  --line:#e5e7eb;
-  --soft:#eef4ff;
-}
-
+:root{--bg:#f6f8fb;--card:#fff;--text:#101828;--muted:#667085;--navy:#0b1220;--blue:#2563eb;--line:#e5e7eb;--soft:#eef4ff}
 *{box-sizing:border-box}
-
 html{scroll-behavior:smooth}
-
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
-
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
 button,input,textarea,select{font:inherit}
-
-.container{
-  width:min(1120px,calc(100% - 28px));
-  margin:auto;
-}
+.container{width:min(1160px,calc(100% - 28px));margin:auto}
 
 header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(255,255,255,.97);
-  border-bottom:1px solid var(--line);
+position:sticky;
+top:0;
+z-index:100;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--line)
 }
 
 nav{
-  height:68px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
+height:66px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:800;
-  font-size:19px;
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:800;
+font-size:19px
 }
 
 .logo{
-  width:36px;
-  height:36px;
-  border-radius:10px;
-  background:var(--navy);
-  color:#fff;
-  display:grid;
-  place-items:center;
-  font-weight:900;
+width:36px;
+height:36px;
+border-radius:10px;
+background:var(--navy);
+color:#fff;
+display:grid;
+place-items:center;
+font-weight:900
 }
 
 .navlinks{
-  display:flex;
-  gap:25px;
+display:flex;
+gap:22px
 }
 
 .navlinks a{
-  text-decoration:none;
-  color:#475467;
-  font-size:14px;
-  font-weight:600;
+text-decoration:none;
+color:#475467;
+font-size:14px;
+font-weight:700
 }
 
 .btn{
-  border:1px solid var(--line);
-  background:#fff;
-  color:var(--text);
-  border-radius:10px;
-  padding:11px 16px;
-  cursor:pointer;
-  font-weight:700;
+border:1px solid var(--line);
+background:#fff;
+color:var(--text);
+border-radius:10px;
+padding:11px 15px;
+cursor:pointer;
+font-weight:700
 }
 
-.btn:hover{opacity:.9}
-
 .primary{
-  background:var(--navy);
-  color:#fff;
-  border-color:var(--navy);
+background:var(--navy);
+color:#fff;
+border-color:var(--navy)
 }
 
 .blue{
-  background:var(--blue);
-  color:#fff;
-  border-color:var(--blue);
+background:var(--blue);
+color:#fff;
+border-color:var(--blue)
 }
 
-.block{width:100%}
+.danger{
+color:#b42318
+}
+
+.block{
+width:100%
+}
 
 .hero{
-  background:linear-gradient(180deg,#fff,#f6f8fb);
-  padding:75px 0 55px;
-  border-bottom:1px solid var(--line);
+background:linear-gradient(180deg,#fff,#f6f8fb);
+padding:66px 0 46px;
+border-bottom:1px solid var(--line)
 }
 
 .hero-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:45px;
-  align-items:center;
+display:grid;
+grid-template-columns:1.12fr .88fr;
+gap:40px;
+align-items:center
 }
 
 .badge{
-  display:inline-block;
-  padding:8px 12px;
-  border:1px solid #dbe5f5;
-  border-radius:50px;
-  font-size:13px;
-  font-weight:700;
-  color:#344054;
-  background:#f8fbff;
+display:inline-block;
+padding:8px 12px;
+border:1px solid #dbe5f5;
+border-radius:50px;
+font-size:13px;
+font-weight:700;
+color:#344054;
+background:#f8fbff
 }
 
 h1{
-  font-size:clamp(40px,6vw,66px);
-  line-height:1.04;
-  letter-spacing:-2px;
-  margin:20px 0;
+font-size:clamp(40px,6vw,64px);
+line-height:1.04;
+letter-spacing:-2px;
+margin:18px 0
 }
 
 .hero p{
-  color:var(--muted);
-  font-size:18px;
-  line-height:1.7;
-  max-width:650px;
+color:var(--muted);
+font-size:18px;
+line-height:1.65;
+max-width:680px
 }
 
 .hero-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:25px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:24px
 }
 
 .small-note{
-  color:#667085;
-  font-size:13px;
-  margin-top:12px;
+color:#667085;
+font-size:13px;
+margin-top:10px
 }
 
 .preview{
-  background:var(--navy);
-  padding:15px;
-  border-radius:22px;
-  box-shadow:0 25px 60px rgba(15,23,42,.2);
+background:var(--navy);
+padding:15px;
+border-radius:22px;
+box-shadow:0 25px 60px rgba(15,23,42,.18)
 }
 
 .preview-inner{
-  background:#fff;
-  border-radius:15px;
-  padding:18px;
-}
-
-.preview-top{
-  display:flex;
-  justify-content:space-between;
-  color:#667085;
-  font-size:12px;
-}
-
-.metric{
-  margin-top:15px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:16px;
-  background:#f8fafc;
-}
-
-.metric b{
-  display:block;
-  font-size:30px;
-  margin:5px 0;
+background:#fff;
+border-radius:15px;
+padding:18px
 }
 
 .preview-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
-  margin-top:10px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px
 }
 
 .preview-card{
-  border:1px solid var(--line);
-  padding:13px;
-  border-radius:12px;
+border:1px solid var(--line);
+padding:15px;
+border-radius:12px;
+background:#fbfcfe
 }
 
-.preview-card small{color:#667085}
+.preview-card small{
+color:var(--muted)
+}
 
-section{padding:55px 0}
+section{
+padding:52px 0
+}
 
-.section-head{margin-bottom:24px}
+.section-head{
+margin-bottom:23px
+}
 
 .section-head h2{
-  font-size:34px;
-  margin:0;
-  letter-spacing:-1px;
+font-size:34px;
+margin:0;
+letter-spacing:-1px
 }
 
 .section-head p{
-  color:var(--muted);
-  margin:8px 0 0;
+color:var(--muted);
+margin:8px 0 0
 }
 
 .toolbar{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:18px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:18px
 }
 
 .toolbar input,
 .toolbar select{
-  max-width:340px;
+max-width:350px
 }
 
 .tools{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px
 }
 
 .card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:19px;
-  box-shadow:0 10px 30px rgba(16,24,40,.06);
+background:#fff;
+border:1px solid var(--line);
+border-radius:16px;
+padding:18px;
+box-shadow:0 10px 28px rgba(16,24,40,.05)
 }
 
 .icon{
-  width:44px;
-  height:44px;
-  border-radius:11px;
-  background:var(--soft);
-  display:grid;
-  place-items:center;
-  font-size:21px;
+width:44px;
+height:44px;
+border-radius:11px;
+background:var(--soft);
+display:grid;
+place-items:center;
+font-size:21px
 }
 
-.card h3{margin:15px 0 7px}
+.card h3{
+margin:14px 0 7px;
+font-size:17px
+}
 
 .card p{
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.55;
-  min-height:44px;
+color:var(--muted);
+font-size:13.5px;
+line-height:1.55;
+min-height:42px
 }
 
-.hidden{display:none!important}
+.hidden{
+display:none!important
+}
 
 #workspace{
-  display:none;
-  margin-top:20px;
+display:none;
+margin-top:22px
 }
 
-#workspace.active{display:block}
+#workspace.active{
+display:block
+}
 
 .workspace-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px
 }
 
-.workspace-header h2{margin:0}
+.workspace-header h2{
+margin:0
+}
 
-.workspace-header p{color:var(--muted)}
+.workspace-header p{
+color:var(--muted)
+}
 
 .tool-layout{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-  margin-top:20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-top:20px
 }
 
-.field{margin-bottom:15px}
+.field{
+margin-bottom:14px
+}
 
 label{
-  display:block;
-  font-size:13px;
-  font-weight:700;
-  margin-bottom:7px;
-  color:#475467;
+display:block;
+font-size:13px;
+font-weight:700;
+margin-bottom:7px;
+color:#475467
 }
 
 input,
 textarea,
 select{
-  width:100%;
-  border:1px solid #d0d5dd;
-  background:#fff;
-  border-radius:10px;
-  padding:13px;
-  outline:none;
+width:100%;
+border:1px solid #d0d5dd;
+background:#fff;
+border-radius:10px;
+padding:12px;
+outline:none
 }
 
 textarea{
-  min-height:135px;
-  resize:vertical;
+min-height:120px;
+resize:vertical
 }
 
 input:focus,
 textarea:focus,
 select:focus{
-  border-color:#84adff;
-  box-shadow:0 0 0 3px #eff4ff;
-}
-
-.result{
-  min-height:240px;
-  white-space:pre-wrap;
-  line-height:1.65;
-  background:#fbfcfe;
-}
-
-.result.empty{color:#98a2b3}
-
-.result-buttons{
-  display:flex;
-  gap:10px;
-  margin-top:10px;
-  flex-wrap:wrap;
+border-color:#84adff;
+box-shadow:0 0 0 3px #eff4ff
 }
 
 .row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px
+}
+
+.result{
+min-height:250px;
+white-space:pre-wrap;
+line-height:1.65;
+background:#fbfcfe
+}
+
+.result.empty{
+color:#98a2b3
+}
+
+.result-buttons{
+display:flex;
+gap:10px;
+margin-top:10px;
+flex-wrap:wrap
+}
+
+.list{
+display:grid;
+gap:9px;
+margin-top:14px
+}
+
+.list-item{
+border:1px solid var(--line);
+border-radius:11px;
+padding:11px;
+background:#fff;
+display:flex;
+justify-content:space-between;
+gap:10px;
+align-items:flex-start
+}
+
+.list-item small{
+color:var(--muted)
+}
+
+.stat{
+border:1px solid var(--line);
+border-radius:12px;
+padding:14px;
+background:#fbfcfe;
+margin-bottom:10px
+}
+
+.stat b{
+font-size:25px
+}
+
+.progress{
+height:12px;
+background:#eef2f6;
+border-radius:20px;
+overflow:hidden
+}
+
+.progress>div{
+height:100%;
+background:var(--navy);
+width:0
 }
 
 .timer{
-  font-size:44px;
-  font-weight:800;
-  text-align:center;
-  padding:20px 0;
+font-size:46px;
+font-weight:900;
+text-align:center;
+padding:18px 0
 }
 
-.tracker-list{
-  display:grid;
-  gap:10px;
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px
 }
 
-.track-item{
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:12px;
-  background:#fff;
+.feature{
+text-align:center
 }
-
-.track-item b{display:block}
-
-.track-item small{color:var(--muted)}
-
-.features-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
-}
-
-.feature{text-align:center}
 
 .feature b{
-  display:block;
-  font-size:20px;
-  margin-bottom:6px;
+display:block;
+font-size:19px;
+margin-bottom:5px
 }
 
 .feature span{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.free-box{
-  background:var(--navy);
-  color:#fff;
-  border-radius:22px;
-  padding:40px 25px;
-  text-align:center;
-}
-
-.free-box h2{
-  margin:0 0 12px;
-  font-size:34px;
-}
-
-.free-box p{
-  margin:0 auto 22px;
-  max-width:650px;
-  line-height:1.7;
-  color:#cbd5e1;
-}
-
-.free-box .btn{
-  background:#fff;
-  color:var(--navy);
-  border-color:#fff;
+font-size:13px;
+color:var(--muted)
 }
 
 .ad{
-  margin-top:20px;
-  border:1px dashed #cbd5e1;
-  background:#fff;
-  color:#98a2b3;
-  text-align:center;
-  padding:20px;
-  border-radius:14px;
+margin-top:20px;
+border:1px dashed #cbd5e1;
+background:#fff;
+color:#98a2b3;
+text-align:center;
+padding:18px;
+border-radius:14px
 }
 
 footer{
-  background:#fff;
-  border-top:1px solid var(--line);
-  padding:35px 0;
+background:#fff;
+border-top:1px solid var(--line);
+padding:34px 0
 }
 
 .footer{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
-  color:#667085;
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+color:#667085
 }
 
 .toast{
-  position:fixed;
-  bottom:20px;
-  left:50%;
-  transform:translate(-50%,25px);
-  opacity:0;
-  background:#111827;
-  color:#fff;
-  padding:11px 16px;
-  border-radius:50px;
-  font-weight:700;
-  transition:.25s;
-  z-index:999;
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translate(-50%,25px);
+opacity:0;
+background:#111827;
+color:#fff;
+padding:11px 16px;
+border-radius:50px;
+font-weight:700;
+transition:.25s;
+z-index:999
 }
 
 .toast.show{
-  opacity:1;
-  transform:translate(-50%,0);
+opacity:1;
+transform:translate(-50%,0)
+}
+
+@media(max-width:980px){
+.tools{grid-template-columns:repeat(3,1fr)}
 }
 
 @media(max-width:850px){
-  .hero-grid,
-  .tool-layout{
-    grid-template-columns:1fr;
-  }
+.hero-grid,
+.tool-layout{
+grid-template-columns:1fr
+}
 
-  .tools{
-    grid-template-columns:1fr 1fr;
-  }
+.tools{
+grid-template-columns:1fr 1fr
+}
 
-  .features-grid{
-    grid-template-columns:1fr 1fr;
-  }
+.features{
+grid-template-columns:1fr 1fr
+}
 
-  .navlinks{display:none}
+.navlinks{
+display:none
+}
 }
 
 @media(max-width:560px){
-  nav{height:60px}
+.container{
+width:calc(100% - 20px)
+}
 
-  .container{
-    width:calc(100% - 20px);
-  }
+.hero{
+padding:46px 0 36px
+}
 
-  .hero{
-    padding:48px 0 38px;
-  }
+h1{
+font-size:41px;
+letter-spacing:-1.3px
+}
 
-  h1{
-    font-size:42px;
-    letter-spacing:-1.5px;
-  }
+.hero p{
+font-size:16px
+}
 
-  .hero p{font-size:16px}
+.tools,
+.features,
+.row,
+.preview-grid{
+grid-template-columns:1fr
+}
 
-  .tools,
-  .features-grid,
-  .row{
-    grid-template-columns:1fr;
-  }
-
-  .section-head h2{font-size:29px}
-
-  .free-box h2{font-size:28px}
+.section-head h2{
+font-size:29px
+}
 }
 </style>
 </head>
@@ -540,7 +531,6 @@ WorkZivo
 <div class="navlinks">
 <a href="#tools">Tools</a>
 <a href="#features">Features</a>
-<a href="#free">Free Access</a>
 </div>
 
 <button class="btn primary" onclick="go('tools')">
@@ -555,89 +545,82 @@ Open Tools
 <div class="container hero-grid">
 
 <div>
+
 <span class="badge">
-16 Free Professional Tools
+40 Everyday Smart Tools
 </span>
 
 <h1>
-Work smarter.<br>
-Present yourself better.
+Useful tools for everyday life.
 </h1>
 
 <p>
-WorkZivo provides practical career, job-search, content and productivity tools
-for job seekers, professionals and creators in one clean workspace.
+Money, shopping, home, travel, productivity and fitness tools in one clean mobile-friendly workspace.
 </p>
 
 <div class="hero-buttons">
+
 <button class="btn blue" onclick="go('tools')">
-Explore Free Tools
+Explore Tools
 </button>
+
 </div>
 
 <div class="small-note">
-No registration. No subscription. Start using the tools for free.
+No sign-up. Data saved by trackers stays in this browser.
 </div>
+
 </div>
 
 <div class="preview">
+
 <div class="preview-inner">
-
-<div class="preview-top">
-<span>WorkZivo Workspace</span>
-<span>● Ready</span>
-</div>
-
-<div class="metric">
-<span style="color:#667085">
-Available professional tools
-</span>
-
-<b>16</b>
-
-<small style="color:#98a2b3">
-Career • Job Search • Content • Productivity
-</small>
-</div>
 
 <div class="preview-grid">
 
 <div class="preview-card">
-<b>Resume</b><br>
-<small>Improve bullet points</small>
+<b>Money</b><br>
+<small>Budget, expenses & savings</small>
 </div>
 
 <div class="preview-card">
-<b>Job Safety</b><br>
-<small>Check risk signals</small>
+<b>Home</b><br>
+<small>Lists, habits & utilities</small>
 </div>
 
 <div class="preview-card">
-<b>Career</b><br>
-<small>Build roadmap</small>
+<b>Travel</b><br>
+<small>Fuel, trip & packing</small>
 </div>
 
 <div class="preview-card">
-<b>Tracker</b><br>
-<small>Track applications</small>
+<b>Fitness</b><br>
+<small>BMI, pace & progress</small>
 </div>
 
 </div>
 
 </div>
+
 </div>
 
 </div>
 </section>
 
 <section id="tools">
+
 <div class="container">
 
 <div class="section-head">
-<h2>Professional Tools</h2>
+
+<h2>
+Everyday Tools
+</h2>
+
 <p>
-Choose a tool and start working instantly. All tools are free.
+Search or choose a category.
 </p>
+
 </div>
 
 <div class="toolbar">
@@ -653,10 +636,12 @@ id="toolCategory"
 onchange="filterTools()">
 
 <option value="all">All categories</option>
-<option value="career">Career</option>
-<option value="job">Job Search</option>
-<option value="content">Content</option>
-<option value="productivity">Productivity</option>
+<option value="money">Money & Shopping</option>
+<option value="home">Home & Daily Life</option>
+<option value="kitchen">Kitchen</option>
+<option value="travel">Travel</option>
+<option value="work">Work & Productivity</option>
+<option value="fitness">Fitness</option>
 
 </select>
 
@@ -669,8 +654,13 @@ onchange="filterTools()">
 <div class="workspace-header">
 
 <div>
-<h2 id="toolTitle">Tool</h2>
+
+<h2 id="toolTitle">
+Tool
+</h2>
+
 <p id="toolDescription"></p>
+
 </div>
 
 <button class="btn" onclick="closeTool()">
@@ -685,25 +675,21 @@ Close
 
 <div>
 
-<label>Result</label>
+<label>
+Result
+</label>
 
-<div
-id="result"
-class="card result empty">
+<div id="result" class="card result empty">
 Your result will appear here.
 </div>
 
 <div class="result-buttons">
 
-<button
-class="btn primary"
-onclick="copyResult()">
+<button class="btn primary" onclick="copyResult()">
 Copy Result
 </button>
 
-<button
-class="btn"
-onclick="clearResult()">
+<button class="btn" onclick="clearResult()">
 Clear
 </button>
 
@@ -716,86 +702,75 @@ Clear
 </div>
 
 <div class="ad">
-Advertisement Space — Google AdSense Ready
+Advertisement Space
 </div>
 
 </div>
+
 </section>
 
 <section id="features">
+
 <div class="container">
 
 <div class="section-head">
-<h2>Built for everyday work</h2>
+
+<h2>
+Designed for daily use
+</h2>
+
 <p>
-Fast, simple and designed for mobile devices.
+Fast, mobile friendly and privacy conscious.
 </p>
+
 </div>
 
-<div class="features-grid">
+<div class="features">
+
+<div class="card feature">
+<b>40 Tools</b>
+<span>No duplicate tools from your other site.</span>
+</div>
 
 <div class="card feature">
 <b>Mobile First</b>
-<span>Works smoothly on smartphones.</span>
-</div>
-
-<div class="card feature">
-<b>16 Tools</b>
-<span>Career, job search, content and productivity.</span>
+<span>Easy to use on Android and desktop.</span>
 </div>
 
 <div class="card feature">
 <b>Local Storage</b>
-<span>Application tracker stays on your device.</span>
+<span>Trackers stay on your device.</span>
 </div>
 
 <div class="card feature">
-<b>Free Access</b>
-<span>No subscription required.</span>
+<b>No Account</b>
+<span>Open and use instantly.</span>
 </div>
 
 </div>
 
 </div>
-</section>
 
-<section id="free">
-<div class="container">
-
-<div class="free-box">
-
-<h2>
-All WorkZivo tools are free
-</h2>
-
-<p>
-Use WorkZivo's career, job-search, content and productivity tools without a paid plan.
-Some tools are rule-based and provide guidance rather than guarantees.
-</p>
-
-<button class="btn" onclick="go('tools')">
-Start Using Tools
-</button>
-
-</div>
-
-</div>
 </section>
 
 <footer>
+
 <div class="container footer">
 
 <div>
+
 <b style="color:#101828">
 WorkZivo
 </b>
 
 <br><br>
 
-Smart tools for work, career and growth.
+Everyday smart tools.
+
 </div>
 
 <div>
+
 Privacy • Terms • Contact
 
 <br><br>
@@ -803,9 +778,11 @@ Privacy • Terms • Contact
 <small>
 © 2026 WorkZivo
 </small>
+
 </div>
 
 </div>
+
 </footer>
 
 <div id="toast" class="toast">
@@ -816,148 +793,859 @@ Done
 
 const $ = s => document.querySelector(s);
 
-let timerInterval = null;
+const money = n =>
+'₹' +
+Number(n || 0)
+.toLocaleString(
+'en-IN',
+{
+maximumFractionDigits:2
+}
+);
 
-const toolDefs = [
+const num = id =>
+Number(
+document.getElementById(id)?.value || 0
+);
 
-[
-'resume',
-'📄',
-'Resume Bullet Improver',
-'Turn simple responsibilities into stronger professional resume bullet points.',
-'career'
-],
+const val = id =>
+String(
+document.getElementById(id)?.value || ''
+).trim();
 
-[
-'linkedin',
-'💼',
-'LinkedIn Post Builder',
-'Create professional job-search, project and achievement posts.',
-'content'
-],
+let activeTimer = null;
+let stopwatchTimer = null;
+let stopwatchSeconds = 0;
+let currentTool = '';
 
-[
-'caption',
-'✍️',
-'Caption Generator',
-'Generate topic-based captions for social posts, projects, events and daily life.',
-'content'
-],
+const tools = [
 
-[
-'interview',
-'🎤',
-'Interview Answer Builder',
-'Prepare structured answers for common interview questions.',
-'career'
-],
+['budget','💰','Monthly Budget Planner','Plan monthly spending and savings.','money'],
 
-[
-'budget',
-'₹',
-'Monthly Budget Planner',
-'Create a simple monthly budget based on your income.',
-'productivity'
-],
+['expense','🧾','Daily Expense Tracker','Save daily expenses and see totals.','money'],
 
-[
-'cleaner',
-'✓',
-'Text Cleaner',
-'Remove unnecessary spaces and clean pasted text instantly.',
-'productivity'
-],
+['billsplit','👥','Bill Splitter','Split a bill between people.','money'],
 
-[
-'scam',
-'🛡️',
-'Job Scam Checker',
-'Scan recruiter messages for common scam and high-risk signals.',
-'job'
-],
+['tip','💵','Tip Calculator','Calculate tip and per-person amount.','money'],
 
-[
-'hrdecoder',
-'💬',
-'HR Message Decoder',
-'Understand common HR messages and get a suggested reply.',
-'job'
-],
+['fuel','⛽','Fuel Cost Calculator','Estimate fuel needed and trip cost.','money'],
 
-[
-'timer',
-'⏱️',
-'Interview Answer Timer',
-'Practice answering interview questions in 60, 90 or 120 seconds.',
-'career'
-],
+['pricecompare','🛒','Price Comparison Calculator','Compare pack prices by unit.','money'],
 
-[
-'offers',
-'⚖️',
-'Job Offer Comparator',
-'Compare two offers across salary, commute, growth and benefits.',
-'job'
-],
+['savings','🎯','Savings Goal Planner','Estimate time needed for a savings goal.','money'],
 
-[
-'roadmap',
-'🗺️',
-'Career Roadmap Builder',
-'Build a practical learning roadmap for your target role.',
-'career'
-],
+['electricity','⚡','Electricity Bill Estimator','Estimate bill from units and rate.','money'],
 
-[
-'skillgap',
-'🎯',
-'Skill Gap Checker',
-'Compare your current skills with a target role and find gaps.',
-'career'
-],
+['simpleinterest','📈','Simple Interest Calculator','Calculate simple interest.','money'],
 
-[
-'tracker',
-'📋',
-'Job Application Tracker',
-'Save and track applications on this device.',
-'job'
-],
+['compoundinterest','📊','Compound Interest Calculator','Estimate compound growth.','money'],
 
-[
-'practice',
-'🧠',
-'Interview Practice Board',
-'Generate random interview questions for quick practice.',
-'career'
-],
+['grocery','🛍️','Grocery List & Budget','Track grocery items and estimated total.','home'],
 
-[
-'notice',
-'📅',
-'Notice Period Calculator',
-'Estimate your last working date from resignation date and notice period.',
-'job'
-],
+['water','💧','Water Intake Tracker','Track glasses or ml for today.','home'],
 
-[
-'decision',
-'🤔',
-'Decision Matrix',
-'Compare two choices using scores for important factors.',
-'productivity'
-]
+['habit','✅','Habit Tracker','Track daily habits on this device.','home'],
+
+['notes','📝','Quick Notes','Save quick notes locally.','home'],
+
+['todo','☑️','To-Do List','Create and complete daily tasks.','home'],
+
+['countdown','🎂','Event Countdown','Count days until an event.','home'],
+
+['sleep','😴','Sleep Calculator','Plan sleep or wake-up time.','home'],
+
+['pomodoro','🍅','Pomodoro Timer','Focus timer with common presets.','home'],
+
+['stopwatch','⏱️','Stopwatch','Simple stopwatch with reset.','home'],
+
+['picker','🎲','Random Decision Picker','Randomly pick one option.','home'],
+
+['kitchenconvert','🥄','Kitchen Unit Converter','Convert cups, tbsp, tsp and ml.','kitchen'],
+
+['recipe','🍲','Recipe Quantity Calculator','Scale ingredient quantities.','kitchen'],
+
+['unitprice','🏷️','Grocery Unit Price Calculator','Calculate price per kg or 100g.','kitchen'],
+
+['cooktimer','🍳','Cooking Timer','Set a simple cooking countdown.','kitchen'],
+
+['homesplit','🏠','Home Expense Splitter','Split rent and household expenses.','kitchen'],
+
+['tripcost','🚗','Trip Expense Calculator','Add fuel, toll, food and stay costs.','travel'],
+
+['travelbudget','🧳','Travel Budget Planner','Create a basic trip budget.','travel'],
+
+['mileage','🚘','Mileage Calculator','Calculate actual vehicle mileage.','travel'],
+
+['packing','🎒','Travel Packing Checklist','Create and save a packing list.','travel'],
+
+['taxisplit','🚕','Taxi Fare Splitter','Split taxi fare with extras.','travel'],
+
+['workhours','🕘','Work Hours Calculator','Calculate actual work time after breaks.','work'],
+
+['overtime','⌛','Overtime Calculator','Estimate overtime pay.','work'],
+
+['meetingcost','👔','Meeting Cost Calculator','Estimate a meeting’s labour cost.','work'],
+
+['shifthours','🌙','Shift Hours Calculator','Calculate day or overnight shift hours.','work'],
+
+['productivity','📌','Daily Productivity Tracker','Score completed work for the day.','work'],
+
+['bmi','⚖️','BMI Calculator','Calculate BMI from height and weight.','fitness'],
+
+['calories','🔥','Calorie Needs Estimator','Estimate daily calorie needs.','fitness'],
+
+['steps','👟','Steps to Distance Calculator','Estimate distance from steps.','fitness'],
+
+['pace','🏃','Walking / Running Pace Calculator','Calculate pace from distance and time.','fitness'],
+
+['weight','📉','Weight Progress Tracker','Save weight entries on this device.','fitness']
 
 ];
 
+function generic(
+fields,
+button = 'Calculate'
+){
+
+return fields
+.map(
+f => {
+
+if(f.type === 'select'){
+
+return `
+
+<div class="field">
+
+<label>
+${f.label}
+</label>
+
+<select id="${f.id}">
+
+${f.options.map(
+o =>
+`<option value="${o.value ?? o}">${o.label ?? o}</option>`
+).join('')}
+
+</select>
+
+</div>
+
+`;
+
+}
+
+if(f.type === 'textarea'){
+
+return `
+
+<div class="field">
+
+<label>
+${f.label}
+</label>
+
+<textarea
+id="${f.id}"
+placeholder="${f.ph || ''}">
+</textarea>
+
+</div>
+
+`;
+
+}
+
+return `
+
+<div class="field">
+
+<label>
+${f.label}
+</label>
+
+<input
+id="${f.id}"
+type="${f.type || 'number'}"
+${f.step ? `step="${f.step}"` : ''}
+${f.min !== undefined ? `min="${f.min}"` : ''}
+placeholder="${f.ph || ''}"
+value="${f.value ?? ''}">
+
+</div>
+
+`;
+
+}
+)
+.join('')
+
++
+
+`
+
+<button
+class="btn blue"
+onclick="runTool(currentTool)">
+
+${button}
+
+</button>
+
+`;
+
+}
+
+const forms = {
+
+budget:() =>
+generic([
+{
+id:'income',
+label:'Monthly income',
+ph:'30000'
+},
+{
+id:'needspct',
+label:'Needs %',
+value:50
+},
+{
+id:'savepct',
+label:'Savings %',
+value:30
+},
+{
+id:'personalpct',
+label:'Personal %',
+value:20
+}
+]),
+
+billsplit:() =>
+generic([
+{
+id:'bill',
+label:'Total bill',
+ph:'1200'
+},
+{
+id:'people',
+label:'Number of people',
+value:2,
+min:1
+},
+{
+id:'extra',
+label:'Extra charges / tip',
+value:0
+}
+]),
+
+tip:() =>
+generic([
+{
+id:'bill',
+label:'Bill amount',
+ph:'1000'
+},
+{
+id:'tipPct',
+label:'Tip %',
+value:10
+},
+{
+id:'people',
+label:'People',
+value:1,
+min:1
+}
+]),
+
+fuel:() =>
+generic([
+{
+id:'distance',
+label:'Distance (km)',
+ph:'250'
+},
+{
+id:'mileage',
+label:'Vehicle mileage (km/l)',
+ph:'18'
+},
+{
+id:'fuelprice',
+label:'Fuel price per litre',
+ph:'105'
+}
+]),
+
+pricecompare:() =>
+generic([
+{
+id:'p1',
+label:'Pack A price',
+ph:'80'
+},
+{
+id:'q1',
+label:'Pack A quantity',
+ph:'500'
+},
+{
+id:'p2',
+label:'Pack B price',
+ph:'145'
+},
+{
+id:'q2',
+label:'Pack B quantity',
+ph:'1000'
+}
+]),
+
+savings:() =>
+generic([
+{
+id:'goal',
+label:'Savings goal',
+ph:'50000'
+},
+{
+id:'current',
+label:'Already saved',
+value:0
+},
+{
+id:'monthly',
+label:'Monthly saving',
+ph:'5000'
+}
+]),
+
+electricity:() =>
+generic([
+{
+id:'units',
+label:'Units consumed (kWh)',
+ph:'250'
+},
+{
+id:'rate',
+label:'Rate per unit',
+ph:'8'
+},
+{
+id:'fixed',
+label:'Fixed charges',
+value:0
+}
+]),
+
+simpleinterest:() =>
+generic([
+{
+id:'principal',
+label:'Principal amount',
+ph:'10000'
+},
+{
+id:'rate',
+label:'Annual interest %',
+ph:'8'
+},
+{
+id:'years',
+label:'Years',
+ph:'2'
+}
+]),
+
+compoundinterest:() =>
+generic([
+{
+id:'principal',
+label:'Principal amount',
+ph:'10000'
+},
+{
+id:'rate',
+label:'Annual interest %',
+ph:'8'
+},
+{
+id:'years',
+label:'Years',
+ph:'5'
+},
+{
+id:'freq',
+label:'Compounding',
+type:'select',
+options:[
+{
+value:1,
+label:'Yearly'
+},
+{
+value:4,
+label:'Quarterly'
+},
+{
+value:12,
+label:'Monthly'
+}
+]
+}
+]),
+
+countdown:() =>
+generic([
+{
+id:'eventname',
+label:'Event name',
+type:'text',
+ph:'Birthday'
+},
+{
+id:'eventdate',
+label:'Event date',
+type:'date'
+}
+]),
+
+sleep:() =>
+generic([
+{
+id:'mode',
+label:'Calculate',
+type:'select',
+options:[
+{
+value:'wake',
+label:'Bedtime from wake-up time'
+},
+{
+value:'sleep',
+label:'Wake-up time from bedtime'
+}
+]
+},
+{
+id:'clock',
+label:'Time',
+type:'time'
+},
+{
+id:'hours',
+label:'Sleep hours',
+value:8,
+step:'0.5'
+}
+]),
+
+picker:() =>
+generic([
+{
+id:'choices',
+label:'Choices (one per line or comma separated)',
+type:'textarea',
+ph:'Pizza\nBurger\nDosa'
+}
+],
+'Pick One'
+),
+
+kitchenconvert:() =>
+generic([
+{
+id:'amount',
+label:'Amount',
+value:1,
+step:'0.01'
+},
+{
+id:'from',
+label:'From',
+type:'select',
+options:[
+'cup',
+'tbsp',
+'tsp',
+'ml'
+]
+},
+{
+id:'to',
+label:'To',
+type:'select',
+options:[
+'cup',
+'tbsp',
+'tsp',
+'ml'
+]
+}
+]),
+
+recipe:() =>
+generic([
+{
+id:'qty',
+label:'Original ingredient quantity',
+ph:'2'
+},
+{
+id:'serves',
+label:'Original servings',
+ph:'4'
+},
+{
+id:'newserves',
+label:'New servings',
+ph:'7'
+}
+]),
+
+unitprice:() =>
+generic([
+{
+id:'price',
+label:'Price',
+ph:'120'
+},
+{
+id:'grams',
+label:'Weight (grams)',
+ph:'750'
+}
+]),
+
+homesplit:() =>
+generic([
+{
+id:'rent',
+label:'Rent',
+value:0
+},
+{
+id:'electric',
+label:'Electricity',
+value:0
+},
+{
+id:'internet',
+label:'Internet',
+value:0
+},
+{
+id:'other',
+label:'Other expenses',
+value:0
+},
+{
+id:'people',
+label:'People',
+value:2,
+min:1
+}
+]),
+
+tripcost:() =>
+generic([
+{
+id:'fuelcost',
+label:'Fuel cost',
+value:0
+},
+{
+id:'toll',
+label:'Toll / parking',
+value:0
+},
+{
+id:'food',
+label:'Food',
+value:0
+},
+{
+id:'stay',
+label:'Hotel / stay',
+value:0
+},
+{
+id:'other',
+label:'Other',
+value:0
+}
+]),
+
+travelbudget:() =>
+generic([
+{
+id:'days',
+label:'Trip days',
+value:3,
+min:1
+},
+{
+id:'stayday',
+label:'Stay per day',
+value:0
+},
+{
+id:'foodday',
+label:'Food per day',
+value:0
+},
+{
+id:'transport',
+label:'Total transport',
+value:0
+},
+{
+id:'activities',
+label:'Activities / shopping',
+value:0
+}
+]),
+
+mileage:() =>
+generic([
+{
+id:'km',
+label:'Distance driven (km)',
+ph:'300'
+},
+{
+id:'litres',
+label:'Fuel used (litres)',
+ph:'20'
+}
+]),
+
+taxisplit:() =>
+generic([
+{
+id:'fare',
+label:'Taxi fare',
+ph:'500'
+},
+{
+id:'toll',
+label:'Toll / extra',
+value:0
+},
+{
+id:'people',
+label:'People',
+value:2,
+min:1
+}
+]),
+
+workhours:() =>
+generic([
+{
+id:'start',
+label:'Start time',
+type:'time'
+},
+{
+id:'end',
+label:'End time',
+type:'time'
+},
+{
+id:'breakmin',
+label:'Break minutes',
+value:30,
+min:0
+}
+]),
+
+overtime:() =>
+generic([
+{
+id:'hours',
+label:'Overtime hours',
+ph:'5'
+},
+{
+id:'hourly',
+label:'Normal hourly pay',
+ph:'200'
+},
+{
+id:'multiplier',
+label:'Overtime multiplier',
+value:1.5,
+step:'0.1'
+}
+]),
+
+meetingcost:() =>
+generic([
+{
+id:'people',
+label:'People in meeting',
+value:5,
+min:1
+},
+{
+id:'avgMonthly',
+label:'Average monthly salary per person',
+ph:'50000'
+},
+{
+id:'minutes',
+label:'Meeting duration (minutes)',
+value:60,
+min:1
+},
+{
+id:'monthlyHours',
+label:'Working hours per month',
+value:176,
+min:1
+}
+]),
+
+shifthours:() =>
+generic([
+{
+id:'start',
+label:'Shift start',
+type:'time'
+},
+{
+id:'end',
+label:'Shift end',
+type:'time'
+},
+{
+id:'breakmin',
+label:'Break minutes',
+value:30,
+min:0
+}
+]),
+
+bmi:() =>
+generic([
+{
+id:'weightkg',
+label:'Weight (kg)',
+ph:'70'
+},
+{
+id:'heightcm',
+label:'Height (cm)',
+ph:'170'
+}
+]),
+
+calories:() =>
+generic([
+{
+id:'sex',
+label:'Sex',
+type:'select',
+options:[
+{
+value:'male',
+label:'Male'
+},
+{
+value:'female',
+label:'Female'
+}
+]
+},
+{
+id:'age',
+label:'Age',
+ph:'25'
+},
+{
+id:'weightkg',
+label:'Weight (kg)',
+ph:'70'
+},
+{
+id:'heightcm',
+label:'Height (cm)',
+ph:'170'
+},
+{
+id:'activity',
+label:'Activity',
+type:'select',
+options:[
+{
+value:1.2,
+label:'Sedentary'
+},
+{
+value:1.375,
+label:'Light activity'
+},
+{
+value:1.55,
+label:'Moderate activity'
+},
+{
+value:1.725,
+label:'Very active'
+}
+]
+}
+]),
+
+steps:() =>
+generic([
+{
+id:'stepsn',
+label:'Steps',
+ph:'10000'
+},
+{
+id:'stride',
+label:'Average stride length (cm)',
+value:75
+}
+]),
+
+pace:() =>
+generic([
+{
+id:'distancekm',
+label:'Distance (km)',
+ph:'5'
+},
+{
+id:'minutes',
+label:'Total time (minutes)',
+ph:'30'
+}
+])
+
+};
+
 function renderCards(){
 
-const grid = $("#toolsGrid");
-
-grid.innerHTML =
-toolDefs
+$('#toolsGrid').innerHTML =
+tools
 .map(
-([id,icon,title,desc,cat]) => `
+([
+id,
+icon,
+title,
+desc,
+cat
+]) => `
 
 <div
 class="card tool-card"
@@ -988,7 +1676,42 @@ Open Tool
 
 `
 )
-.join("");
+.join('');
+
+}
+
+function filterTools(){
+
+const q =
+val('toolSearch')
+.toLowerCase();
+
+const cat =
+val('toolCategory');
+
+document
+.querySelectorAll('.tool-card')
+.forEach(
+card => {
+
+const visible =
+(
+!q ||
+card.dataset.name.includes(q)
+)
+&&
+(
+cat === 'all' ||
+card.dataset.category === cat
+);
+
+card.classList.toggle(
+'hidden',
+!visible
+);
+
+}
+);
 
 }
 
@@ -997,828 +1720,63 @@ function go(id){
 document
 .getElementById(id)
 ?.scrollIntoView({
-behavior:"smooth"
+behavior:'smooth'
 });
 
 }
 
-function filterTools(){
+function openTool(id){
 
-const q =
-(
-$("#toolSearch").value || ""
-)
-.toLowerCase()
-.trim();
+stopAllTimers();
 
-const cat =
-$("#toolCategory").value;
+currentTool = id;
 
-document
-.querySelectorAll(".tool-card")
-.forEach(card => {
-
-const show =
-(
-!q ||
-card.dataset.name.includes(q)
-)
-&&
-(
-cat === "all" ||
-card.dataset.category === cat
+const t =
+tools.find(
+x =>
+x[0] === id
 );
 
-card
+$('#toolTitle').textContent =
+t[2];
+
+$('#toolDescription').textContent =
+t[3];
+
+$('#formArea').innerHTML =
+buildSpecialForm(id)
+||
+forms[id]?.()
+||
+'';
+
+$('#workspace')
 .classList
-.toggle(
-"hidden",
-!show
-);
-
-});
-
-}
-
-const forms = {
-
-resume:`
-
-<div class="field">
-<label>Current resume sentence</label>
-<textarea
-id="inputA"
-placeholder="Example: I created Power BI dashboards">
-</textarea>
-</div>
-
-<div class="field">
-<label>Skills / Role</label>
-<input
-id="inputB"
-placeholder="Example: Data Analyst, Power BI, SQL">
-</div>
-
-<div class="field">
-<label>Result / impact (optional)</label>
-<input
-id="inputC"
-placeholder="Example: reduced reporting time by 30%">
-</div>
-
-<button
-class="btn blue"
-onclick="generate('resume')">
-Improve Resume Bullet
-</button>
-
-`,
-
-linkedin:`
-
-<div class="field">
-<label>Post Type</label>
-
-<select id="inputA">
-<option>Looking for a job</option>
-<option>Sharing a project</option>
-<option>Sharing an achievement</option>
-</select>
-
-</div>
-
-<div class="field">
-<label>Your Details</label>
-
-<textarea
-id="inputB"
-placeholder="Example: Data Analyst fresher, SQL, Python, Power BI">
-</textarea>
-
-</div>
-
-<div class="field">
-<label>Location / CTA (optional)</label>
-
-<input
-id="inputC"
-placeholder="Example: Mumbai | Open to opportunities">
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('linkedin')">
-Create LinkedIn Post
-</button>
-
-`,
-
-caption:`
-
-<div class="field">
-<label>Topic</label>
-
-<input
-id="inputA"
-placeholder="Example: Power BI dashboard, birthday, gym, travel, food">
-
-</div>
-
-<div class="field">
-<label>Tone</label>
-
-<select id="inputB">
-<option>Professional</option>
-<option>Clean</option>
-<option>Energetic</option>
-<option>Casual</option>
-<option>Motivational</option>
-<option>Funny</option>
-</select>
-
-</div>
-
-<div class="field">
-<label>Platform</label>
-
-<select id="inputC">
-<option>Instagram</option>
-<option>LinkedIn</option>
-<option>Facebook</option>
-<option>General</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('caption')">
-Generate Caption
-</button>
-
-`,
-
-interview:`
-
-<div class="field">
-<label>Interview Question</label>
-
-<input
-id="inputA"
-placeholder="Example: Tell me about yourself">
-
-</div>
-
-<div class="field">
-<label>Your Details</label>
-
-<textarea
-id="inputB"
-placeholder="Education, internship, skills and strengths">
-</textarea>
-
-</div>
-
-<div class="field">
-<label>Answer length</label>
-
-<select id="inputC">
-<option>Short</option>
-<option>Medium</option>
-<option>Detailed</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('interview')">
-Build Answer
-</button>
-
-`,
-
-budget:`
-
-<div class="field">
-<label>Monthly Income ₹</label>
-
-<input
-type="number"
-id="inputA"
-placeholder="25000">
-
-</div>
-
-<div class="field">
-<label>Goal</label>
-
-<select id="inputB">
-<option>Balanced</option>
-<option>Save more</option>
-<option>Reduce debt</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('budget')">
-Create Budget
-</button>
-
-`,
-
-cleaner:`
-
-<div class="field">
-<label>Paste Text</label>
-
-<textarea
-id="inputA"
-placeholder="Paste your text here">
-</textarea>
-
-</div>
-
-<div class="field">
-<label>Mode</label>
-
-<select id="inputB">
-<option>Normal clean</option>
-<option>One line</option>
-<option>Remove blank lines</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('cleaner')">
-Clean Text
-</button>
-
-`,
-
-scam:`
-
-<div class="field">
-<label>Recruiter / Job Message</label>
-
-<textarea
-id="inputA"
-placeholder="Paste the full message here">
-</textarea>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('scam')">
-Check Risk Signals
-</button>
-
-`,
-
-hrdecoder:`
-
-<div class="field">
-<label>HR Message</label>
-
-<textarea
-id="inputA"
-placeholder="Paste HR or recruiter message">
-</textarea>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('hrdecoder')">
-Decode Message
-</button>
-
-`,
-
-timer:`
-
-<div class="field">
-<label>Practice Time</label>
-
-<select
-id="inputA"
-onchange="resetTimer()">
-
-<option value="60">60 seconds</option>
-<option value="90">90 seconds</option>
-<option value="120">120 seconds</option>
-
-</select>
-
-</div>
-
-<div
-class="timer"
-id="timerDisplay">
-01:00
-</div>
-
-<div class="result-buttons">
-
-<button
-class="btn blue"
-onclick="startTimer()">
-Start
-</button>
-
-<button
-class="btn"
-onclick="resetTimer()">
-Reset
-</button>
-
-</div>
-
-`,
-
-offers:`
-
-<div class="row">
-
-<div>
-<label>Offer A Name</label>
-<input
-id="offerAName"
-placeholder="Company A">
-</div>
-
-<div>
-<label>Offer B Name</label>
-<input
-id="offerBName"
-placeholder="Company B">
-</div>
-
-</div>
-
-<br>
-
-<div class="row">
-
-<div>
-<label>A Salary /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="aSalary"
-value="7">
-</div>
-
-<div>
-<label>B Salary /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="bSalary"
-value="7">
-</div>
-
-</div>
-
-<div class="row">
-
-<div>
-<label>A Growth /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="aGrowth"
-value="7">
-</div>
-
-<div>
-<label>B Growth /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="bGrowth"
-value="7">
-</div>
-
-</div>
-
-<div class="row">
-
-<div>
-<label>A Commute /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="aCommute"
-value="7">
-</div>
-
-<div>
-<label>B Commute /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="bCommute"
-value="7">
-</div>
-
-</div>
-
-<div class="row">
-
-<div>
-<label>A Benefits /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="aBenefits"
-value="7">
-</div>
-
-<div>
-<label>B Benefits /10</label>
-<input
-type="number"
-min="0"
-max="10"
-id="bBenefits"
-value="7">
-</div>
-
-</div>
-
-<button
-class="btn blue"
-onclick="compareOffers()">
-Compare Offers
-</button>
-
-`,
-
-roadmap:`
-
-<div class="field">
-<label>Target Role</label>
-
-<select id="inputA">
-<option>Data Analyst</option>
-<option>Business Analyst</option>
-<option>Power BI Developer</option>
-<option>Python Developer</option>
-<option>Machine Learning Engineer</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('roadmap')">
-Build Roadmap
-</button>
-
-`,
-
-skillgap:`
-
-<div class="field">
-<label>Target Role</label>
-
-<select id="inputA">
-<option>Data Analyst</option>
-<option>Business Analyst</option>
-<option>Power BI Developer</option>
-<option>Python Developer</option>
-<option>Machine Learning Engineer</option>
-</select>
-
-</div>
-
-<div class="field">
-<label>Your Current Skills</label>
-
-<textarea
-id="inputB"
-placeholder="Example: Excel, SQL, Power BI, Python">
-</textarea>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('skillgap')">
-Check Skill Gaps
-</button>
-
-`,
-
-tracker:`
-
-<div class="field">
-<label>Company</label>
-
-<input
-id="trackCompany"
-placeholder="Company name">
-
-</div>
-
-<div class="field">
-<label>Role</label>
-
-<input
-id="trackRole"
-placeholder="Role">
-
-</div>
-
-<div class="field">
-<label>Status</label>
-
-<select id="trackStatus">
-<option>Applied</option>
-<option>Interview</option>
-<option>Offer</option>
-<option>Rejected</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="addApplication()">
-Save Application
-</button>
-
-<div style="height:14px"></div>
-
-<div
-id="trackerList"
-class="tracker-list">
-</div>
-
-`,
-
-practice:`
-
-<div class="field">
-<label>Question Type</label>
-
-<select id="inputA">
-<option>General</option>
-<option>Data Analyst</option>
-<option>Behavioral</option>
-</select>
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('practice')">
-Give Me a Question
-</button>
-
-`,
-
-notice:`
-
-<div class="field">
-<label>Resignation Date</label>
-
-<input
-type="date"
-id="inputA">
-
-</div>
-
-<div class="field">
-<label>Notice Period (days)</label>
-
-<input
-type="number"
-id="inputB"
-value="30"
-min="0">
-
-</div>
-
-<button
-class="btn blue"
-onclick="generate('notice')">
-Calculate Date
-</button>
-
-`,
-
-decision:`
-
-<div class="row">
-
-<div>
-<label>Option A</label>
-
-<input
-id="dA"
-placeholder="Option A">
-</div>
-
-<div>
-<label>Option B</label>
-
-<input
-id="dB"
-placeholder="Option B">
-</div>
-
-</div>
-
-<br>
-
-<div class="row">
-
-<div>
-<label>A Salary /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dASalary"
-value="5">
-</div>
-
-<div>
-<label>B Salary /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dBSalary"
-value="5">
-</div>
-
-</div>
-
-<div class="row">
-
-<div>
-<label>A Growth /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dAGrowth"
-value="5">
-</div>
-
-<div>
-<label>B Growth /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dBGrowth"
-value="5">
-</div>
-
-</div>
-
-<div class="row">
-
-<div>
-<label>A Time /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dATime"
-value="5">
-</div>
-
-<div>
-<label>B Time /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dBTime"
-value="5">
-</div>
-
-</div>
-
-<div class="row">
-
-<div>
-<label>A Stability /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dAStability"
-value="5">
-</div>
-
-<div>
-<label>B Stability /10</label>
-
-<input
-type="number"
-min="0"
-max="10"
-id="dBStability"
-value="5">
-</div>
-
-</div>
-
-<button
-class="btn blue"
-onclick="compareDecision()">
-Compare
-</button>
-
-`
-
-};
-
-const descriptions =
-Object.fromEntries(
-toolDefs.map(
-([id,,title,desc]) => [
-id,
-{
-title,
-desc
-}
-]
-)
-);
-
-function openTool(type){
-
-if(timerInterval){
-clearInterval(timerInterval);
-timerInterval = null;
-}
-
-const d =
-descriptions[type];
-
-$("#toolTitle").textContent =
-d.title;
-
-$("#toolDescription").textContent =
-d.desc;
-
-$("#formArea").innerHTML =
-forms[type];
-
-$("#workspace")
-.classList
-.add("active");
+.add('active');
 
 clearResult();
 
-if(type === "tracker"){
-renderApplications();
-}
+refreshSpecial(id);
 
-setTimeout(() => {
-
-$("#workspace")
+setTimeout(
+() =>
+$('#workspace')
 .scrollIntoView({
-behavior:"smooth",
-block:"start"
-});
+behavior:'smooth',
+block:'start'
+}),
+100
+);
 
-},100);
-
-if(typeof gtag === "function"){
+if(
+typeof gtag === 'function'
+){
 
 gtag(
-"event",
-"tool_open",
+'event',
+'tool_open',
 {
-tool_name:type
+tool_name:id
 }
 );
 
@@ -1828,1344 +1786,1727 @@ tool_name:type
 
 function closeTool(){
 
-if(timerInterval){
-clearInterval(timerInterval);
-timerInterval = null;
-}
+stopAllTimers();
 
-$("#workspace")
+$('#workspace')
 .classList
-.remove("active");
-
-}
-
-function getValue(id){
-
-const element =
-document.getElementById(id);
-
-return element
-?
-String(element.value).trim()
-:
-"";
+.remove('active');
 
 }
 
 function setResult(text){
 
-$("#result").textContent =
+$('#result').textContent =
 text;
 
-$("#result")
+$('#result')
 .classList
-.remove("empty");
+.remove('empty');
 
 }
 
 function clearResult(){
 
-$("#result").textContent =
-"Your result will appear here.";
+$('#result').textContent =
+'Your result will appear here.';
 
-$("#result")
+$('#result')
 .classList
-.add("empty");
+.add('empty');
 
 }
 
-function cleanWords(text){
+function toast(text){
 
-return text
-.replace(/\s+/g," ")
-.trim();
+const element =
+$('#toast');
+
+element.textContent =
+text;
+
+element.classList.add(
+'show'
+);
+
+setTimeout(
+() =>
+element.classList.remove(
+'show'
+),
+1700
+);
 
 }
 
-function captionFor(
-topic,
-tone,
-platform
-){
+function validPositive(...ids){
 
-const text =
-topic.toLowerCase();
+return ids.every(
+id =>
+num(id) > 0
+);
 
-let caption = "";
+}
 
-let tags = [];
+function runTool(id){
+
+let out = '';
+
+if(id === 'budget'){
+
+const income = num('income');
+const needs = num('needspct');
+const savings = num('savepct');
+const personal = num('personalpct');
 
 if(
-/power bi|dashboard|data|analytics|excel|sql|python|project/.test(text)
+income <= 0 ||
+needs + savings + personal !== 100
 ){
 
-caption =
-`Built something worth sharing: ${topic}. Turning ideas and data into clearer insights, stronger decisions and practical results.`;
-
-tags = [
-"#DataAnalytics",
-"#PowerBI",
-"#Projects",
-"#Learning"
-];
-
-}
-
-else if(
-/birthday|bday/.test(text)
-){
-
-caption =
-`Celebrating ${topic} with good vibes, great memories and a lot to be thankful for. 🎉`;
-
-tags = [
-"#Birthday",
-"#Celebration",
-"#Memories",
-"#GoodVibes"
-];
-
-}
-
-else if(
-/gym|workout|fitness|bodybuilding/.test(text)
-){
-
-caption =
-`${topic} — showing up, staying consistent and getting a little stronger every day. 💪`;
-
-tags = [
-"#Fitness",
-"#Gym",
-"#Consistency",
-"#Discipline"
-];
-
-}
-
-else if(
-/travel|trip|vacation|journey|tour/.test(text)
-){
-
-caption =
-`${topic} — new places, fresh views and memories worth keeping. ✈️`;
-
-tags = [
-"#Travel",
-"#Explore",
-"#Journey",
-"#TravelDiaries"
-];
-
-}
-
-else if(
-/food|pizza|burger|coffee|restaurant|meal/.test(text)
-){
-
-caption =
-`${topic} — because some moments are best enjoyed one bite at a time. 😋`;
-
-tags = [
-"#Food",
-"#Foodie",
-"#GoodFood",
-"#FoodLover"
-];
-
-}
-
-else if(
-/job|career|open to work|interview/.test(text)
-){
-
-caption =
-`Focused on the next step in my career: ${topic}. Learning, improving and staying ready for the right opportunity.`;
-
-tags = [
-"#OpenToWork",
-"#Career",
-"#Jobs",
-"#ProfessionalGrowth"
-];
-
-}
-
-else if(
-/reel|video|content|instagram/.test(text)
-){
-
-caption =
-`${topic} — creating, experimenting and enjoying the process. 🎬`;
-
-tags = [
-"#Reels",
-"#ContentCreator",
-"#Create",
-"#SocialMedia"
-];
-
-}
-
-else if(
-/friend|friendship/.test(text)
-){
-
-caption =
-`${topic} — good people make ordinary moments unforgettable. ✨`;
-
-tags = [
-"#Friends",
-"#Friendship",
-"#Memories",
-"#GoodTimes"
-];
-
-}
-
-else if(
-/love|couple|relationship/.test(text)
-){
-
-caption =
-`${topic} — simple moments, real smiles and memories that stay. ❤️`;
-
-tags = [
-"#Love",
-"#Together",
-"#Memories",
-"#GoodVibes"
-];
-
-}
-
-else if(
-/nature|sunset|rain|mountain|beach/.test(text)
-){
-
-caption =
-`${topic} — sometimes the best reset is slowing down and enjoying the view. 🌿`;
-
-tags = [
-"#Nature",
-"#Peace",
-"#Explore",
-"#Moments"
-];
-
-}
-
-else{
-
-caption =
-`${topic} — a moment, an idea and a story worth sharing.`;
-
-tags = [
-"#Moments",
-"#Life",
-"#Create",
-"#Share"
-];
-
-}
-
-if(tone === "Professional"){
-
-caption =
-caption
-.replace(
-/🎉|💪|✈️|😋|🎬|✨|❤️|🌿/g,
-""
-)
-.trim();
-
-}
-
-if(tone === "Energetic"){
-
-caption =
-`🚀 ${caption} Let’s keep moving forward!`;
-
-}
-
-if(tone === "Casual"){
-
-caption =
-`✨ ${caption}`;
-
-}
-
-if(tone === "Motivational"){
-
-caption =
-`${caption} Keep showing up — progress comes from consistency.`;
-
-}
-
-if(tone === "Funny"){
-
-caption =
-`${caption} 😄 Because serious captions are overrated.`;
-
-}
-
-if(platform === "LinkedIn"){
-
-tags =
-tags.filter(
-tag =>
-![
-"#GoodVibes",
-"#Foodie",
-"#Love",
-"#Reels"
-]
-.includes(tag)
-);
-
-tags.push(
-"#ProfessionalGrowth"
+return toast(
+'Percentages must total 100'
 );
 
 }
 
-if(platform === "General"){
-
-tags =
-tags.slice(
-0,
-3
-);
-
-}
-
-return `${caption}
-
-${[
-...new Set(tags)
-]
-.slice(0,5)
-.join(" ")}`;
-
-}
-
-function generate(type){
-
-const a =
-getValue("inputA");
-
-const b =
-getValue("inputB");
-
-const c =
-getValue("inputC");
-
-if(!a){
-
-showToast(
-"Please enter your details"
-);
-
-return;
-
-}
-
-let output = "";
-
-if(type === "resume"){
-
-let sentence =
-a
-.replace(
-/^i\s+/i,
-""
-)
-.replace(
-/\.$/,
-""
-);
-
-sentence =
-sentence
-.charAt(0)
-.toUpperCase()
-+
-sentence.slice(1);
-
-output =
-`• ${sentence}${b ? `, using ${b}` : ""}${c ? ` to ${c}` : ""}.
-
-Tip: Keep the bullet specific and add measurable impact whenever possible.`;
-
-}
-
-if(type === "linkedin"){
-
-let intro = "";
-
-if(a === "Looking for a job"){
-
-intro =
-"I’m currently exploring new opportunities.";
-
-}
-
-else if(a === "Sharing a project"){
-
-intro =
-"I’m excited to share a recent project.";
-
-}
-
-else{
-
-intro =
-"I’m happy to share a recent achievement.";
-
-}
-
-output =
-`${intro}
-
-${b || "I am continuing to build practical professional skills and looking for opportunities to contribute and grow."}${c ? `
-
-${c}` : ""}
-
-I’d be glad to connect with recruiters, professionals and teams working in this space.
-
-#Career #ProfessionalGrowth ${a === "Looking for a job" ? "#OpenToWork #Jobs" : "#Learning #Projects"}`;
-
-}
-
-if(type === "caption"){
-
-output =
-captionFor(
-a,
-b || "Professional",
-c || "Instagram"
-);
-
-}
-
-if(type === "interview"){
-
-const details =
-b ||
-"I have been building practical skills through my education and hands-on experience.";
-
-const length =
-c || "Short";
-
-if(length === "Short"){
-
-output =
-`Question:
-${a}
-
-Suggested Answer:
-
-${details} I’m a quick learner, I enjoy solving problems, and I’m looking for an opportunity where I can contribute while continuing to grow.`;
-
-}
-
-else if(length === "Detailed"){
-
-output =
-`Question:
-${a}
-
-Suggested Answer:
-
-${details}
-
-My approach is to understand the problem clearly, apply the right tools, communicate progress, and keep improving from feedback. I value teamwork, responsibility and continuous learning.
-
-I’m now looking for a role where I can use these strengths, contribute to real business work and grow with an experienced team.`;
-
-}
-
-else{
-
-output =
-`Question:
-${a}
-
-Suggested Answer:
-
-${details}
-
-I’m a quick learner, enjoy solving problems and working with others. I’m looking for an opportunity where I can contribute to the team, learn from experienced professionals and continue growing in my career.`;
-
-}
-
-}
-
-if(type === "budget"){
-
-const income =
-Number(a);
-
-if(
-!income ||
-income <= 0
-){
-
-showToast(
-"Enter valid income"
-);
-
-return;
-
-}
-
-let needs = 55;
-let savings = 25;
-let growth = 10;
-let personal = 10;
-
-if(b === "Save more"){
-
-needs = 50;
-savings = 30;
-
-}
-
-if(b === "Reduce debt"){
-
-needs = 50;
-savings = 20;
-growth = 20;
-
-}
-
-const rupees =
-value =>
-Math.round(value)
-.toLocaleString(
-"en-IN"
-);
-
-output =
-`Monthly Income: ₹${rupees(income)}
+out =
+`Monthly income: ${money(income)}
 
 Needs (${needs}%):
-₹${rupees(income * needs / 100)}
+${money(income * needs / 100)}
 
 Savings (${savings}%):
-₹${rupees(income * savings / 100)}
+${money(income * savings / 100)}
 
-Growth / Debt (${growth}%):
-₹${rupees(income * growth / 100)}
-
-Personal Spending (${personal}%):
-₹${rupees(income * personal / 100)}
-
-Adjust these percentages for your real rent, family expenses and debt.`;
+Personal (${personal}%):
+${money(income * personal / 100)}`;
 
 }
 
-if(type === "cleaner"){
-
-if(b === "One line"){
-
-output =
-cleanWords(a)
-.replace(
-/\s+([,.!?;:])/g,
-"$1"
-);
-
-}
-
-else if(
-b === "Remove blank lines"
-){
-
-output =
-a
-.split("\n")
-.map(
-line =>
-line.trim()
-)
-.filter(Boolean)
-.join("\n");
-
-}
-
-else{
-
-output =
-a
-.replace(
-/[ \t]+/g,
-" "
-)
-.replace(
-/\s+([,.!?;:])/g,
-"$1"
-)
-.replace(
-/([,.!?;:])([A-Za-z])/g,
-"$1 $2"
-)
-.replace(
-/\n{3,}/g,
-"\n\n"
-)
-.trim();
-
-}
-
-}
-
-if(type === "scam"){
-
-const rules = [
-
-[
-"Payment or registration fee",
-/(pay|payment|fee|registration charge|security deposit|processing fee)/i
-],
-
-[
-"Urgent pressure",
-/(urgent|immediately|today only|within 1 hour|limited time)/i
-],
-
-[
-"Guaranteed job or income",
-/(guaranteed job|100% job|guaranteed salary|earn.*per day)/i
-],
-
-[
-"OTP / bank / card request",
-/(otp|cvv|card number|bank password|upi pin)/i
-],
-
-[
-"WhatsApp-only hiring",
-/(whatsapp only|contact on whatsapp only)/i
-],
-
-[
-"Sensitive document pressure",
-/(send.*aadhaar|send.*pan|passport.*immediately)/i
-]
-
-];
-
-const found =
-rules
-.filter(
-rule =>
-rule[1].test(a)
-)
-.map(
-rule =>
-rule[0]
-);
-
-const score =
-Math.min(
-100,
-found.length * 18
-);
-
-const risk =
-score >= 55
-?
-"HIGH"
-:
-score >= 25
-?
-"MEDIUM"
-:
-"LOW";
-
-output =
-`Risk level: ${risk}
-
-Risk score: ${score}/100
-
-Signals found:
-
-${found.length
-?
-found
-.map(
-item =>
-`• ${item}`
-)
-.join("\n")
-:
-"• No common high-risk phrases detected"}
-
-Safety checks:
-
-• Verify the company on its official website.
-• Confirm the recruiter email/domain.
-• Never share OTP, PIN or card details.
-• Be cautious if money is requested for a job.
-
-This is a heuristic check, not proof that a job is genuine or fake.`;
-
-}
-
-if(type === "hrdecoder"){
-
-const text =
-a.toLowerCase();
+if(id === 'billsplit'){
 
 if(
-/shortlist|shortlisted/.test(text)
-){
-
-output =
-`Meaning:
-
-You have likely moved to the next hiring stage.
-
-Suggested reply:
-
-Thank you for the update. I appreciate the opportunity. Please share the next steps, interview schedule, and any documents I should carry or prepare.`;
-
-}
-
-else if(
-/we will get back|we'll get back|under review/.test(text)
-){
-
-output =
-`Meaning:
-
-The company has not made a final decision yet.
-
-Suggested reply:
-
-Thank you for the update. I appreciate your time. I look forward to hearing from you regarding the next steps.`;
-
-}
-
-else if(
-/interview|schedule|available/.test(text)
-){
-
-output =
-`Meaning:
-
-The recruiter is trying to schedule or confirm an interview.
-
-Suggested reply:
-
-Thank you for reaching out. I am available for the interview. Please share the date, time, location or meeting link, and any preparation details.`;
-
-}
-
-else if(
-/documents|document/.test(text)
-){
-
-output =
-`Meaning:
-
-The recruiter is asking for documents. Verify the company and recruiter before sharing sensitive information.
-
-Suggested reply:
-
-Sure. Please confirm which documents are required and the official company email or portal where I should submit them.`;
-
-}
-
-else{
-
-output =
-`Simple meaning:
-
-This message does not match one of the common templates in WorkZivo.
-
-Safe reply:
-
-Thank you for the message. Could you please share a little more detail about the role, next steps, and any action required from my side?`;
-
-}
-
-}
-
-if(type === "roadmap"){
-
-const roadmaps = {
-
-"Data Analyst":[
-"Excel fundamentals",
-"SQL querying",
-"Data cleaning / EDA",
-"Power BI or Tableau",
-"Basic statistics",
-"2–3 portfolio projects",
-"Interview practice"
-],
-
-"Business Analyst":[
-"Excel",
-"Requirements gathering",
-"Process mapping",
-"SQL basics",
-"Power BI basics",
-"Documentation / BRD",
-"Case-study practice"
-],
-
-"Power BI Developer":[
-"Power Query",
-"Data modeling",
-"DAX",
-"Visual design",
-"Performance optimization",
-"Row-level security",
-"Portfolio dashboards"
-],
-
-"Python Developer":[
-"Python fundamentals",
-"OOP",
-"Git / GitHub",
-"APIs",
-"SQL",
-"Testing",
-"Framework basics",
-"Projects"
-],
-
-"Machine Learning Engineer":[
-"Python",
-"NumPy / Pandas",
-"Statistics",
-"Scikit-learn",
-"Model evaluation",
-"Feature engineering",
-"Deployment basics",
-"Projects"
-]
-
-};
-
-output =
-`${a} Roadmap
-
-${roadmaps[a]
-.map(
-(step,index) =>
-`${index + 1}. ${step}`
+!validPositive(
+'bill',
+'people'
 )
-.join("\n")}
+){
 
-Tip: Build one practical project after every 2–3 learning steps.`;
-
-}
-
-if(type === "skillgap"){
-
-const requirements = {
-
-"Data Analyst":[
-"excel",
-"sql",
-"power bi",
-"tableau",
-"python",
-"statistics"
-],
-
-"Business Analyst":[
-"excel",
-"sql",
-"requirements",
-"process mapping",
-"power bi",
-"documentation"
-],
-
-"Power BI Developer":[
-"power query",
-"dax",
-"data modeling",
-"power bi",
-"sql",
-"rls"
-],
-
-"Python Developer":[
-"python",
-"oop",
-"git",
-"sql",
-"api",
-"testing"
-],
-
-"Machine Learning Engineer":[
-"python",
-"pandas",
-"numpy",
-"statistics",
-"scikit-learn",
-"machine learning",
-"deployment"
-]
-
-};
-
-const current =
-b.toLowerCase();
-
-const needed =
-requirements[a];
-
-const matched =
-needed.filter(
-skill =>
-current.includes(skill)
+return toast(
+'Enter valid values'
 );
 
-const missing =
-needed.filter(
-skill =>
-!current.includes(skill)
+}
+
+const total =
+num('bill')
++
+num('extra');
+
+out =
+`Total: ${money(total)}
+
+People: ${num('people')}
+
+Per person:
+${money(total / num('people'))}`;
+
+}
+
+if(id === 'tip'){
+
+if(
+!validPositive(
+'bill',
+'people'
+)
+){
+
+return toast(
+'Enter valid values'
 );
 
-output =
-`Target role: ${a}
+}
 
-Matched skills (${matched.length}/${needed.length}):
+const tip =
+num('bill')
+*
+num('tipPct')
+/
+100;
 
-${matched.length
-?
-matched
-.map(
-skill =>
-`✓ ${skill}`
-)
-.join("\n")
-:
-"None detected"}
+const total =
+num('bill')
++
+tip;
 
-Skills to work on:
+out =
+`Tip: ${money(tip)}
 
-${missing.length
-?
-missing
-.map(
-skill =>
-`• ${skill}`
-)
-.join("\n")
-:
-"No major gaps detected from this simple checklist."}
+Total: ${money(total)}
 
-Note: This is a basic keyword-based comparison.`;
+Per person:
+${money(total / num('people'))}`;
 
 }
 
-if(type === "practice"){
+if(id === 'fuel'){
 
-const questions = {
-
-General:[
-"Tell me about yourself.",
-"Why should we hire you?",
-"What are your strengths and weaknesses?",
-"Where do you see yourself in three years?",
-"Why do you want this role?"
-],
-
-"Data Analyst":[
-"How would you clean a messy dataset?",
-"Explain INNER JOIN vs LEFT JOIN.",
-"What is the difference between a measure and calculated column in Power BI?",
-"How would you investigate a sudden drop in sales?",
-"What is EDA and why is it useful?"
-],
-
-Behavioral:[
-"Tell me about a time you solved a difficult problem.",
-"Describe a situation where you worked under pressure.",
-"Tell me about a mistake and what you learned.",
-"How do you handle conflicting priorities?",
-"Describe a time you learned something quickly."
-]
-
-};
-
-const list =
-questions[a] ||
-questions.General;
-
-const question =
-list[
-Math.floor(
-Math.random() *
-list.length
+if(
+!validPositive(
+'distance',
+'mileage',
+'fuelprice'
 )
-];
+){
 
-output =
-`Practice Question:
-
-${question}
-
-Try answering in 60–90 seconds using a clear structure.`;
+return toast(
+'Enter valid values'
+);
 
 }
 
-if(type === "notice"){
+const litres =
+num('distance')
+/
+num('mileage');
 
-const days =
-Number(b);
+out =
+`Fuel needed:
+${litres.toFixed(2)} L
+
+Estimated cost:
+${money(
+litres *
+num('fuelprice')
+)}`;
+
+}
+
+if(id === 'pricecompare'){
+
+if(
+!validPositive(
+'p1',
+'q1',
+'p2',
+'q2'
+)
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const a =
+num('p1')
+/
+num('q1');
+
+const b =
+num('p2')
+/
+num('q2');
+
+out =
+`Pack A unit cost:
+${money(a)}
+
+Pack B unit cost:
+${money(b)}
+
+Better value:
+${a < b ? 'Pack A' : b < a ? 'Pack B' : 'Same value'}`;
+
+}
+
+if(id === 'savings'){
+
+if(
+num('goal') <= 0 ||
+num('monthly') <= 0
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const left =
+Math.max(
+0,
+num('goal')
+-
+num('current')
+);
+
+const months =
+Math.ceil(
+left /
+num('monthly')
+);
+
+out =
+`Goal:
+${money(num('goal'))}
+
+Remaining:
+${money(left)}
+
+Monthly saving:
+${money(num('monthly'))}
+
+Estimated time:
+${months} month${months === 1 ? '' : 's'}`;
+
+}
+
+if(id === 'electricity'){
+
+if(
+num('units') < 0 ||
+num('rate') < 0
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const energy =
+num('units')
+*
+num('rate');
+
+const total =
+energy
++
+num('fixed');
+
+out =
+`Energy charge:
+${money(energy)}
+
+Fixed charges:
+${money(num('fixed'))}
+
+Estimated bill:
+${money(total)}
+
+Actual electricity tariffs may include slabs, taxes and other charges.`;
+
+}
+
+if(id === 'simpleinterest'){
+
+if(
+!validPositive(
+'principal',
+'years'
+)
+||
+num('rate') < 0
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const interest =
+num('principal')
+*
+num('rate')
+*
+num('years')
+/
+100;
+
+out =
+`Interest:
+${money(interest)}
+
+Total amount:
+${money(
+num('principal')
++
+interest
+)}`;
+
+}
+
+if(id === 'compoundinterest'){
+
+if(
+!validPositive(
+'principal',
+'years',
+'freq'
+)
+||
+num('rate') < 0
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const n =
+num('freq');
+
+const amount =
+num('principal')
+*
+Math.pow(
+1 +
+num('rate')
+/
+100
+/
+n,
+n *
+num('years')
+);
+
+out =
+`Final amount:
+${money(amount)}
+
+Interest earned:
+${money(
+amount -
+num('principal')
+)}`;
+
+}
+
+if(id === 'countdown'){
 
 const date =
+val('eventdate');
+
+if(!date){
+
+return toast(
+'Choose a date'
+);
+
+}
+
+const today =
+new Date();
+
+today.setHours(
+0,
+0,
+0,
+0
+);
+
+const target =
 new Date(
-a + "T00:00:00"
+date +
+'T00:00:00'
+);
+
+const days =
+Math.ceil(
+(
+target -
+today
+)
+/
+86400000
+);
+
+out =
+`${val('eventname') || 'Event'}
+
+${days >= 0
+?
+`${days} day${Math.abs(days) === 1 ? '' : 's'} remaining`
+:
+`Passed ${Math.abs(days)} day${Math.abs(days) === 1 ? '' : 's'} ago`
+}`;
+
+}
+
+if(id === 'sleep'){
+
+if(
+!val('clock')
+||
+num('hours') <= 0
+){
+
+return toast(
+'Enter time and sleep hours'
+);
+
+}
+
+let [
+hour,
+minute
+] =
+val('clock')
+.split(':')
+.map(Number);
+
+let mins =
+hour *
+60
++
+minute;
+
+const delta =
+Math.round(
+num('hours')
+*
+60
+);
+
+mins =
+val('mode') === 'wake'
+?
+mins -
+delta
+:
+mins +
+delta;
+
+mins =
+(
+(
+mins %
+1440
+)
++
+1440
+)
+%
+1440;
+
+const hh =
+String(
+Math.floor(
+mins /
+60
+)
+)
+.padStart(
+2,
+'0'
+);
+
+const mm =
+String(
+mins %
+60
+)
+.padStart(
+2,
+'0'
+);
+
+out =
+`${val('mode') === 'wake' ? 'Suggested bedtime' : 'Suggested wake-up time'}:
+${hh}:${mm}
+
+This is a planning tool, not medical advice.`;
+
+}
+
+if(id === 'picker'){
+
+const choices =
+val('choices')
+.split(/\n|,/)
+.map(
+x =>
+x.trim()
+)
+.filter(Boolean);
+
+if(
+choices.length < 2
+){
+
+return toast(
+'Enter at least 2 choices'
+);
+
+}
+
+out =
+`Selected:
+${choices[
+Math.floor(
+Math.random()
+*
+choices.length
+)
+]}`;
+
+}
+
+if(id === 'kitchenconvert'){
+
+const map = {
+cup:240,
+tbsp:15,
+tsp:5,
+ml:1
+};
+
+if(
+num('amount') < 0
+){
+
+return toast(
+'Enter valid amount'
+);
+
+}
+
+out =
+`${num('amount')} ${val('from')}
+=
+${(
+num('amount')
+*
+map[val('from')]
+/
+map[val('to')]
+).toFixed(2)} ${val('to')}
+
+Kitchen measures are approximate.`;
+
+}
+
+if(id === 'recipe'){
+
+if(
+!validPositive(
+'serves',
+'newserves'
+)
+||
+num('qty') < 0
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+out =
+`New quantity:
+${(
+num('qty')
+*
+num('newserves')
+/
+num('serves')
+).toFixed(2)}
+
+Scale factor:
+${(
+num('newserves')
+/
+num('serves')
+).toFixed(2)}×`;
+
+}
+
+if(id === 'unitprice'){
+
+if(
+!validPositive(
+'price',
+'grams'
+)
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+out =
+`Price per 100g:
+${money(
+num('price')
+/
+num('grams')
+*
+100
+)}
+
+Price per kg:
+${money(
+num('price')
+/
+num('grams')
+*
+1000
+)}`;
+
+}
+
+if(id === 'homesplit'){
+
+if(
+num('people') <= 0
+){
+
+return toast(
+'Enter people'
+);
+
+}
+
+const total =
+num('rent')
++
+num('electric')
++
+num('internet')
++
+num('other');
+
+out =
+`Total household expenses:
+${money(total)}
+
+Per person:
+${money(
+total /
+num('people')
+)}`;
+
+}
+
+if(id === 'tripcost'){
+
+const total =
+[
+'fuelcost',
+'toll',
+'food',
+'stay',
+'other'
+]
+.reduce(
+(sum,id) =>
+sum +
+num(id),
+0
+);
+
+out =
+`Total trip cost:
+${money(total)}
+
+Fuel:
+${money(num('fuelcost'))}
+
+Toll/Parking:
+${money(num('toll'))}
+
+Food:
+${money(num('food'))}
+
+Stay:
+${money(num('stay'))}
+
+Other:
+${money(num('other'))}`;
+
+}
+
+if(id === 'travelbudget'){
+
+if(
+num('days') <= 0
+){
+
+return toast(
+'Enter trip days'
+);
+
+}
+
+const daily =
+(
+num('stayday')
++
+num('foodday')
+)
+*
+num('days');
+
+const total =
+daily
++
+num('transport')
++
+num('activities');
+
+out =
+`Estimated trip budget:
+${money(total)}
+
+Daily stay + food total:
+${money(daily)}
+
+Transport:
+${money(num('transport'))}
+
+Activities/Shopping:
+${money(num('activities'))}`;
+
+}
+
+if(id === 'mileage'){
+
+if(
+!validPositive(
+'km',
+'litres'
+)
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+out =
+`Actual mileage:
+${(
+num('km')
+/
+num('litres')
+).toFixed(2)} km/L`;
+
+}
+
+if(id === 'taxisplit'){
+
+if(
+num('people') <= 0
+){
+
+return toast(
+'Enter people'
+);
+
+}
+
+const total =
+num('fare')
++
+num('toll');
+
+out =
+`Total fare:
+${money(total)}
+
+Per person:
+${money(
+total /
+num('people')
+)}`;
+
+}
+
+if(
+id === 'workhours'
+||
+id === 'shifthours'
+){
+
+const start =
+timeMinutes(
+val('start')
+);
+
+const end =
+timeMinutes(
+val('end')
 );
 
 if(
-isNaN(date.getTime())
+start === null
 ||
-isNaN(days)
-||
-days < 0
+end === null
 ){
 
-showToast(
-"Enter valid date and days"
-);
-
-return;
-
-}
-
-const startDate =
-new Date(date);
-
-date.setDate(
-date.getDate() + days
-);
-
-output =
-`Resignation date:
-${startDate.toLocaleDateString("en-IN")}
-
-Notice period:
-${days} days
-
-Estimated last working date:
-${date.toLocaleDateString("en-IN")}
-
-Note: Company policy may count notice days differently, so confirm with HR.`;
-
-}
-
-setResult(output);
-
-if(typeof gtag === "function"){
-
-gtag(
-"event",
-"tool_generate",
-{
-tool_name:type
-}
+return toast(
+'Enter start and end time'
 );
 
 }
 
+let diff =
+end -
+start;
+
+if(diff < 0){
+
+diff += 1440;
+
 }
 
-function startTimer(){
+diff -=
+num('breakmin');
 
-if(timerInterval){
+if(diff < 0){
 
-clearInterval(
-timerInterval
+return toast(
+'Break is longer than shift'
 );
 
 }
 
-let seconds =
-Number(
-getValue("inputA")
-)
+out =
+`Actual work time:
+${Math.floor(diff / 60)}h ${diff % 60}m
+
+Decimal hours:
+${(diff / 60).toFixed(2)}`;
+
+}
+
+if(id === 'overtime'){
+
+if(
+num('hours') < 0
 ||
-60;
+num('hourly') < 0
+||
+num('multiplier') < 0
+){
 
-const display =
-$("#timerDisplay");
+return toast(
+'Enter valid values'
+);
 
-function drawTimer(){
+}
 
-const minutes =
-String(
-Math.floor(
-seconds / 60
+out =
+`Estimated overtime pay:
+${money(
+num('hours')
+*
+num('hourly')
+*
+num('multiplier')
+)}`;
+
+}
+
+if(id === 'meetingcost'){
+
+if(
+!validPositive(
+'people',
+'avgMonthly',
+'minutes',
+'monthlyHours'
 )
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const hourly =
+num('avgMonthly')
+/
+num('monthlyHours');
+
+out =
+`Estimated meeting cost:
+${money(
+hourly
+*
+num('people')
+*
+num('minutes')
+/
+60
+)}
+
+Approx hourly labour cost/person:
+${money(hourly)}`;
+
+}
+
+if(id === 'bmi'){
+
+if(
+!validPositive(
+'weightkg',
+'heightcm'
 )
-.padStart(
-2,
-"0"
+){
+
+return toast(
+'Enter valid values'
 );
 
-const secondsLeft =
-String(
-seconds % 60
+}
+
+const bmi =
+num('weightkg')
+/
+Math.pow(
+num('heightcm')
+/
+100,
+2
+);
+
+const category =
+bmi < 18.5
+?
+'Underweight'
+:
+bmi < 25
+?
+'Normal range'
+:
+bmi < 30
+?
+'Overweight'
+:
+'Obesity range';
+
+out =
+`BMI:
+${bmi.toFixed(1)}
+
+Category:
+${category}
+
+BMI is a screening estimate and does not diagnose health.`;
+
+}
+
+if(id === 'calories'){
+
+if(
+!validPositive(
+'age',
+'weightkg',
+'heightcm',
+'activity'
 )
-.padStart(
-2,
-"0"
-);
+){
 
-display.textContent =
-`${minutes}:${secondsLeft}`;
-
-}
-
-drawTimer();
-
-timerInterval =
-setInterval(() => {
-
-seconds--;
-
-drawTimer();
-
-if(seconds <= 0){
-
-clearInterval(
-timerInterval
-);
-
-timerInterval = null;
-
-showToast(
-"Time is up"
-);
-
-setResult(
-"Time is up. Review your answer: Was it clear, structured and within the time limit?"
+return toast(
+'Enter valid values'
 );
 
 }
 
-},1000);
+const base =
+val('sex') === 'male'
+?
+10 *
+num('weightkg')
++
+6.25 *
+num('heightcm')
+-
+5 *
+num('age')
++
+5
+:
+10 *
+num('weightkg')
++
+6.25 *
+num('heightcm')
+-
+5 *
+num('age')
+-
+161;
+
+out =
+`Estimated maintenance calories:
+${Math.round(
+base *
+num('activity')
+)} kcal/day
+
+This is a general estimate, not medical or dietary advice.`;
 
 }
 
-function resetTimer(){
+if(id === 'steps'){
 
-if(timerInterval){
+if(
+num('stepsn') < 0
+||
+num('stride') <= 0
+){
 
-clearInterval(
-timerInterval
+return toast(
+'Enter valid values'
 );
 
 }
 
-timerInterval = null;
+out =
+`Estimated distance:
+${(
+num('stepsn')
+*
+num('stride')
+/
+100000
+).toFixed(2)} km`;
+
+}
+
+if(id === 'pace'){
+
+if(
+!validPositive(
+'distancekm',
+'minutes'
+)
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const pace =
+num('minutes')
+/
+num('distancekm');
+
+const minute =
+Math.floor(pace);
 
 const seconds =
-Number(
-getValue("inputA")
+Math.round(
+(
+pace -
+minute
 )
-||
-60;
-
-const display =
-$("#timerDisplay");
-
-if(!display){
-return;
-}
-
-const minutes =
-String(
-Math.floor(
-seconds / 60
-)
-)
-.padStart(
-2,
-"0"
+*
+60
 );
 
-const secondsLeft =
-String(
-seconds % 60
-)
-.padStart(
-2,
-"0"
-);
+out =
+`Average pace:
+${minute}:${String(seconds).padStart(2,'0')} min/km
 
-display.textContent =
-`${minutes}:${secondsLeft}`;
+Average speed:
+${(
+num('distancekm')
+/
+(
+num('minutes')
+/
+60
+)
+).toFixed(2)} km/h`;
 
 }
 
-function numberScore(id){
+if(out){
 
-return Math.max(
-0,
-Math.min(
+setResult(out);
+
+if(
+typeof gtag === 'function'
+){
+
+gtag(
+'event',
+'tool_generate',
+{
+tool_name:id
+}
+);
+
+}
+
+}
+
+}
+
+function timeMinutes(time){
+
+if(
+!/^\d{2}:\d{2}$/
+.test(time)
+){
+
+return null;
+
+}
+
+const [
+hour,
+minute
+] =
+time
+.split(':')
+.map(Number);
+
+return hour * 60 + minute;
+
+}
+
+function buildSpecialForm(id){
+
+if(id === 'expense'){
+
+return `
+
+<div class="row">
+
+<div>
+
+<label>
+Description
+</label>
+
+<input
+id="expDesc"
+placeholder="Lunch">
+
+</div>
+
+<div>
+
+<label>
+Amount
+</label>
+
+<input
+id="expAmt"
+type="number"
+placeholder="120">
+
+</div>
+
+</div>
+
+<br>
+
+<button
+class="btn blue"
+onclick="addExpense()">
+
+Add Expense
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+if(id === 'grocery'){
+
+return `
+
+<div class="row">
+
+<div>
+
+<label>
+Item
+</label>
+
+<input
+id="groName"
+placeholder="Rice">
+
+</div>
+
+<div>
+
+<label>
+Estimated price
+</label>
+
+<input
+id="groPrice"
+type="number"
+placeholder="250">
+
+</div>
+
+</div>
+
+<br>
+
+<button
+class="btn blue"
+onclick="addGrocery()">
+
+Add Item
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+if(id === 'water'){
+
+return `
+
+<div class="field">
+
+<label>
+Daily goal (ml)
+</label>
+
+<input
+id="waterGoal"
+type="number"
+value="2000">
+
+</div>
+
+<div class="field">
+
+<label>
+Add water (ml)
+</label>
+
+<input
+id="waterAdd"
+type="number"
+value="250">
+
+</div>
+
+<button
+class="btn blue"
+onclick="addWater()">
+
+Add Water
+
+</button>
+
+<button
+class="btn"
+onclick="resetWater()">
+
+Reset Today
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+if(id === 'habit'){
+
+return `
+
+<div class="field">
+
+<label>
+Habit
+</label>
+
+<input
+id="habitName"
+placeholder="Walk 30 minutes">
+
+</div>
+
+<button
+class="btn blue"
+onclick="addHabit()">
+
+Add Habit
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+if(id === 'notes'){
+
+return `
+
+<div class="field">
+
+<label>
+Quick note
+</label>
+
+<textarea
+id="noteText"
+placeholder="Write something...">
+</textarea>
+
+</div>
+
+<button
+class="btn blue"
+onclick="saveNote()">
+
+Save Note
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+if(id === 'todo'){
+
+return `
+
+<div class="field">
+
+<label>
+Task
+</label>
+
+<input
+id="todoText"
+placeholder="Pay electricity bill">
+
+</div>
+
+<button
+class="btn blue"
+onclick="addTodo()">
+
+Add Task
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+if(id === 'pomodoro'){
+
+return timerForm(
+'pomodoroMinutes',
+[
+25,
+50,
+5
+],
+25,
+'startPomodoro()'
+);
+
+}
+
+if(id === 'stopwatch'){
+
+return `
+
+<div
+id="timerDisplay"
+class="timer">
+
+00:00:00
+
+</div>
+
+<div class="result-buttons">
+
+<button
+class="btn blue"
+onclick="startStopwatch()">
+
+Start / Pause
+
+</button>
+
+<button
+class="btn"
+onclick="resetStopwatch()">
+
+Reset
+
+</button>
+
+</div>
+
+`;
+
+}
+
+if(id === 'cooktimer'){
+
+return timerForm(
+'cookMinutes',
+[
+5,
 10,
-Number(
-getValue(id)
-)
-||
-0
-)
+15,
+30
+],
+10,
+'startCookTimer()'
 );
 
 }
 
-function compareOffers(){
+if(id === 'packing'){
 
-const offerA =
-getValue("offerAName")
-||
-"Offer A";
+return `
 
-const offerB =
-getValue("offerBName")
-||
-"Offer B";
+<div class="field">
 
-const scoreA =
+<label>
+Packing item
+</label>
 
-numberScore("aSalary") * .40
-+
-numberScore("aGrowth") * .30
-+
-numberScore("aCommute") * .15
-+
-numberScore("aBenefits") * .15;
+<input
+id="packText"
+placeholder="Charger">
 
-const scoreB =
+</div>
 
-numberScore("bSalary") * .40
-+
-numberScore("bGrowth") * .30
-+
-numberScore("bCommute") * .15
-+
-numberScore("bBenefits") * .15;
+<button
+class="btn blue"
+onclick="addPacking()">
 
-const winner =
-scoreA > scoreB
-?
-offerA
-:
-scoreB > scoreA
-?
-offerB
-:
-"Tie";
+Add Item
 
-setResult(
-`${offerA}: ${scoreA.toFixed(1)}/10
+</button>
 
-${offerB}: ${scoreB.toFixed(1)}/10
+<div
+id="specialList"
+class="list">
+</div>
 
-Higher weighted score:
-${winner}
-
-Weights:
-Salary 40%
-Growth 30%
-Commute 15%
-Benefits 15%
-
-Use this as a decision aid, not the only factor.`
-);
+`;
 
 }
 
-function compareDecision(){
+if(id === 'productivity'){
 
-const optionA =
-getValue("dA")
-||
-"Option A";
+return `
 
-const optionB =
-getValue("dB")
-||
-"Option B";
+<div class="field">
 
-const scoreA =
-(
-numberScore("dASalary")
-+
-numberScore("dAGrowth")
-+
-numberScore("dATime")
-+
-numberScore("dAStability")
-)
-/
-4;
+<label>
+Tasks planned
+</label>
 
-const scoreB =
-(
-numberScore("dBSalary")
-+
-numberScore("dBGrowth")
-+
-numberScore("dBTime")
-+
-numberScore("dBStability")
-)
-/
-4;
+<input
+id="prodPlanned"
+type="number"
+value="5">
 
-const winner =
-scoreA > scoreB
-?
-optionA
-:
-scoreB > scoreA
-?
-optionB
-:
-"Tie";
+</div>
 
-setResult(
-`${optionA}: ${scoreA.toFixed(1)}/10
+<div class="field">
 
-${optionB}: ${scoreB.toFixed(1)}/10
+<label>
+Tasks completed
+</label>
 
-Higher score:
-${winner}
+<input
+id="prodDone"
+type="number"
+value="3">
 
-Tip:
-Change the scores based on what matters most to you.`
-);
+</div>
+
+<div class="field">
+
+<label>
+Focus minutes
+</label>
+
+<input
+id="prodFocus"
+type="number"
+value="120">
+
+</div>
+
+<button
+class="btn blue"
+onclick="productivityScore()">
+
+Calculate Score
+
+</button>
+
+`;
 
 }
 
-function getApplications(){
+if(id === 'weight'){
+
+return `
+
+<div class="field">
+
+<label>
+Weight (kg)
+</label>
+
+<input
+id="weightEntry"
+type="number"
+step="0.1"
+placeholder="70.5">
+
+</div>
+
+<button
+class="btn blue"
+onclick="addWeight()">
+
+Save Weight
+
+</button>
+
+<div
+id="specialList"
+class="list">
+</div>
+
+`;
+
+}
+
+return '';
+
+}
+
+function timerForm(
+id,
+options,
+defaultValue,
+functionName
+){
+
+return `
+
+<div class="field">
+
+<label>
+Minutes
+</label>
+
+<select id="${id}">
+
+${options
+.map(
+x =>
+`<option ${x === defaultValue ? 'selected' : ''}>${x}</option>`
+)
+.join('')}
+
+</select>
+
+</div>
+
+<div
+id="timerDisplay"
+class="timer">
+
+${String(defaultValue).padStart(2,'0')}:00
+
+</div>
+
+<div class="result-buttons">
+
+<button
+class="btn blue"
+onclick="${functionName}">
+
+Start
+
+</button>
+
+<button
+class="btn"
+onclick="stopAllTimers();refreshSpecial(currentTool)">
+
+Reset
+
+</button>
+
+</div>
+
+`;
+
+}
+
+function storeGet(key){
 
 try{
 
 return JSON.parse(
-localStorage.getItem(
-"workzivoApplications"
-)
+localStorage.getItem(key)
 ||
-"[]"
+'[]'
 );
 
 }
-
 catch{
 
 return [];
@@ -3174,145 +3515,413 @@ return [];
 
 }
 
-function saveApplications(items){
+function storeSet(
+key,
+value
+){
 
 localStorage.setItem(
-"workzivoApplications",
-JSON.stringify(items)
+key,
+JSON.stringify(value)
 );
 
 }
 
-function addApplication(){
+function refreshSpecial(id){
 
-const company =
-getValue("trackCompany");
+if(id === 'expense'){
+renderExpense();
+}
 
-const role =
-getValue("trackRole");
+if(id === 'grocery'){
+renderGrocery();
+}
 
-const status =
-getValue("trackStatus");
+if(id === 'water'){
+renderWater();
+}
+
+if(id === 'habit'){
+renderHabit();
+}
+
+if(id === 'notes'){
+renderNotes();
+}
+
+if(id === 'todo'){
+renderTodo();
+}
+
+if(id === 'packing'){
+renderPacking();
+}
+
+if(id === 'weight'){
+renderWeight();
+}
+
+}
+
+function addExpense(){
+
+const description =
+val('expDesc');
+
+const amount =
+num('expAmt');
 
 if(
-!company ||
-!role
+!description ||
+amount <= 0
 ){
 
-showToast(
-"Enter company and role"
+return toast(
+'Enter description and amount'
 );
-
-return;
 
 }
 
 const items =
-getApplications();
+storeGet(
+'wz_expenses'
+);
 
 items.unshift({
-
 id:Date.now(),
-
-company,
-
-role,
-
-status,
-
+d:description,
+a:amount,
 date:
 new Date()
 .toLocaleDateString(
-"en-IN"
+'en-IN'
 )
-
 });
 
-saveApplications(items);
+storeSet(
+'wz_expenses',
+items
+);
 
-$("#trackCompany").value =
-"";
+renderExpense();
 
-$("#trackRole").value =
-"";
-
-renderApplications();
-
-showToast(
-"Application saved"
+toast(
+'Expense saved'
 );
 
 }
 
-function deleteApplication(id){
+function renderExpense(){
 
 const items =
-getApplications()
-.filter(
+storeGet(
+'wz_expenses'
+);
+
+const total =
+items.reduce(
+(sum,item) =>
+sum +
+item.a,
+0
+);
+
+$('#specialList').innerHTML =
+items
+.map(
 item =>
-item.id !== id
-);
+itemHTML(
+`${esc(item.d)} — ${money(item.a)}`,
+item.date,
+`removeStored('wz_expenses',${item.id},'expense')`
+)
+)
+.join('')
+||
+'<small>No expenses yet.</small>';
 
-saveApplications(items);
+setResult(
+`Saved expenses:
+${items.length}
 
-renderApplications();
-
-}
-
-function escapeHtml(value){
-
-return String(value)
-.replace(
-/[&<>"']/g,
-character => ({
-"&":"&amp;",
-"<":"&lt;",
-">":"&gt;",
-'"':"&quot;",
-"'":"&#39;"
-})[character]
+Total:
+${money(total)}`
 );
 
 }
 
-function renderApplications(){
+function addGrocery(){
 
-const container =
-$("#trackerList");
+const name =
+val('groName');
 
-if(!container){
-return;
+const price =
+num('groPrice');
+
+if(
+!name ||
+price < 0
+){
+
+return toast(
+'Enter item and price'
+);
+
 }
 
 const items =
-getApplications();
+storeGet(
+'wz_grocery'
+);
 
-if(items.length){
+items.push({
+id:Date.now(),
+n:name,
+p:price
+});
 
-container.innerHTML =
+storeSet(
+'wz_grocery',
+items
+);
+
+renderGrocery();
+
+}
+
+function renderGrocery(){
+
+const items =
+storeGet(
+'wz_grocery'
+);
+
+const total =
+items.reduce(
+(sum,item) =>
+sum +
+item.p,
+0
+);
+
+$('#specialList').innerHTML =
+items
+.map(
+item =>
+itemHTML(
+`${esc(item.n)} — ${money(item.p)}`,
+'',
+`removeStored('wz_grocery',${item.id},'grocery')`
+)
+)
+.join('')
+||
+'<small>No grocery items yet.</small>';
+
+setResult(
+`Items:
+${items.length}
+
+Estimated total:
+${money(total)}`
+);
+
+}
+
+function waterKey(){
+
+return (
+'wz_water_'
++
+new Date()
+.toISOString()
+.slice(
+0,
+10
+)
+);
+
+}
+
+function addWater(){
+
+const amount =
+num('waterAdd');
+
+if(
+amount <= 0
+){
+
+return toast(
+'Enter amount'
+);
+
+}
+
+localStorage.setItem(
+waterKey(),
+String(
+Number(
+localStorage.getItem(
+waterKey()
+)
+||
+0
+)
++
+amount
+)
+);
+
+renderWater();
+
+}
+
+function resetWater(){
+
+localStorage.setItem(
+waterKey(),
+'0'
+);
+
+renderWater();
+
+}
+
+function renderWater(){
+
+const total =
+Number(
+localStorage.getItem(
+waterKey()
+)
+||
+0
+);
+
+const goal =
+Math.max(
+1,
+num('waterGoal')
+||
+2000
+);
+
+const percentage =
+Math.min(
+100,
+total /
+goal *
+100
+);
+
+$('#specialList').innerHTML =
+`
+
+<div class="stat">
+
+<b>
+${total} ml
+</b>
+
+<br>
+
+<small>
+Goal: ${goal} ml
+</small>
+
+<br><br>
+
+<div class="progress">
+
+<div style="width:${percentage}%">
+</div>
+
+</div>
+
+</div>
+
+`;
+
+setResult(
+`Today:
+${total} ml
+
+Goal progress:
+${percentage.toFixed(0)}%`
+);
+
+}
+
+function addHabit(){
+
+const name =
+val('habitName');
+
+if(!name){
+
+return toast(
+'Enter habit'
+);
+
+}
+
+const items =
+storeGet(
+'wz_habits'
+);
+
+items.push({
+id:Date.now(),
+n:name,
+done:false
+});
+
+storeSet(
+'wz_habits',
+items
+);
+
+renderHabit();
+
+}
+
+function renderHabit(){
+
+const items =
+storeGet(
+'wz_habits'
+);
+
+$('#specialList').innerHTML =
 items
 .map(
 item => `
 
-<div class="track-item">
+<div class="list-item">
+
+<div>
 
 <b>
-${escapeHtml(item.company)}
-—
-${escapeHtml(item.role)}
+${item.done ? '✓ ' : ''}
+${esc(item.n)}
 </b>
 
-<small>
-${escapeHtml(item.status)}
-•
-${escapeHtml(item.date)}
-</small>
+</div>
 
-<div style="margin-top:8px">
+<div>
 
 <button
 class="btn"
-onclick="deleteApplication(${item.id})">
+onclick="toggleStored('wz_habits',${item.id},'habit')">
+
+${item.done ? 'Undo' : 'Done'}
+
+</button>
+
+<button
+class="btn danger"
+onclick="removeStored('wz_habits',${item.id},'habit')">
 
 Delete
 
@@ -3324,40 +3933,742 @@ Delete
 
 `
 )
-.join("");
-
-}
-
-else{
-
-container.innerHTML =
-`<div class="small-note">
-No applications saved yet.
-</div>`;
-
-}
+.join('')
+||
+'<small>No habits yet.</small>';
 
 setResult(
-`Saved applications on this device: ${items.length}`
+`Completed today:
+${items.filter(item => item.done).length}/${items.length}`
+);
+
+}
+
+function saveNote(){
+
+const text =
+val('noteText');
+
+if(!text){
+
+return toast(
+'Write a note'
+);
+
+}
+
+const items =
+storeGet(
+'wz_notes'
+);
+
+items.unshift({
+id:Date.now(),
+t:text,
+date:
+new Date()
+.toLocaleString(
+'en-IN'
+)
+});
+
+storeSet(
+'wz_notes',
+items
+);
+
+document
+.getElementById(
+'noteText'
+)
+.value = '';
+
+renderNotes();
+
+}
+
+function renderNotes(){
+
+const items =
+storeGet(
+'wz_notes'
+);
+
+$('#specialList').innerHTML =
+items
+.map(
+item =>
+itemHTML(
+esc(item.t),
+item.date,
+`removeStored('wz_notes',${item.id},'notes')`
+)
+)
+.join('')
+||
+'<small>No notes yet.</small>';
+
+setResult(
+`Saved notes:
+${items.length}`
+);
+
+}
+
+function addTodo(){
+
+const text =
+val('todoText');
+
+if(!text){
+
+return toast(
+'Enter a task'
+);
+
+}
+
+const items =
+storeGet(
+'wz_todos'
+);
+
+items.push({
+id:Date.now(),
+t:text,
+done:false
+});
+
+storeSet(
+'wz_todos',
+items
+);
+
+renderTodo();
+
+}
+
+function renderTodo(){
+
+const items =
+storeGet(
+'wz_todos'
+);
+
+$('#specialList').innerHTML =
+items
+.map(
+item => `
+
+<div class="list-item">
+
+<div>
+
+<b>
+${item.done ? '✓ ' : ''}
+${esc(item.t)}
+</b>
+
+</div>
+
+<div>
+
+<button
+class="btn"
+onclick="toggleStored('wz_todos',${item.id},'todo')">
+
+${item.done ? 'Undo' : 'Done'}
+
+</button>
+
+<button
+class="btn danger"
+onclick="removeStored('wz_todos',${item.id},'todo')">
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+`
+)
+.join('')
+||
+'<small>No tasks yet.</small>';
+
+setResult(
+`Completed:
+${items.filter(item => item.done).length}/${items.length}`
+);
+
+}
+
+function addPacking(){
+
+const text =
+val('packText');
+
+if(!text){
+
+return toast(
+'Enter item'
+);
+
+}
+
+const items =
+storeGet(
+'wz_packing'
+);
+
+items.push({
+id:Date.now(),
+t:text,
+done:false
+});
+
+storeSet(
+'wz_packing',
+items
+);
+
+renderPacking();
+
+}
+
+function renderPacking(){
+
+const items =
+storeGet(
+'wz_packing'
+);
+
+$('#specialList').innerHTML =
+items
+.map(
+item => `
+
+<div class="list-item">
+
+<div>
+
+<b>
+${item.done ? '✓ ' : ''}
+${esc(item.t)}
+</b>
+
+</div>
+
+<div>
+
+<button
+class="btn"
+onclick="toggleStored('wz_packing',${item.id},'packing')">
+
+${item.done ? 'Undo' : 'Packed'}
+
+</button>
+
+<button
+class="btn danger"
+onclick="removeStored('wz_packing',${item.id},'packing')">
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+`
+)
+.join('')
+||
+'<small>No items yet.</small>';
+
+setResult(
+`Packed:
+${items.filter(item => item.done).length}/${items.length}`
+);
+
+}
+
+function addWeight(){
+
+const weight =
+num('weightEntry');
+
+if(
+weight <= 0
+){
+
+return toast(
+'Enter valid weight'
+);
+
+}
+
+const items =
+storeGet(
+'wz_weight'
+);
+
+items.unshift({
+id:Date.now(),
+w:weight,
+date:
+new Date()
+.toLocaleDateString(
+'en-IN'
+)
+});
+
+storeSet(
+'wz_weight',
+items
+);
+
+renderWeight();
+
+}
+
+function renderWeight(){
+
+const items =
+storeGet(
+'wz_weight'
+);
+
+$('#specialList').innerHTML =
+items
+.map(
+item =>
+itemHTML(
+`${item.w} kg`,
+item.date,
+`removeStored('wz_weight',${item.id},'weight')`
+)
+)
+.join('')
+||
+'<small>No entries yet.</small>';
+
+if(
+items.length
+){
+
+const latest =
+items[0].w;
+
+const first =
+items[
+items.length - 1
+].w;
+
+setResult(
+`Latest:
+${latest} kg
+
+Change since first entry:
+${(latest - first).toFixed(1)} kg
+
+Entries:
+${items.length}`
+);
+
+}
+else{
+
+setResult(
+'No weight entries saved yet.'
+);
+
+}
+
+}
+
+function removeStored(
+key,
+id,
+view
+){
+
+storeSet(
+key,
+storeGet(key)
+.filter(
+item =>
+item.id !== id
+)
+);
+
+refreshSpecial(view);
+
+}
+
+function toggleStored(
+key,
+id,
+view
+){
+
+const items =
+storeGet(key);
+
+const item =
+items.find(
+item =>
+item.id === id
+);
+
+if(item){
+
+item.done =
+!item.done;
+
+}
+
+storeSet(
+key,
+items
+);
+
+refreshSpecial(view);
+
+}
+
+function itemHTML(
+title,
+sub,
+onDelete
+){
+
+return `
+
+<div class="list-item">
+
+<div>
+
+<b>
+${title}
+</b>
+
+<br>
+
+<small>
+${sub || ''}
+</small>
+
+</div>
+
+<button
+class="btn danger"
+onclick="${onDelete}">
+
+Delete
+
+</button>
+
+</div>
+
+`;
+
+}
+
+function esc(text){
+
+return String(text)
+.replace(
+/[&<>"']/g,
+character =>
+({
+'&':'&amp;',
+'<':'&lt;',
+'>':'&gt;',
+'"':'&quot;',
+"'":'&#39;'
+})[character]
+);
+
+}
+
+function timerStart(
+totalSeconds
+){
+
+stopAllTimers();
+
+let left =
+totalSeconds;
+
+const display =
+$('#timerDisplay');
+
+function draw(){
+
+const minutes =
+Math.floor(
+left /
+60
+);
+
+const seconds =
+left %
+60;
+
+display.textContent =
+`${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}`;
+
+}
+
+draw();
+
+activeTimer =
+setInterval(
+() => {
+
+left--;
+
+draw();
+
+if(
+left <= 0
+){
+
+clearInterval(
+activeTimer
+);
+
+activeTimer =
+null;
+
+toast(
+'Time is up'
+);
+
+setResult(
+'Time is up.'
+);
+
+}
+
+},
+1000
+);
+
+}
+
+function startPomodoro(){
+
+timerStart(
+num('pomodoroMinutes')
+*
+60
+);
+
+}
+
+function startCookTimer(){
+
+timerStart(
+num('cookMinutes')
+*
+60
+);
+
+}
+
+function startStopwatch(){
+
+if(stopwatchTimer){
+
+clearInterval(
+stopwatchTimer
+);
+
+stopwatchTimer =
+null;
+
+return;
+
+}
+
+stopwatchTimer =
+setInterval(
+() => {
+
+stopwatchSeconds++;
+
+drawStopwatch();
+
+},
+1000
+);
+
+}
+
+function drawStopwatch(){
+
+const hours =
+Math.floor(
+stopwatchSeconds /
+3600
+);
+
+const minutes =
+Math.floor(
+(
+stopwatchSeconds %
+3600
+)
+/
+60
+);
+
+const seconds =
+stopwatchSeconds %
+60;
+
+const display =
+$('#timerDisplay');
+
+if(display){
+
+display.textContent =
+`${String(hours).padStart(2,'0')}:${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}`;
+
+}
+
+}
+
+function resetStopwatch(){
+
+if(stopwatchTimer){
+
+clearInterval(
+stopwatchTimer
+);
+
+}
+
+stopwatchTimer =
+null;
+
+stopwatchSeconds =
+0;
+
+drawStopwatch();
+
+}
+
+function stopAllTimers(){
+
+if(activeTimer){
+
+clearInterval(
+activeTimer
+);
+
+}
+
+if(stopwatchTimer){
+
+clearInterval(
+stopwatchTimer
+);
+
+}
+
+activeTimer =
+null;
+
+stopwatchTimer =
+null;
+
+}
+
+function productivityScore(){
+
+const planned =
+num('prodPlanned');
+
+const done =
+num('prodDone');
+
+const focus =
+num('prodFocus');
+
+if(
+planned <= 0
+||
+done < 0
+||
+focus < 0
+){
+
+return toast(
+'Enter valid values'
+);
+
+}
+
+const completion =
+Math.min(
+100,
+done /
+planned *
+100
+);
+
+const focusScore =
+Math.min(
+100,
+focus /
+180 *
+100
+);
+
+const score =
+Math.round(
+completion *
+0.7
++
+focusScore *
+0.3
+);
+
+setResult(
+`Productivity score:
+${score}/100
+
+Task completion:
+${completion.toFixed(0)}%
+
+Focus contribution:
+${focusScore.toFixed(0)}%
+
+Use this as a simple personal tracker, not a performance rating.`
 );
 
 }
 
 async function copyResult(){
 
-const result =
-$("#result");
-
 if(
-result.classList
-.contains("empty")
+$('#result')
+.classList
+.contains(
+'empty'
+)
 ){
 
-showToast(
-"Generate a result first"
+return toast(
+'Generate a result first'
 );
-
-return;
 
 }
 
@@ -3366,42 +4677,21 @@ try{
 await navigator
 .clipboard
 .writeText(
-result.textContent
+$('#result').textContent
 );
 
-showToast(
-"Result copied"
+toast(
+'Copied'
 );
 
 }
-
 catch{
 
-showToast(
-"Long press the result to copy"
+toast(
+'Long press result to copy'
 );
 
 }
-
-}
-
-function showToast(message){
-
-const toast =
-$("#toast");
-
-toast.textContent =
-message;
-
-toast.classList
-.add("show");
-
-setTimeout(() => {
-
-toast.classList
-.remove("show");
-
-},1800);
 
 }
 
