@@ -30,5 +30,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+<url>
+  <loc>https://eternyxstudios.github.io/smartkit-ai/monthly-budget-planner.html</loc>
+</url>
 </urlset>
