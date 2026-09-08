@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Budget Planner | WorkZivo</title>
+  <meta name="description" content="Plan your monthly income and expenses with WorkZivo's free Monthly Budget Planner. Calculate total expenses, savings, and remaining balance instantly." />
+  <meta name="keywords" content="monthly budget planner, budget calculator, monthly expense calculator, savings planner, free budget tool" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eternyxstudios.github.io/smartkit-ai/monthly-budget-planner.html" />
+  <meta name="google-site-verification" content="NBSKN9PLvveWXPO3smJfq7NeyCMZiKa2hqA2MuHpAB0" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C64CMC5L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1C64CMC5L');
+  </script>
+  <style>
+    :root{--navy:#0f172a;--blue:#2563eb;--blue2:#1d4ed8;--bg:#f8fafc;--card:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--good:#15803d;--bad:#b91c1c;--shadow:0 12px 35px rgba(15,23,42,.08);--radius:20px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6} a{color:inherit;text-decoration:none}.container{width:min(1100px,calc(100% - 32px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:16px}.brand{font-weight:800;font-size:1.25rem;letter-spacing:-.02em}.brand span{color:var(--blue)}.navlinks{display:flex;gap:18px;align-items:center;font-size:.95rem;color:#334155}.navbtn{padding:10px 15px;border-radius:12px;background:var(--navy);color:#fff}
+    .hero{padding:58px 0 28px;text-align:center}.badge{display:inline-flex;align-items:center;gap:8px;background:#eff6ff;color:#1d4ed8;border:1px solid #dbeafe;padding:7px 12px;border-radius:999px;font-weight:700;font-size:.85rem}h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.08;margin:18px 0 14px;letter-spacing:-.04em}.hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.05rem}
+    .layout{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;padding:24px 0 40px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.tool{padding:24px}.tool h2,.result h2,.info h2{margin:0 0 8px;font-size:1.35rem}.sub{color:var(--muted);margin:0 0 20px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:.9rem;font-weight:700;margin-bottom:7px}.field{margin-bottom:14px}input{width:100%;border:1px solid #cbd5e1;background:#fff;color:var(--text);border-radius:12px;padding:13px 14px;font-size:1rem;outline:none;transition:.2s}input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.12)}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}button{border:0;border-radius:12px;padding:13px 18px;font-weight:800;font-size:.96rem;cursor:pointer}.primary{background:var(--blue);color:#fff}.primary:hover{background:var(--blue2)}.secondary{background:#eef2f7;color:#0f172a}
+    .result{padding:24px;align-self:start;position:sticky;top:92px}.metric{padding:15px 0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.metric small{display:block;color:var(--muted);margin-bottom:3px}.metric strong{font-size:1.45rem}.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin-top:10px}.bar{height:100%;width:0;background:var(--blue);transition:.35s}.status{margin-top:16px;padding:12px 14px;border-radius:12px;background:#f8fafc;border:1px solid var(--line);font-weight:700}
+    .info{padding:26px;margin-bottom:24px}.info p,.info li{color:#475569}.info ul{padding-left:20px}.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}.tip{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}.tip strong{display:block;margin-bottom:6px}.related{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.related a{display:block;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}.related a:hover{border-color:#93c5fd;transform:translateY(-1px)}
+    footer{margin-top:36px;background:#fff;border-top:1px solid var(--line)}.footer{padding:28px 0;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#64748b;font-size:.92rem}.footerlinks{display:flex;gap:14px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks a:not(.navbtn){display:none}.layout{grid-template-columns:1fr}.result{position:static}.grid2,.tips,.related{grid-template-columns:1fr}.hero{padding-top:38px}.tool,.result,.info{padding:20px}}
+  </style>
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="index.html">Work<span>Zivo</span></a><nav class="navlinks"><a href="index.html">All Tools</a><a href="about.html">About</a><a class="navbtn" href="#planner">Use Planner</a></nav></div></header>
+<main>
+<section class="hero container"><div class="badge">Free • Fast • No sign-up</div><h1>Monthly Budget Planner</h1><p>Enter your monthly income and expenses to instantly see how much you spend, how much you can save, and how much money remains.</p></section>
+<section class="container layout" id="planner">
+  <div class="card tool">
+    <h2>Enter your monthly numbers</h2><p class="sub">Use approximate values if you do not know the exact amount yet.</p>
+    <div class="field"><label for="income">Monthly Income (₹)</label><input id="income" type="number" min="0" step="0.01" placeholder="e.g. 30000" /></div>
+    <div class="grid2">
+      <div class="field"><label for="rent">Rent / Housing (₹)</label><input id="rent" type="number" min="0" step="0.01" placeholder="e.g. 8000" /></div>
+      <div class="field"><label for="food">Food / Grocery (₹)</label><input id="food" type="number" min="0" step="0.01" placeholder="e.g. 5000" /></div>
+      <div class="field"><label for="transport">Transport / Fuel (₹)</label><input id="transport" type="number" min="0" step="0.01" placeholder="e.g. 2500" /></div>
+      <div class="field"><label for="bills">Bills / Recharge (₹)</label><input id="bills" type="number" min="0" step="0.01" placeholder="e.g. 2000" /></div>
+      <div class="field"><label for="emi">EMI / Debt Payments (₹)</label><input id="emi" type="number" min="0" step="0.01" placeholder="e.g. 3000" /></div>
+      <div class="field"><label for="other">Other Expenses (₹)</label><input id="other" type="number" min="0" step="0.01" placeholder="e.g. 1500" /></div>
+    </div>
+    <div class="field"><label for="goal">Monthly Savings Goal (₹)</label><input id="goal" type="number" min="0" step="0.01" placeholder="e.g. 5000" /></div>
+    <div class="buttons"><button class="primary" id="calculateBtn">Calculate Budget</button><button class="secondary" id="resetBtn">Reset</button></div>
+  </div>
+  <aside class="card result" aria-live="polite"><h2>Your Budget Summary</h2><p class="sub">Results update when you press Calculate Budget.</p>
+    <div class="metric"><small>Total Monthly Income</small><strong id="incomeOut">₹0</strong></div>
+    <div class="metric"><small>Total Expenses</small><strong id="expenseOut">₹0</strong></div>
+    <div class="metric"><small>Money Remaining</small><strong id="remainingOut">₹0</strong></div>
+    <div class="metric"><small>Savings Rate</small><strong id="rateOut">0%</strong><div class="progress"><div class="bar" id="bar"></div></div></div>
+    <div class="metric"><small>Savings Goal</small><strong id="goalOut">₹0</strong></div>
+    <div class="status" id="status">Enter your numbers to create a monthly budget.</div>
+  </aside>
+</section>
+<section class="container card info"><h2>How to use this Monthly Budget Planner</h2><p>Add your expected monthly income, then enter your major monthly expenses. WorkZivo totals your expenses and compares them with your income and savings goal.</p><div class="tips"><div class="tip"><strong>1. Add income</strong><span>Use the amount you actually receive each month.</span></div><div class="tip"><strong>2. Add expenses</strong><span>Include fixed and regular variable costs.</span></div><div class="tip"><strong>3. Review balance</strong><span>Check your remaining amount and savings rate.</span></div></div></section>
+<section class="container card info"><h2>Simple budgeting tips</h2><ul><li>Record realistic expenses instead of using ideal spending numbers.</li><li>Keep some money aside for unexpected expenses.</li><li>Review your budget at least once every month.</li><li>If expenses are higher than income, first identify optional spending that can be reduced.</li></ul><p><strong>Note:</strong> This tool is for general planning only and is not financial advice.</p></section>
+<section class="container card info"><h2>Related WorkZivo tools</h2><div class="related"><a href="index.html"><strong>Daily Expense Tracker</strong><br><span>Track day-to-day spending.</span></a><a href="index.html"><strong>Savings Goal Planner</strong><br><span>Plan toward a savings target.</span></a><a href="index.html"><strong>Bill Splitter</strong><br><span>Split shared expenses quickly.</span></a></div></section>
+</main>
+<footer><div class="container footer"><div>© 2026 WorkZivo. Free everyday tools.</div><div class="footerlinks"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div></div></footer>
+<script>
+const ids=["income","rent","food","transport","bills","emi","other","goal"];const money=new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0});const val=id=>{const n=Number(document.getElementById(id).value);return Number.isFinite(n)&&n>=0?n:0};
+function calculate(){const income=val("income");const expenses=["rent","food","transport","bills","emi","other"].reduce((sum,id)=>sum+val(id),0);const goal=val("goal");const remaining=income-expenses;const rate=income>0?Math.max(0,(remaining/income)*100):0;document.getElementById("incomeOut").textContent=money.format(income);document.getElementById("expenseOut").textContent=money.format(expenses);document.getElementById("remainingOut").textContent=money.format(remaining);document.getElementById("rateOut").textContent=rate.toFixed(1)+"%";document.getElementById("goalOut").textContent=money.format(goal);document.getElementById("bar").style.width=Math.min(100,rate)+"%";const status=document.getElementById("status");if(income<=0){status.textContent="Please enter your monthly income.";status.style.color="var(--bad)";return}if(remaining<0){status.textContent=`Your expenses exceed your income by ${money.format(Math.abs(remaining))}.`;status.style.color="var(--bad)"}else if(goal>0&&remaining>=goal){status.textContent=`Great — your current plan reaches your ${money.format(goal)} savings goal.`;status.style.color="var(--good)"}else if(goal>0){status.textContent=`You are ${money.format(goal-remaining)} short of your savings goal.`;status.style.color="#92400e"}else{status.textContent=`You have ${money.format(remaining)} remaining after monthly expenses.`;status.style.color="var(--good)"}try{gtag('event','tool_generate',{tool_name:'Monthly Budget Planner'})}catch(e){}}
+function resetPlanner(){ids.forEach(id=>document.getElementById(id).value="");["incomeOut","expenseOut","remainingOut","goalOut"].forEach(id=>document.getElementById(id).textContent="₹0");document.getElementById("rateOut").textContent="0%";document.getElementById("bar").style.width="0%";const status=document.getElementById("status");status.textContent="Enter your numbers to create a monthly budget.";status.style.color="var(--text)"}
+document.getElementById("calculateBtn").addEventListener("click",calculate);document.getElementById("resetBtn").addEventListener("click",resetPlanner);
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Monthly Budget Planner","url":"https://eternyxstudios.github.io/smartkit-ai/monthly-budget-planner.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"description":"A free monthly budget planner to calculate expenses, remaining balance, savings rate, and savings goal progress."}</script>
+</body>
+</html>
