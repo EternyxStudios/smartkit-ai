@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://eternyxstudios.github.io/smartkit-ai/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://eternyxstudios.github.io/smartkit-ai/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://eternyxstudios.github.io/smartkit-ai/privacy.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://eternyxstudios.github.io/smartkit-ai/terms.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://eternyxstudios.github.io/smartkit-ai/contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-<url>
-  <loc>https://eternyxstudios.github.io/smartkit-ai/monthly-budget-planner.html</loc>
-</url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/about.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/privacy.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/terms.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/contact.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/monthly-budget-planner.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/daily-expense-tracker.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/bill-splitter.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/tip-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/fuel-cost-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/price-comparison-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/savings-goal-planner.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/electricity-bill-estimator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/simple-interest-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/compound-interest-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/grocery-list-budget.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/water-intake-tracker.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/habit-tracker.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/quick-notes.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/to-do-list.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/event-countdown.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/sleep-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/pomodoro-timer.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/stopwatch.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/random-decision-picker.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/kitchen-unit-converter.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/recipe-quantity-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/grocery-unit-price-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/cooking-timer.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/home-expense-splitter.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/trip-expense-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/travel-budget-planner.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/mileage-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/travel-packing-checklist.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/taxi-fare-splitter.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/work-hours-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/overtime-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/meeting-cost-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/shift-hours-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/daily-productivity-tracker.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/bmi-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/calorie-needs-estimator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/steps-distance-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/pace-calculator.html</loc></url>
+  <url><loc>https://eternyxstudios.github.io/smartkit-ai/weight-progress-tracker.html</loc></url>
 </urlset>

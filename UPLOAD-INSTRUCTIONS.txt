@@ -1,0 +1,7 @@
+WorkZivo 40 SEO Tool Pages
+
+Upload all 40 HTML files plus tool-engine.js to the ROOT of the smartkit-ai GitHub repository.
+Replace the old sitemap.xml with the included sitemap.xml.
+Do NOT delete index.html, about.html, privacy.html, terms.html, contact.html, robots.txt, sw.js, manifest.json, script.js or icon.svg.
+After GitHub Pages updates, submit sitemap.xml again in Google Search Console.
+You do not need to request indexing for all 40 pages manually; the sitemap helps Google discover them.
